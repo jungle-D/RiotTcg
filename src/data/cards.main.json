@@ -1,0 +1,114 @@
+[
+  {
+    "id": "main_blade_dancer",
+    "name": "Blade Dancer",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Blade+Dancer",
+    "description": "快速单位，适合前期抢节奏。",
+    "type": "unit"
+  },
+  {
+    "id": "main_arcane_bolt",
+    "name": "Arcane Bolt",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Arcane+Bolt",
+    "description": "低费法术，补足伤害。",
+    "type": "spell"
+  },
+  {
+    "id": "main_shield_guard",
+    "name": "Shield Guard",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Shield+Guard",
+    "description": "防御单位，保护核心。",
+    "type": "unit"
+  },
+  {
+    "id": "main_wild_charge",
+    "name": "Wild Charge",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Wild+Charge",
+    "description": "爆发强化法术。",
+    "type": "spell"
+  },
+  {
+    "id": "main_echo_mage",
+    "name": "Echo Mage",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Echo+Mage",
+    "description": "中期资源单位。",
+    "type": "unit"
+  },
+  {
+    "id": "main_rift_hunter",
+    "name": "Rift Hunter",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Rift+Hunter",
+    "description": "灵活打点单位。",
+    "type": "unit"
+  },
+  {
+    "id": "main_hero_squire",
+    "name": "Hero Squire",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Hero+Squire",
+    "description": "英雄单位之一。",
+    "type": "hero"
+  },
+  {
+    "id": "main_hero_warden",
+    "name": "Hero Warden",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Hero+Warden",
+    "description": "英雄单位之一。",
+    "type": "hero"
+  },
+  {
+    "id": "main_hero_sentinel",
+    "name": "Hero Sentinel",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Hero+Sentinel",
+    "description": "英雄单位之一。",
+    "type": "hero"
+  },
+  {
+    "id": "main_moon_barrier",
+    "name": "Moon Barrier",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Moon+Barrier",
+    "description": "高效防守法术。",
+    "type": "spell"
+  },
+  {
+    "id": "main_crystal_archer",
+    "name": "Crystal Archer",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Crystal+Archer",
+    "description": "远程单位。",
+    "type": "unit"
+  },
+  {
+    "id": "main_ember_call",
+    "name": "Ember Call",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Ember+Call",
+    "description": "低费过牌法术。",
+    "type": "spell"
+  },
+  {
+    "id": "main_tempo_strike",
+    "name": "Tempo Strike",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Tempo+Strike",
+    "description": "压制对手节奏。",
+    "type": "spell"
+  },
+  {
+    "id": "main_sky_lancer",
+    "name": "Sky Lancer",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Sky+Lancer",
+    "description": "中后期输出单位。",
+    "type": "unit"
+  },
+  {
+    "id": "main_path_strider",
+    "name": "Path Strider",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Path+Strider",
+    "description": "游走单位，可快速转移战场位置。",
+    "type": "wandering"
+  },
+  {
+    "id": "main_stone_aegis",
+    "name": "Stone Aegis",
+    "image": "https://via.placeholder.com/140x180/20324f/ffffff?text=Stone+Aegis",
+    "description": "防御单位，提供高额护盾。",
+    "type": "defense"
+  }
+]

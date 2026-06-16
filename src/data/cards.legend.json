@@ -1,0 +1,20 @@
+[
+  {
+    "id": "legend_aurora",
+    "name": "Aurora",
+    "image": "https://via.placeholder.com/140x180/5f5af6/ffffff?text=Aurora",
+    "description": "星辉守望者，擅长持续压制。"
+  },
+  {
+    "id": "legend_kael",
+    "name": "Kael",
+    "image": "https://via.placeholder.com/140x180/f56b5f/ffffff?text=Kael",
+    "description": "烈焰统帅，爆发能力出色。"
+  },
+  {
+    "id": "legend_nyx",
+    "name": "Nyx",
+    "image": "https://via.placeholder.com/140x180/5f9ff5/ffffff?text=Nyx",
+    "description": "夜幕主宰，强调节奏与控制。"
+  }
+]

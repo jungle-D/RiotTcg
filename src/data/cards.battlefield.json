@@ -1,0 +1,32 @@
+[
+  {
+    "id": "battlefield_sky_ruins",
+    "name": "Sky Ruins",
+    "image": "https://via.placeholder.com/140x180/55657c/ffffff?text=Sky+Ruins",
+    "description": "提升远程单位的先手能力。"
+  },
+  {
+    "id": "battlefield_ember_valley",
+    "name": "Ember Valley",
+    "image": "https://via.placeholder.com/140x180/7d5449/ffffff?text=Ember+Valley",
+    "description": "强化法术爆发。"
+  },
+  {
+    "id": "battlefield_mirror_lake",
+    "name": "Mirror Lake",
+    "image": "https://via.placeholder.com/140x180/467a8d/ffffff?text=Mirror+Lake",
+    "description": "增强续航与回复。"
+  },
+  {
+    "id": "battlefield_frozen_gate",
+    "name": "Frozen Gate",
+    "image": "https://via.placeholder.com/140x180/5d7290/ffffff?text=Frozen+Gate",
+    "description": "限制敌方快攻。"
+  },
+  {
+    "id": "battlefield_twilight_fort",
+    "name": "Twilight Fort",
+    "image": "https://via.placeholder.com/140x180/5c5d74/ffffff?text=Twilight+Fort",
+    "description": "强化护甲与防守。"
+  }
+]

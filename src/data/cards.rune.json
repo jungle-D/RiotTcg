@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rune_red",
+    "name": "Red Rune",
+    "image": "https://via.placeholder.com/140x180/e25555/ffffff?text=Red+Rune",
+    "description": "红色符文。",
+    "color": "red"
+  },
+  {
+    "id": "rune_blue",
+    "name": "Blue Rune",
+    "image": "https://via.placeholder.com/140x180/4f87ff/ffffff?text=Blue+Rune",
+    "description": "蓝色符文。",
+    "color": "blue"
+  },
+  {
+    "id": "rune_green",
+    "name": "Green Rune",
+    "image": "https://via.placeholder.com/140x180/3dac60/ffffff?text=Green+Rune",
+    "description": "绿色符文。",
+    "color": "green"
+  },
+  {
+    "id": "rune_purple",
+    "name": "Purple Rune",
+    "image": "https://via.placeholder.com/140x180/8d56d9/ffffff?text=Purple+Rune",
+    "description": "紫色符文。",
+    "color": "purple"
+  }
+]

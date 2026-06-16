@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hero_aurora",
+    "name": "Aurora",
+    "image": "https://via.placeholder.com/140x180/5f5af6/ffffff?text=Hero+Aurora",
+    "description": "Aurora 对应英雄单位。"
+  },
+  {
+    "id": "hero_kael",
+    "name": "Kael",
+    "image": "https://via.placeholder.com/140x180/f56b5f/ffffff?text=Hero+Kael",
+    "description": "Kael 对应英雄单位。"
+  },
+  {
+    "id": "hero_nyx",
+    "name": "Nyx",
+    "image": "https://via.placeholder.com/140x180/5f9ff5/ffffff?text=Hero+Nyx",
+    "description": "Nyx 对应英雄单位。"
+  },
+  {
+    "id": "hero_mira",
+    "name": "Mira",
+    "image": "https://via.placeholder.com/140x180/6fcd7a/ffffff?text=Hero+Mira",
+    "description": "额外英雄，用于验证同名限制逻辑。"
+  }
+]
