@@ -21,6 +21,17 @@
   gap: 14px;
 }
 
+.deck-file-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.deck-import-btn input {
+  display: none;
+}
+
 .section-card {
   border: 1px solid #38445d;
   background: #1c2433;
@@ -107,11 +118,13 @@
 .modal {
   width: min(980px, 100%);
   max-height: 90vh;
-  overflow-y: auto;
+  overflow: hidden;
   border: 1px solid #3a4761;
   border-radius: 14px;
   background: #101623;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-header {
@@ -149,6 +162,14 @@
   color: #ff9d9d;
 }
 
+.modal-scroll-content {
+  margin-top: 12px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  padding-right: 4px;
+}
+
 .card-grid {
   margin-top: 14px;
   display: grid;
@@ -174,6 +195,7 @@
 .card-item img {
   width: 100%;
   border-radius: 8px;
+  cursor: zoom-in;
 }
 
 .card-item h4 {
@@ -188,6 +210,38 @@
   font-size: 13px;
 }
 
+.card-preview-btn {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.card-preview-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 6, 12, 0.72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  z-index: 120;
+}
+
+.card-preview-modal {
+  width: min(560px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  border: 1px solid #3a4761;
+  border-radius: 14px;
+  background: #101623;
+  padding: 16px;
+}
+
+.card-preview-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 .counter-row {
   margin-top: 8px;
   display: flex;
@@ -197,11 +251,16 @@
 }
 
 .modal-footer {
-  margin-top: 14px;
+  margin-top: 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 12px;
+  position: sticky;
+  bottom: 0;
+  background: #101623;
+  padding-top: 8px;
+  border-top: 1px solid #2f3a50;
 }
 
 .btn {

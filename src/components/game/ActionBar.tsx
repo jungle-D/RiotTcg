@@ -51,7 +51,7 @@ function ActionBar({
     <footer className="action-bar">
       {dicePhase ? (
         <div className="dice-panel">
-          <p className="dice-hint">投掷骰子决定先手，点数大者先手。</p>
+          <p className="dice-hint">双方完成战场选择与调度后，投掷骰子决定先手。</p>
           {playerDice !== null && opponentDice !== null ? (
             <p className="dice-result">
               你的点数：{playerDice} · 对手点数：{opponentDice}

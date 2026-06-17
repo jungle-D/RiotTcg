@@ -1,0 +1,37 @@
+[
+  {
+    "id": 33,
+    "type": "card_rarity",
+    "code": "rune_dust",
+    "name": "普通",
+    "sort": 5
+  },
+  {
+    "id": 34,
+    "type": "card_rarity",
+    "code": "rune_glimmer",
+    "name": "不凡",
+    "sort": 4
+  },
+  {
+    "id": 35,
+    "type": "card_rarity",
+    "code": "rune_shard",
+    "name": "稀有",
+    "sort": 3
+  },
+  {
+    "id": 36,
+    "type": "card_rarity",
+    "code": "rune_core",
+    "name": "史诗",
+    "sort": 2
+  },
+  {
+    "id": 37,
+    "type": "card_rarity",
+    "code": "rune_legend",
+    "name": "异画",
+    "sort": 1
+  }
+]

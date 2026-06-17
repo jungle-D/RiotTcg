@@ -1,4 +1,5 @@
 import type { BaseCard } from '../types/cards'
+import { useState } from 'react'
 
 type CounterMap = Record<string, number>
 
@@ -47,6 +48,8 @@ function CardSelectModal(props: CardSelectModalProps) {
     onConfirm,
   } = props
 
+  const [previewCard, setPreviewCard] = useState<BaseCard | null>(null)
+
   if (!open) {
     return null
   }
@@ -79,74 +82,88 @@ function CardSelectModal(props: CardSelectModalProps) {
         ) : null}
         {errorText ? <p className="error-text">{errorText}</p> : null}
 
-        <div className="card-grid">
-          {cards.map((card) => {
-            const disabled = disabledCardIds.includes(card.id)
-            const isSingleSelected = selectedId === card.id
-            const count = selectedCounters[card.id] ?? 0
-            const isMultiSelected = selectedIds.includes(card.id)
-            const atCardLimit =
-              typeof maxCountPerCard === 'number' && count >= maxCountPerCard
-            const atIncrementLimit =
-              disabledIncrementCardIds.includes(card.id) || atCardLimit || atTotalLimit
+        <div className="modal-scroll-content">
+          <div className="card-grid">
+            {cards.map((card) => {
+              const disabled = disabledCardIds.includes(card.id)
+              const isSingleSelected = selectedId === card.id
+              const count = selectedCounters[card.id] ?? 0
+              const isMultiSelected = selectedIds.includes(card.id)
+              const atCardLimit =
+                typeof maxCountPerCard === 'number' && count >= maxCountPerCard
+              const atIncrementLimit =
+                disabledIncrementCardIds.includes(card.id) || atCardLimit || atTotalLimit
 
-            return (
-              <article
-                key={card.id}
-                className={`card-item ${disabled ? 'disabled' : ''} ${
-                  isSingleSelected || isMultiSelected || count > 0 ? 'selected' : ''
-                }`}
-              >
-                <img src={card.image} alt={card.name} />
-                <h4>{card.name}</h4>
-                <p>{card.description}</p>
-
-                {mode === 'single' ? (
+              return (
+                <article
+                  key={card.id}
+                  className={`card-item ${disabled ? 'disabled' : ''} ${
+                    isSingleSelected || isMultiSelected || count > 0 ? 'selected' : ''
+                  }`}
+                >
+                  <img
+                    src={card.image}
+                    alt={card.name}
+                    onDoubleClick={() => setPreviewCard(card)}
+                  />
                   <button
                     type="button"
-                    className="btn"
-                    disabled={disabled}
-                    onClick={() => onSingleChoose?.(card.id)}
+                    className="btn ghost card-preview-btn"
+                    onClick={() => setPreviewCard(card)}
+                    onDoubleClick={() => setPreviewCard(card)}
                   >
-                    {isSingleSelected ? '已选择' : '选择'}
+                    查看大图
                   </button>
-                ) : null}
+                  <h4>{card.name}</h4>
+                  <p>{card.description}</p>
 
-                {mode === 'counter' ? (
-                  <div className="counter-row">
+                  {mode === 'single' ? (
                     <button
                       type="button"
-                      className="btn ghost"
-                      disabled={disabled || count <= 0}
-                      onClick={() => onCounterChange?.(card.id, count - 1)}
+                      className="btn"
+                      disabled={disabled}
+                      onClick={() => onSingleChoose?.(card.id)}
                     >
-                      -
+                      {isSingleSelected ? '已选择' : '选择'}
                     </button>
-                    <span>{count}</span>
+                  ) : null}
+
+                  {mode === 'counter' ? (
+                    <div className="counter-row">
+                      <button
+                        type="button"
+                        className="btn ghost"
+                        disabled={disabled || count <= 0}
+                        onClick={() => onCounterChange?.(card.id, count - 1)}
+                      >
+                        -
+                      </button>
+                      <span>{count}</span>
+                      <button
+                        type="button"
+                        className="btn ghost"
+                        disabled={disabled || atIncrementLimit}
+                        onClick={() => onCounterChange?.(card.id, count + 1)}
+                      >
+                        +
+                      </button>
+                    </div>
+                  ) : null}
+
+                  {mode === 'multi' ? (
                     <button
                       type="button"
-                      className="btn ghost"
-                      disabled={disabled || atIncrementLimit}
-                      onClick={() => onCounterChange?.(card.id, count + 1)}
+                      className="btn"
+                      disabled={disabled}
+                      onClick={() => onMultiToggle?.(card.id)}
                     >
-                      +
+                      {isMultiSelected ? '取消' : '加入'}
                     </button>
-                  </div>
-                ) : null}
-
-                {mode === 'multi' ? (
-                  <button
-                    type="button"
-                    className="btn"
-                    disabled={disabled}
-                    onClick={() => onMultiToggle?.(card.id)}
-                  >
-                    {isMultiSelected ? '取消' : '加入'}
-                  </button>
-                ) : null}
-              </article>
-            )
-          })}
+                  ) : null}
+                </article>
+              )
+            })}
+          </div>
         </div>
 
         <footer className="modal-footer">
@@ -165,6 +182,28 @@ function CardSelectModal(props: CardSelectModalProps) {
           </button>
         </footer>
       </section>
+
+      {previewCard ? (
+        <section
+          className="card-preview-mask"
+          onClick={(event) => {
+            event.stopPropagation()
+            setPreviewCard(null)
+          }}
+        >
+          <article className="card-preview-modal" onClick={(event) => event.stopPropagation()}>
+            <header className="modal-header">
+              <h2>{previewCard.name}</h2>
+              <button type="button" className="btn ghost" onClick={() => setPreviewCard(null)}>
+                关闭
+              </button>
+            </header>
+            <img src={previewCard.image} alt={previewCard.name} className="card-preview-image" />
+            <p className="helper">卡牌ID：{previewCard.id}</p>
+            <p className="helper">{previewCard.description}</p>
+          </article>
+        </section>
+      ) : null}
     </div>
   )
 }

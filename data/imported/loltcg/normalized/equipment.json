@@ -1,0 +1,3841 @@
+[
+  {
+    "id": "lol_34534",
+    "name": "魔法鲜豆",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/f6de8aed9fd647f8a4a12c34168763fd.webp",
+    "description": "当你在法术对决期间打出单位时，你可以选择让此装备变为休眠状态，以此抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34534,
+      "cardNo": "UNL-011/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Wild Blue Studios",
+      "flavorText": "新鲜得快冒芽了。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/f6de8aed9fd647f8a4a12c34168763fd.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34542",
+    "name": "枯萎战斧",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/7d138597c0844ab5864e58e29e950227.webp",
+    "description": "{{装配}}{{1}}{{红色}}（支付{{1}}和{{红色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34542,
+      "cardNo": "UNL-019/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": 4,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Caravan Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/7d138597c0844ab5864e58e29e950227.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34567",
+    "name": "灵魂之剑",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/2578dd9aed844bafa139d869cb67b7ba.webp",
+    "description": "{{装配}}{{绿色}}（支付{{绿色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34567,
+      "cardNo": "UNL-039/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": 1,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/2578dd9aed844bafa139d869cb67b7ba.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34573",
+    "name": "被遗忘的路标",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/cd704e67c9e248d2942043a17f93db78.webp",
+    "description": "{{迅捷>}} 将你控制的一名单位变为休眠状态，{{横置}}：将你控制的另一名单位移动到你因此技能而休眠的单位的所在位置。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34573,
+      "cardNo": "UNL-045/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "德玛西亚雄都 470\n不朽堡垒 2105\n班德尔城 ????",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/cd704e67c9e248d2942043a17f93db78.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34577",
+    "name": "蜜糖果实",
+    "image": "https://cdn.playloltcg.com/lol/card/20260326/ad3cd8a5fc89442dba83ff2c4f669107.webp",
+    "description": "此牌以休眠状态进场。\n{{反应>}} {{横置}}：{{获得}}{{A}}。（获得费用资源的技能无法成为其他法术的反应目标。）\n{{等级6>}} {{>>}}{{反应>}} {{横置}}：{{获得}} {{1}}和{{A}}。（你仅可在拥有不少于6经验时才能使用此技能。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34577,
+      "cardNo": "UNL-049/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260326/ad3cd8a5fc89442dba83ff2c4f669107.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34607",
+    "name": "冰封宝石",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/2a87af09320b43e78cacb2b299fcd4fe.webp",
+    "description": "当你在每回合内抽第二张牌时，让一名友方单位本回合内{{S}}+2。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34607,
+      "cardNo": "UNL-074/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "每个晶面都透着弗雷尔卓德的力量。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/2a87af09320b43e78cacb2b299fcd4fe.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34611",
+    "name": "精灵提灯",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/d55f4c05a60a4a2191408cb20c997265.webp",
+    "description": "{{瞬息}}（在其控制者的开始阶段开始时，结算得分之前将其摧毁。）\n当你打出此牌时，打出一名活跃状态的3{{S}}“精灵”到你的基地，它拥有{{瞬息}}。\n{{绝念>}} 重复此装备的打出效果。（当此牌被摧毁后，发动此效果。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34611,
+      "cardNo": "UNL-078/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/d55f4c05a60a4a2191408cb20c997265.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34620",
+    "name": "地沟区地图",
+    "image": "https://cdn.playloltcg.com/lol/card/20260325/cab71dd4d3e14c22ae09d0a46fe4585a.webp",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n{{瞬息}}（在其控制者的开始阶段开始时，结算得分之前将其摧毁。）\n当一名对手得分时，抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34620,
+      "cardNo": "UNL-085/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“等等，好像拿反了。”",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260325/cab71dd4d3e14c22ae09d0a46fe4585a.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34624",
+    "name": "倾颓宫殿",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/85510c7c7a6243b0870f2e19e7f7c54c.webp",
+    "description": "在你的开始阶段开始时，如果你有且仅有四张手牌，且你在各处战场上有且仅有四名单位，则立即赢得对局。\n弃置一张手牌，{{横置}}：打出一名1{{S}}的“战鹰”，它拥有{{法盾}}。（对手必须支付{{A}}才能将其选作法术或技能的目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34624,
+      "cardNo": "UNL-088/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/85510c7c7a6243b0870f2e19e7f7c54c.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34634",
+    "name": "猎人的宽刃刀",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/ba0362fdd1184709ae22b32658a4b236.webp",
+    "description": "{{装配}}{{橙色}}（支付{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34634,
+      "cardNo": "UNL-096/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": 2,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/ba0362fdd1184709ae22b32658a4b236.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34647",
+    "name": "猩红玫瑰",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/c67da1e9196d4272925085c6d54d61e8.webp",
+    "description": "当你打出一名单位时，你可以选择支付{{1}}来获得1经验。\n消耗3经验，{{横置}}：让一名单位变为活跃状态。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34647,
+      "cardNo": "UNL-109/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "一朵玫瑰，也能让人血脉贲张。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/c67da1e9196d4272925085c6d54d61e8.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34676",
+    "name": "喷射球果",
+    "image": "https://cdn.playloltcg.com/lol/card/20260325/245f2bfd1e3040da95efc3fb6abd66b4.webp",
+    "description": "当你打出此牌时，你可以选择移动一名敌方单位。\n当你移动一名敌方单位时，你可以选择让此牌变为休眠状态，以此{{眩晕}}该敌方单位。（使其在本回合内无法造成战斗伤害。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34676,
+      "cardNo": "UNL-133/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "小小一枚球果，看尽恩怨情仇。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260325/245f2bfd1e3040da95efc3fb6abd66b4.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34679",
+    "name": "占卜花朵",
+    "image": "https://cdn.playloltcg.com/lol/card/20260328/19428025eaeb404da3e75c2a70babbc9.webp",
+    "description": "此牌以休眠状态进场。\n摧毁此牌，支付{{1}}，{{横置}}：{{洞察2}}，然后抽一张牌。获得1经验。（执行洞察2，即查看你主牌堆顶部的两张牌。你可以将其中任意卡牌回收，并将其余的卡牌按任意顺序放回原处。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34679,
+      "cardNo": "UNL-136/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "一花一叶，并非总会障目。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260328/19428025eaeb404da3e75c2a70babbc9.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34681",
+    "name": "夺命名单",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/cf44f6d9329149d89c23d8ed21bbaae2.webp",
+    "description": "打出此牌时，宣告一种属性标签。（如：“厄运小姐”、“德玛西亚”、“魄罗”等均为属性标签。）\n{{横置}}：让一名具有该属性标签的单位在本回合内{{S}}-2。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34681,
+      "cardNo": "UNL-138/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "榜上有名，不见得全是好事。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/cf44f6d9329149d89c23d8ed21bbaae2.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34694",
+    "name": "受诅咒的石棺",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/fd1d8d0f9d8f40aabd17929c47a27752.webp",
+    "description": "当你打出此牌时，放逐你废牌堆中的所有单位。\n{{横置}}：打出一名以此方式放逐的单位。（必须支付卡牌费用。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34694,
+      "cardNo": "UNL-148/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "“请勿打扰。”\n——石棺铭文",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/fd1d8d0f9d8f40aabd17929c47a27752.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34706",
+    "name": "牧人的传家宝",
+    "image": "https://cdn.playloltcg.com/lol/card/20260328/c357165bebcd41158065e7e3679967b7.webp",
+    "description": "当你打出此牌时，获得1经验。\n{{装配}} — 消耗1经验（支付此费用：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34706,
+      "cardNo": "UNL-158/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": 2,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Kudos Productions",
+      "flavorText": "“就连那群笨羊都知道，它确实与众不同。”",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260328/c357165bebcd41158065e7e3679967b7.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34709",
+    "name": "占卜贝壳",
+    "image": "https://cdn.playloltcg.com/lol/card/20260326/35642403f11e4885af42dadb0b589188.webp",
+    "description": "{{预知}}（当你打出此牌时，查看主牌堆顶部的一张牌。你可以选择将其回收。）\n{{迅捷>}} 摧毁此牌，{{横置}}：让一名单位在本回合内{{S}}+2。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34709,
+      "cardNo": "UNL-161/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "稀罕宝物，用完就扔。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260326/35642403f11e4885af42dadb0b589188.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34723",
+    "name": "逆转碎片",
+    "image": "https://cdn.playloltcg.com/lol/card/20260327/60b253854c9d4a67874171b24210f79b.webp",
+    "description": "每回合首次，当友方单位在你的开始阶段被摧毁时，每名对手必须摧毁自己的一名单位。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34723,
+      "cardNo": "UNL-174/219",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 6,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "宝藏永远都在，生命无法重来。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260327/60b253854c9d4a67874171b24210f79b.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33081",
+    "name": "锯齿短匕",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/1d2005b27489499f839da2a805b985f8.png",
+    "description": "{{装配红色}}（支付{{红色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33081,
+      "cardNo": "SFD·009/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/1d2005b27489499f839da2a805b985f8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33088",
+    "name": "反曲之弓",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d1a50c803abf4109bc1079ab725394af.png",
+    "description": "{{装配红色}}（支付{{红色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33088,
+      "cardNo": "SFD·016/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d1a50c803abf4109bc1079ab725394af.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33091",
+    "name": "装配架",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/171a79e7252642518697aaae0ce3afd9.png",
+    "description": "支付{{1}}和{{红色}}，从你的废牌堆中回收一名单位，{{横置}}：打出一名3{{S}}的“机器人”到你的基地。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33091,
+      "cardNo": "SFD·019/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "“真不敢相信，这么好的东西都有人扔！”",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/171a79e7252642518697aaae0ce3afd9.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33095",
+    "name": "长剑",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/48ad3f52ea5a4fc4bef6b90e0186d6c7.png",
+    "description": "{{灵便}}（此牌获得{{反应}}。当你打出此牌时,将它贴附到你控制的一名单位上。)\n{{装配}}{{红色}}（支付{{红色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33095,
+      "cardNo": "SFD·022/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "剑不是造得越长越好——听过\"边际收益递减\"吗?",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/48ad3f52ea5a4fc4bef6b90e0186d6c7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33106",
+    "name": "阿瑞昂的陨落",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/ca519b1a4c5149a69f0aebccb8991bda.png",
+    "description": "{{装配1红色}}（支付{{1}}和{{红色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33106,
+      "cardNo": "SFD·030/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/ca519b1a4c5149a69f0aebccb8991bda.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33109",
+    "name": "多兰之盾",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/074701dac87b4b53b23a540122bda822.png",
+    "description": "{{装配绿色}}（支付{{绿色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33109,
+      "cardNo": "SFD·033/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/074701dac87b4b53b23a540122bda822.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33118",
+    "name": "残暴之力",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/4da831212c3748a8b6f0e58c605972c2.png",
+    "description": "{{装配绿色}}（支付{{绿色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33118,
+      "cardNo": "SFD·042/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/4da831212c3748a8b6f0e58c605972c2.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33122",
+    "name": "魄罗佳肴",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/4d0b86020d7e4e2a9edb228acc816095.png",
+    "description": "当你打出此牌时，抽一张牌。\n支付{{1}}和{{绿色}}，{{横置}}，摧毁此牌：抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33122,
+      "cardNo": "SFD·046/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "“吃吧！吃完就会茁壮成长！”\n——布隆",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/4d0b86020d7e4e2a9edb228acc816095.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33128",
+    "name": "守护天使",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/cbbc137ed7644a529456560f55cce23e.png",
+    "description": "{{装配绿色}}（支付{{绿色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33128,
+      "cardNo": "SFD·051/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/cbbc137ed7644a529456560f55cce23e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33129",
+    "name": "玄冰之心",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/20802732da784672ab55a181cd1e0329.png",
+    "description": "{{横置}}：让一名单位在本回合内{{S}}+3。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33129,
+      "cardNo": "SFD·052/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“所有人都将臣服……只是时机未到。”\n——丽桑卓",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/20802732da784672ab55a181cd1e0329.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33134",
+    "name": "斯特拉克的挑战护手",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/b9a16b698fb64b93ba88ca7b96303d2c.png",
+    "description": "{{灵便}}（此牌获得{{反应}}。当你打出此牌时，将它贴附到你控制的一名单位上。)\n{{装配绿色}}（支付{{绿色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33134,
+      "cardNo": "SFD·056/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "这对爪子可不是闹着玩的。",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/b9a16b698fb64b93ba88ca7b96303d2c.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33139",
+    "name": "斯弗尔尚歌",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/3fb9c51990c64735b1d613e27e53f2a7.png",
+    "description": "{{装配}}{{1}}{{绿色}}（支付{{1}}和{{绿色}}：将此牌贴附到你控制的一名单位上。）\n在此牌贴附于单位期间，复制该单位的技能描述到此武装的效果文字，在贴附期间持续生效。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33139,
+      "cardNo": "SFD·059/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Envar Studio",
+      "flavorText": "\"只有最伟大的弗雷尔卓德英雄才拥有臻冰做的武器!\"——努努",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/3fb9c51990c64735b1d613e27e53f2a7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33143",
+    "name": "炼金科技桶",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/23504c10ca8944bb9f66013378a6d5a7.png",
+    "description": "当你在对手的回合内打出一张法术牌时，你可以选择让我变为休眠状态，以此打出一个休眠的“金币”装备指示物。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33143,
+      "cardNo": "SFD·063/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka & 黯荧岛Dark Glow",
+      "flavorText": "“皮城人热衷香水，可祖安人就连呼吸都是奢侈。”\n——烈娜塔·戈拉斯克",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/23504c10ca8944bb9f66013378a6d5a7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33144",
+    "name": "布甲",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d31c7e8423b74a6b8f476fc48b0a6e9f.png",
+    "description": "{{灵便}}（此牌获得{{反应}}。当你打出此牌时，将它贴附到你控制的一名单位上。）\n{{装配蓝色}}（支付{{蓝色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33144,
+      "cardNo": "SFD·064/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d31c7e8423b74a6b8f476fc48b0a6e9f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33153",
+    "name": "海克斯注力刚壁",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/ca537f6376c24628a1865a1ef0820519.png",
+    "description": "{{装配蓝色}}（支付{{蓝色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33153,
+      "cardNo": "SFD·073/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/ca537f6376c24628a1865a1ef0820519.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33158",
+    "name": "预时之门",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f941d918238b4807a6b0552067feed33.png",
+    "description": "支付{{A}}，{{横置}}：让你本回合打出的下一个法术获得等同于其费用的{{回响}}。（你可以选择支付此额外费用，以重复此法术效果。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33158,
+      "cardNo": "SFD·078/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "唯有熟谙历史之人，才能让历史重演。",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f941d918238b4807a6b0552067feed33.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33165",
+    "name": "海克斯异常体",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f3b51e163579498ca1d51f0c72b80a31.png",
+    "description": "{{横置}}：{{反应}} — 支付任意数量的{{A}}来{{获得}}等量的法力。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33165,
+      "cardNo": "SFD·083/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“海克斯科技是能变革当下，但时代的进步绝不能以牺牲未来为代价！”\n——黑默丁格",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f3b51e163579498ca1d51f0c72b80a31.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33169",
+    "name": "云游图鉴",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/2d9dab4fe9ab43789b44936bcae350fd.png",
+    "description": "{{装配蓝色}}（支付{{蓝色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33169,
+      "cardNo": "SFD·086/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/2d9dab4fe9ab43789b44936bcae350fd.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33175",
+    "name": "Z型驱动",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/5f86f798e1034532a5f1ca0478b39d9f.png",
+    "description": "{{装配1蓝色}}（支付{{1}}和{{蓝色}}：将此牌贴附到你控制的一名单位上。）\n支付{{3}}和{{蓝色}}，放逐此牌：打出所有因此牌效果被放逐的单位，无视费用。（只有在未贴附时才能使用。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33175,
+      "cardNo": "SFD·090/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/5f86f798e1034532a5f1ca0478b39d9f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33180",
+    "name": "多兰之刃",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/ea875fe56f0e42098b5d0617c491e5f3.png",
+    "description": "{{装配橙色}}（支付{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33180,
+      "cardNo": "SFD·095/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "“我想，也许可以……用来砸人。”\n——厄运小姐",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/ea875fe56f0e42098b5d0617c491e5f3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33187",
+    "name": "海克斯饮魔刀",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/5cb0d360db1d434ebd4670e324feeb7e.png",
+    "description": "{{装配橙色}}（支付{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33187,
+      "cardNo": "SFD·102/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/5cb0d360db1d434ebd4670e324feeb7e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33189",
+    "name": "禁魔石丰碑",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/bbfae592c3844bb6a91826a8f1d768d8.png",
+    "description": "{{瞬息}}（在其控制者的下个回合开始阶段，结算得分之前将其摧毁。）\n友方单位获得{{法盾}}（对手必须支付{{A}}才能将其选作法术或技能的目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33189,
+      "cardNo": "SFD·104/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "使用能吸收魔法的禁魔石筑成的丰碑。它们既保护着德玛西亚王国，也歌颂着它的荣耀。",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/bbfae592c3844bb6a91826a8f1d768d8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33193",
+    "name": "狂徒铠甲",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/bd6fa98eb467496cb564b8f95d0ddb80.png",
+    "description": "{{装配橙色}}（支付{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33193,
+      "cardNo": "SFD·108/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/bd6fa98eb467496cb564b8f95d0ddb80.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33202",
+    "name": "三相之力",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d481cd43228e4ad5901fe2d058d01593.png",
+    "description": "{{装配橙色}}（支付{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33202,
+      "cardNo": "SFD·115/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d481cd43228e4ad5901fe2d058d01593.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33204",
+    "name": "远古簇碑",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/1a309c39a83a4058a6a4fa82dfeea66d.png",
+    "description": "{{横置}}：{{反应}}—支付任意数量的法力来{{获得}}等量的{{A}}。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33204,
+      "cardNo": "SFD·117/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "“仅仅守护这片冰天雪地是远远不够的。我们必须守护彼此，在先祖留给我们的基业之上，建立起共同的家园。”\n——艾希",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/1a309c39a83a4058a6a4fa82dfeea66d.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33205",
+    "name": "碎骨棒",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/9e8fa915f43d42f2b4634dcf2e6f496b.png",
+    "description": "{{装配1橙色}}（支付{{1}}和{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33205,
+      "cardNo": "SFD·118/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/9e8fa915f43d42f2b4634dcf2e6f496b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33206",
+    "name": "碎骨棒",
+    "image": "https://cdn.playloltcg.com/lol/card/20260130/4a1b6acd9057487e8d104b9b2375bce3.png",
+    "description": "{{装配1橙色}}（支付{{1}}和{{橙色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33206,
+      "cardNo": "SFD·118a/221·P",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "legacy_etching",
+      "extendRarityName": "异画",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "KAMI",
+      "flavorText": "",
+      "productCodeList": [],
+      "productNameList": [],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260130/4a1b6acd9057487e8d104b9b2375bce3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33214",
+    "name": "多兰之戒",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/72b73f8855f64e46b13c68ba694e15f1.png",
+    "description": "{{装配紫色}}（支付{{紫色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33214,
+      "cardNo": "SFD·124/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/72b73f8855f64e46b13c68ba694e15f1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33223",
+    "name": "轻灵之靴",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d694b9a10e9c405e9eb5109316f20078.png",
+    "description": "{{装配紫色}}（支付{{紫色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33223,
+      "cardNo": "SFD·133/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d694b9a10e9c405e9eb5109316f20078.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33224",
+    "name": "萃取",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/8d84b89359f94941ac589d509006360b.png",
+    "description": "{{装配紫色}}（支付{{紫色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33224,
+      "cardNo": "SFD·134/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/8d84b89359f94941ac589d509006360b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33229",
+    "name": "夜之锋刃",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/3772585868e94929a85477e5d58cda09.png",
+    "description": "{{待命}}（支付{{A}}正面朝下放置此牌，之后可支付{{0}}将其当作反应牌打出。）\n当你从正面朝下状态中打出此牌时，将此牌贴附到此处你控制的一名单位上。\n{{装配紫色}}（支付{{紫色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33229,
+      "cardNo": "SFD·139/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "一切暗影，皆为我友。",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/3772585868e94929a85477e5d58cda09.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33236",
+    "name": "灵魂之轮",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/730de10a279a4523b7e87d21bdfb831f.png",
+    "description": "当你将一名友方单位选为目标时，你可以选择支付{{1}}并让此牌变为休眠状态，以此抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33236,
+      "cardNo": "SFD·144/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "从未断裂，永不屈服。",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/730de10a279a4523b7e87d21bdfb831f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33244",
+    "name": "临终仪式",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/aedfdfbe1a394446a7449258702ef61f.png",
+    "description": "{{装配}} — 支付{{紫色}}，从你的废牌堆回收两张卡牌。（支付此费用：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33244,
+      "cardNo": "SFD·150/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/aedfdfbe1a394446a7449258702ef61f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33247",
+    "name": "先锋之眼",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/327a71f28d88482cacebb67322c2c37f.png",
+    "description": "{{装配黄色}}（支付{{黄色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33247,
+      "cardNo": "SFD·153/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/327a71f28d88482cacebb67322c2c37f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33255",
+    "name": "暴风大剑",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/e6a2f0b37e4a41b1b713bcc9eb0d7287.png",
+    "description": "{{装配黄色}}（支付{{黄色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33255,
+      "cardNo": "SFD·161/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "论大它确实够大。",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/e6a2f0b37e4a41b1b713bcc9eb0d7287.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33262",
+    "name": "先锋军备",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/65a80e9eafbd4258b83d48351b0b08c9.png",
+    "description": "{{横置}}：打出三名1{{S}}的“随从”。（你可以将他们打出到不同的位置。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33262,
+      "cardNo": "SFD·168/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 7,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "要成为一名像样的士兵，光有剑和盾可不够。不过，也算个不错的开始。",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/65a80e9eafbd4258b83d48351b0b08c9.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33263",
+    "name": "追忆祭坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f3f739db8709496aa702b07a4d0bfbb0.png",
+    "description": "当一名友方单位被摧毁时，你可以选择让我变为休眠状态，以此抽一张牌，然后将一张手牌放到主牌堆的顶部或底部。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33263,
+      "cardNo": "SFD·169/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“蜘蛛之神需要祭品。”\n——伊莉丝",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f3f739db8709496aa702b07a4d0bfbb0.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33268",
+    "name": "神圣剪刀",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/54b8194b26f64d01859d71766eaf43e1.png",
+    "description": "{{装配黄色}}（支付{{黄色}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33268,
+      "cardNo": "SFD·172/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "Polar Engine",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/54b8194b26f64d01859d71766eaf43e1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33275",
+    "name": "破败王者之刃",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/53ef6ac60d7d4654b8eed0ba8a485c8b.png",
+    "description": "{{装配}}—支付{{黄色}}，摧毁一名友方单位。\n（支付此费用：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33275,
+      "cardNo": "SFD·178/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "武装",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "“你并非这段故事的主角。”\n——佛耶戈",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/53ef6ac60d7d4654b8eed0ba8a485c8b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33321",
+    "name": "暴怒之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/e4116c1a76f04dae91df3ef1c1e38e9f.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{红色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33321,
+      "cardNo": "SFD·222/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/e4116c1a76f04dae91df3ef1c1e38e9f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33328",
+    "name": "专注之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f71e6c0096c94a04a56f1725f48c731e.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{绿色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33328,
+      "cardNo": "SFD·226/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f71e6c0096c94a04a56f1725f48c731e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33333",
+    "name": "洞察之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/6b4b9debeacb4ee4990e0ac96f3396c6.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{蓝色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33333,
+      "cardNo": "SFD·229/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/6b4b9debeacb4ee4990e0ac96f3396c6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33336",
+    "name": "力量之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f0cd6e466fd64131b45888fdccc7660a.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{橙色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33336,
+      "cardNo": "SFD·231/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f0cd6e466fd64131b45888fdccc7660a.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33341",
+    "name": "不和之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/8af5f320ed3744a0b3a55afd0e124868.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{紫色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33341,
+      "cardNo": "SFD·234/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/8af5f320ed3744a0b3a55afd0e124868.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33348",
+    "name": "团结之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/1d907cba0ef84a4287c705f68786c5f6.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{黄色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33348,
+      "cardNo": "SFD·238/221",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/1d907cba0ef84a4287c705f68786c5f6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31223",
+    "name": "钢铁弩炮",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/b09fb22d135842c18c89d6459077dcdd.png",
+    "description": "此牌以休眠状态进场。\n{{横置}}：对战场上的一名单位造成2点伤害。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31223,
+      "cardNo": "OGN·017/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“这么远的距离，怎么可能打中——哎哟！”",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/b09fb22d135842c18c89d6459077dcdd.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31227",
+    "name": "太阳圆盘",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/eb36eca404ae41f29ef3bf75ac723ef1.png",
+    "description": "{{横置}}：{{鼓舞}}—你在本回合内打出的下一名单位以活跃状态进场。（如果你在本回合内已打出过其他卡牌，则发动此效果。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31227,
+      "cardNo": "OGN·021/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "“追随我的人，也在追随宿命！”\n——阿兹尔",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/eb36eca404ae41f29ef3bf75ac723ef1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31229",
+    "name": "来路不明的武器",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/acde143632894f17b02a10c453033747.png",
+    "description": "弃置一张手牌，{{横置}}： 选择一名友方单位。在本回合内，当它下次被摧毁时，你可以选择支付{{红色}}，改为以休眠状态将其召回。（把该单位送回基地，此行动不算作移动。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31229,
+      "cardNo": "OGN·023/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/acde143632894f17b02a10c453033747.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31240",
+    "name": "邪鸦魔典",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/e84ad14a85fb4cc9ade7a63cdb9caa9a.png",
+    "description": "{{横置}}：你打出的下一个法术造成的伤害+1（每段伤害都+1）。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31240,
+      "cardNo": "OGN·032/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "这本书是用防火材料装订的。理由应该不难猜吧。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/e84ad14a85fb4cc9ade7a63cdb9caa9a.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31249",
+    "name": "暴怒之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/1eebeeeb98bf4f3e9ff936133063c0f7.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{红色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31249,
+      "cardNo": "OGN·040/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "red"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/1eebeeeb98bf4f3e9ff936133063c0f7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31272",
+    "name": "远见面具",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/08ceceefbd704b79a2f68bd0463e0883.png",
+    "description": "每当一名友方单位独自进攻或防守时，让其本回合内{{S}}+1。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31272,
+      "cardNo": "OGN·060/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "接受未来，方可预知未来。",
+      "productCodeList": [
+        "OGN(英雄预组 李青)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 李青",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/08ceceefbd704b79a2f68bd0463e0883.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31275",
+    "name": "奥义！魂佑",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/499fd4e0ecc54ebd95d0ccec163b80bf.png",
+    "description": "当你打出此牌时，给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）\n所有拥有增益的友方单位如未拥有{{法盾}}，则额外获得{{法盾}}。（对手必须支付{{A}}才能将其选作法术或技能的目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31275,
+      "cardNo": "OGN·063/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/499fd4e0ecc54ebd95d0ccec163b80bf.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31285",
+    "name": "烈阳圣坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/d1d4c9829a6c43c4a3eaac56d2ff6e57.png",
+    "description": "每当你摧毁一名被眩晕的敌方单位时，你可以选择让此牌变为休眠状态，以此抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31285,
+      "cardNo": "OGN·072/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "逝者之名，后世之师。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/d1d4c9829a6c43c4a3eaac56d2ff6e57.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31291",
+    "name": "中娅沙漏",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/80cce2ba0e97442a8539b6045bf3b9c4.png",
+    "description": "{{待命}}（支付{{A}}正面朝下放置此牌，之后可支付{{0}}将其当作反应牌打出。）\n下一次当友方单位被摧毁时，改为将此牌摧毁，然后以休眠状态将该单位召回。（把该单位送回基地，此行动不算作移动。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31291,
+      "cardNo": "OGN·077/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/80cce2ba0e97442a8539b6045bf3b9c4.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31297",
+    "name": "专注之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/e454ab6e7fca42979c63ed772c10f7e5.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{绿色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31297,
+      "cardNo": "OGN·081/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "green"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/e454ab6e7fca42979c63ed772c10f7e5.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31308",
+    "name": "懊悔法球",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/46898c1c00e74bcea1125c153ece37cc.png",
+    "description": "{{横置}}：让一名单位在本回合内{{S}}-1，不得低于1{{S}}。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31308,
+      "cardNo": "OGN·090/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“即使是最痛苦的回忆，也有它的美好。”\n——阿狸",
+      "productCodeList": [
+        "OGN(英雄预组 维克托)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 维克托",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/46898c1c00e74bcea1125c153ece37cc.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31316",
+    "name": "能量通道",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/91257142063a4ebb98c76e6a475dd6c4.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{1}}，用以支付法力费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31316,
+      "cardNo": "OGN·098/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "不管它是什么，好像还挺厉害的。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/91257142063a4ebb98c76e6a475dd6c4.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31317",
+    "name": "拾荒小能手",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/94c8ef9994a744ab8559f8fcbe802d0e.png",
+    "description": "从废牌堆中回收三张牌，支付{{1}}，{{横置}}：抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31317,
+      "cardNo": "OGN·099/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Caravan Studio",
+      "flavorText": "遗失在传送门之间夹缝时空的物体会成为构装体的食物——大多是钥匙和不成对的袜子。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/94c8ef9994a744ab8559f8fcbe802d0e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31319",
+    "name": "蘑菇袋",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/c7969c8058974bf08282d637abfc6aad.png",
+    "description": "在你的回合开始阶段，如果你在战场上控制着一张正面朝下的待命牌，则抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31319,
+      "cardNo": "OGN·101/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "“班德尔斥候永远有备而来。”\n——提莫",
+      "productCodeList": [
+        "OGN(英雄预组 维克托)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 维克托",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/c7969c8058974bf08282d637abfc6aad.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31341",
+    "name": "洞察之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/cfd27fbe114b43a29fde10f2399af056.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{蓝色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31341,
+      "cardNo": "OGN·120/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/cfd27fbe114b43a29fde10f2399af056.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31346",
+    "name": "竞技场酒吧",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/c5270193513b469590bc24fd4ed940c3.png",
+    "description": "{{横置}}：给予一名休眠的友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31346,
+      "cardNo": "OGN·124/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“免费赠饮一杯！”",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/c5270193513b469590bc24fd4ed940c3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31367",
+    "name": "海盗避风港",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/50e1463309194db28b3509eacbc1729f.png",
+    "description": "每当你让一名友方单位变为活跃状态时，让其本回合内{{S}}+1。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31367,
+      "cardNo": "OGN·143/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "只要你还有钱，这里就是人间天堂。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/50e1463309194db28b3509eacbc1729f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31377",
+    "name": "雾临剑冢",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/c87bf83f234b4a128877f60596cee3f8.png",
+    "description": "每当你给予一名友方单位增益时，你可以选择支付{{橙色}}让此牌变为休眠状态，以此让该单位变为活跃状态。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31377,
+      "cardNo": "OGN·152/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "千魂梦断于此，只待再起而战。",
+      "productCodeList": [
+        "OGN(英雄预组 李青)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 李青",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/c87bf83f234b4a128877f60596cee3f8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31386",
+    "name": "闪耀极光",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/72765d22d3ff41f1930dc1b542cb6253.png",
+    "description": "在你的回合即将结束时，从主牌堆顶部开始逐一展示卡牌，直到翻出一名单位为止，然后将其打出，无视费用，并回收其余的卡牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31386,
+      "cardNo": "OGN·160/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 9,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "只有勇于面对天兆者，才配接受上天的丰厚馈赠。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/72765d22d3ff41f1930dc1b542cb6253.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31390",
+    "name": "力量之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/b4a0a49fa6ad47ddb8cbcd656cee8f2c.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{橙色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31390,
+      "cardNo": "OGN·163/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/b4a0a49fa6ad47ddb8cbcd656cee8f2c.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31411",
+    "name": "奇妙行囊",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/72c45de6a6ce43429df4c98eb18a414c.png",
+    "description": "{{横置}}：让另一张友方装备、单位或{{待命}}卡牌返回其所属的手牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31411,
+      "cardNo": "OGN·181/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“明明就放在这里的啊……”\n——提莫",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/72c45de6a6ce43429df4c98eb18a414c.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31412",
+    "name": "废料堆",
+    "image": "https://cdn.playloltcg.com/lol/card/20260331/86d1896cf69d4db6acd9e0e205c855bf.png",
+    "description": "当此牌被打出、弃置或摧毁时，抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31412,
+      "cardNo": "OGN·182/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "要是这零件会爆炸，根本就撑不到废料堆！",
+      "productCodeList": [
+        "OGN(英雄预组 金克丝)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 金克丝",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260331/86d1896cf69d4db6acd9e0e205c855bf.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31414",
+    "name": "塞壬号",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/0f5009f520ab4f15a897e87326870d28.png",
+    "description": "支付{{1}}，{{横置}}：将战场上的一名友方单位移动到其所属的基地。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31414,
+      "cardNo": "OGN·184/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "没有了船，海盗也不过是群普通的罪犯而已。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/0f5009f520ab4f15a897e87326870d28.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31416",
+    "name": "无主宝藏",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/640f1dab4cbe40f1bb0b6eb941803270.png",
+    "description": "当此牌离场时，抽一张牌，然后召出一枚休眠的符文。\n支付{{紫色}}，{{横置}}：摧毁此牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31416,
+      "cardNo": "OGN·186/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“咱们要发财啦！”\n——常见遗言",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/640f1dab4cbe40f1bb0b6eb941803270.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31439",
+    "name": "不和之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/6c4834a34d644c1096f43fdb75739872.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{紫色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31439,
+      "cardNo": "OGN·204/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/6c4834a34d644c1096f43fdb75739872.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31448",
+    "name": "未来熔炉",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/98e513ab00204d33ba208b95b2bd78e2.png",
+    "description": "当你打出此牌时，打出一名1{{S}}的“随从”到你的基地。\n你可以选择摧毁此装备，以此从任意废牌堆中回收最多四张卡牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31448,
+      "cardNo": "OGN·212/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "“我们造什么？我也说不清，反正比别人造得好就是了。”",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/98e513ab00204d33ba208b95b2bd78e2.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31465",
+    "name": "烈阳徽记",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/48459a3f67e74b54ab225561c3868210.png",
+    "description": "当你作为进攻方时，如果战斗以平局告终，则召回双方所有单位。（把该单位送回基地，此行动不算作移动。平局将在造成战斗伤害后结算。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31465,
+      "cardNo": "OGN·227/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“下次记得留下一些被打败的凹痕，以做纪念。”\n——蕾欧娜",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/48459a3f67e74b54ab225561c3868210.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31466",
+    "name": "先锋之盔",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/dd5722609bb9405f82401a9588eb8a48.png",
+    "description": "每当一名拥有增益的友方单位被摧毁时，给予另一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31466,
+      "cardNo": "OGN·228/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "无畏先锋的士兵们，相同之处不只在于头盔，更在心中的愿景。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/dd5722609bb9405f82401a9588eb8a48.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31482",
+    "name": "海兽钓钩",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/ce63a14742a348d18de6f546074fa775.png",
+    "description": "支付{{1}}和{{黄色}}，{{横置}}：摧毁一名友方单位，然后查看主牌堆顶部的五张牌。你可以选择从中打出一名战力比被摧毁单位最多高1点的单位卡牌，无视费用，然后回收其余的卡牌。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31482,
+      "cardNo": "OGN·242/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "小鱼总是会被大鱼吃掉，有些还不是一般地大。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/ce63a14742a348d18de6f546074fa775.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31486",
+    "name": "团结之印",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/38b3d07f4d364c5fa682a0f3702f0e0b.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{黄色}}，用以支付符能费用。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 31486,
+      "cardNo": "OGN·245/298",
+      "cardCategory": "equipment",
+      "cardCategoryName": "装备",
+      "cardColorList": [
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 0,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/38b3d07f4d364c5fa682a0f3702f0e0b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  }
+]

@@ -1,0 +1,2332 @@
+[
+  {
+    "id": "lol_34758",
+    "name": "废弃大厅",
+    "image": "https://cdn.playloltcg.com/lol/card/20260328/25b2ac5be09f4adb963ebe235838b1b9.webp",
+    "description": "当一名玩家打出法术时，该玩家可以选择让自己在此处控制的一名单位在本回合内{{S}}+1。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34758,
+      "cardNo": "UNL-205/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260328/25b2ac5be09f4adb963ebe235838b1b9.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34759",
+    "name": "鲜血祭坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20260328/4a9ceade8ae24844894c32d8b55ccc18.webp",
+    "description": "如果此处的一名单位在战斗中被摧毁，其控制者可以选择支付{{A}}{{A}}{{A}}，以此改为移除其所受伤害、将其变为休眠状态、并将其召回。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34759,
+      "cardNo": "UNL-206/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260328/4a9ceade8ae24844894c32d8b55ccc18.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34760",
+    "name": "业余排练厅",
+    "image": "https://cdn.playloltcg.com/lol/card/20260328/1f7232ec682b47cc801b1634d70925bd.webp",
+    "description": "当你据守此处时，你可以选择将战场上的一名单位移动到其基地。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34760,
+      "cardNo": "UNL-207/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260328/1f7232ec682b47cc801b1634d70925bd.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34761",
+    "name": "黑焰祭坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/7cdbd00e4b6446028edb17d1b43058a6.webp",
+    "description": "此处拥有{{瞬息}}的单位获得{{坚守}}。（如果它们是防守方，则{{S}}+1。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34761,
+      "cardNo": "UNL-208/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/7cdbd00e4b6446028edb17d1b43058a6.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34762",
+    "name": "暮色玫瑰实验室",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/dcb640fe080b4c4786535f890fe7f188.webp",
+    "description": "在你的开始阶段开始时，你可以选择摧毁一名此处由你控制的单位，以此抽一张牌。（此行动在得分前进行。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34762,
+      "cardNo": "UNL-209/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/dcb640fe080b4c4786535f890fe7f188.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34763",
+    "name": "禁忌荒原",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/1f7341ca0456463d9ee20b6153983f2a.webp",
+    "description": "如果防守此处的单位落单，则该单位{{S}}-2。（所在位置没有其他友方单位时，即视为“落单”。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34763,
+      "cardNo": "UNL-210/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/1f7341ca0456463d9ee20b6153983f2a.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34764",
+    "name": "失落书库",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/03e8ae13c2fb49b9abdcb75d77bb5fde.webp",
+    "description": "若此战场受你控制，当你打出一张法术牌时，如果消耗了不低于{{4}}法力，则进行{{洞察}}。（查看你主牌堆顶部的一张牌。你可以选择将其回收。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34764,
+      "cardNo": "UNL-211/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Chris Kintner",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/03e8ae13c2fb49b9abdcb75d77bb5fde.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34765",
+    "name": "冰霜要塞",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/70bf0071c6114efdb078731db70517d1.webp",
+    "description": "在每名玩家各自的开始阶段开始时，对此处的所有单位造成1点伤害。（此行动在得分前进行。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34765,
+      "cardNo": "UNL-212/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/70bf0071c6114efdb078731db70517d1.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34766",
+    "name": "蜕变花园",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/3516707321864c19b5757bece552f0ab.webp",
+    "description": "此处的单位获得“{{横置}}：获得1经验。”",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34766,
+      "cardNo": "UNL-213/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/3516707321864c19b5757bece552f0ab.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34767",
+    "name": "鬼影湾",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/4f285ce4d65748c49186dd2655718e8b.webp",
+    "description": "当此处的一名单位返回到一名玩家的手牌时，该玩家可以选择支付{{1}}，以此召出一枚休眠的符文。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34767,
+      "cardNo": "UNL-214/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "MAR Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/4f285ce4d65748c49186dd2655718e8b.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34768",
+    "name": "流星疗泉",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/e6c615555394464e9e49b40a2868704b.webp",
+    "description": "每回合首次，当玩家在此处打出一名非指示物单位时，该玩家可以选择将自己在此处控制的另一名单位移动到其基地。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34768,
+      "cardNo": "UNL-215/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/e6c615555394464e9e49b40a2868704b.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34769",
+    "name": "皮城学院",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/d9d33fbfd0c549c998897604bbfca303.webp",
+    "description": "当你据守此处时，在本回合内，你的下一个法术获得等同于其基础费用的{{回响}}。（你可以选择支付此额外费用，以重复此法术效果。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34769,
+      "cardNo": "UNL-216/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/d9d33fbfd0c549c998897604bbfca303.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34770",
+    "name": "捕猎场",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/f28897252d7e46f9af0683cc0d8a476d.webp",
+    "description": "当你征服此处时，如果你给敌方单位分配了不低于3点的过量伤害，则打出一名1{{S}}“战鹰”，它拥有{{法盾}}。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34770,
+      "cardNo": "UNL-217/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/f28897252d7e46f9af0683cc0d8a476d.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34771",
+    "name": "偶像谷",
+    "image": "https://cdn.playloltcg.com/lol/card/20260327/1d66c535faf44731907008362a0751c7.webp",
+    "description": "当一名玩家在此处打出一名单位时，该玩家可以选择支付{{1}}，以此给予该单位{{增益}}。（未拥有增益的单位获得一个{{S}}+1增益。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34771,
+      "cardNo": "UNL-218/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Caravan Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260327/1d66c535faf44731907008362a0751c7.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34772",
+    "name": "海力亚秘库",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/510ead2f342c4a68b8d702c38c5948ec.webp",
+    "description": "当你据守此处时，你的非指示物单位在本回合内的打出费用增加{{1}}。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34772,
+      "cardNo": "UNL-219/219",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/510ead2f342c4a68b8d702c38c5948ec.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34857",
+    "name": "帝王神坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/ce41926ec83f442991f280484fd4c439.png",
+    "description": "当你征服此处时，你可以选择支付{{1}}并让你在此处控制的一名单位返回其所属的手牌，以此在此处打出一名2{{S}}的“黄沙士兵”。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34857,
+      "cardNo": "SFD·207/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/ce41926ec83f442991f280484fd4c439.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33307",
+    "name": "魄罗熔炉",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/140388557db24a8fb3245fb4fe5ec0be.png",
+    "description": "如果此战场受你控制，则所有友方传奇获得“{{横置}}：将你控制的一件武装贴附到你控制的一名单位上。”",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33307,
+      "cardNo": "SFD·208/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Dao Trong Le",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/140388557db24a8fb3245fb4fe5ec0be.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33308",
+    "name": "遗忘丰碑",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d62c1fff13a54634bb72b8e0480de217.png",
+    "description": "每名玩家在各自的第三回合开始前，无法从此处获得分数。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33308,
+      "cardNo": "SFD·209/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d62c1fff13a54634bb72b8e0480de217.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33309",
+    "name": "传奇殿堂",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/50742c3a4ecc491ba16fa578b27c0441.png",
+    "description": "当你征服此处时，你可以选择支付{{1}}，以此让你的传奇变为活跃状态。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33309,
+      "cardNo": "SFD·210/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/50742c3a4ecc491ba16fa578b27c0441.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33310",
+    "name": "玛莱尖塔",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/0ae022f865b44c5a902bf1ea23d1b9c0.png",
+    "description": "如果此战场受你控制，则友方{{回响}}的费用减少{{1}}。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33310,
+      "cardNo": "SFD·211/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/0ae022f865b44c5a902bf1ea23d1b9c0.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33311",
+    "name": "雷区",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/793e8beb30da4dda9225fe66946e1bbb.png",
+    "description": "当你征服此处时，将你主牌堆顶部的两张牌放入废牌堆。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33311,
+      "cardNo": "SFD·212/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/793e8beb30da4dda9225fe66946e1bbb.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33312",
+    "name": "奥恩的锻炉",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/828ff873e77044599eb5aa2439c99c0d.png",
+    "description": "如果此战场受你控制，则每回合打出的第一件友方装备的费用减少{{1}}，不包括指示物。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33312,
+      "cardNo": "SFD·213/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/828ff873e77044599eb5aa2439c99c0d.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33313",
+    "name": "能量枢纽",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/71eab0bd53894d959e674ff2ad2926fc.png",
+    "description": "当你据守此处时，你可以选择支付{{A}}{{A}}{{A}}{{A}}，以此额外获得1分。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33313,
+      "cardNo": "SFD·214/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/71eab0bd53894d959e674ff2ad2926fc.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33314",
+    "name": "拉文布鲁姆学院",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/33b8accc78c24a55aefb54d38f037a14.png",
+    "description": "当你防守此处时，展示你主牌堆顶部的一张牌。如果是一张法术牌，则将其放入你的手牌，否则将其回收。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33314,
+      "cardNo": "SFD·215/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Will Gist",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/33b8accc78c24a55aefb54d38f037a14.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33315",
+    "name": "落岩之径",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/cd90e0fedcee476b99d4e1fa1c3d28b1.png",
+    "description": "单位无法被打出到此处。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33315,
+      "cardNo": "SFD·216/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/cd90e0fedcee476b99d4e1fa1c3d28b1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33316",
+    "name": "权能之座",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f5a619abe6264c808384bd0f9cca4811.png",
+    "description": "当你征服此处时，你和盟友每控制一处其他战场，你便抽一张牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33316,
+      "cardNo": "SFD·217/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f5a619abe6264c808384bd0f9cca4811.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33317",
+    "name": "沉没神庙",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d9bc45893f8246faad0c383764e810f8.png",
+    "description": "当你征服此处时，如果此战场上留存至少一名{{强力}}单位，则你可以选择支付{{1}}来抽一张牌。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33317,
+      "cardNo": "SFD·218/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d9bc45893f8246faad0c383764e810f8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33318",
+    "name": "彩纸灵树",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/3f921f720b4347f382fa39ed1b0be0d4.png",
+    "description": "当你据守此处时，每名玩家召出一枚休眠的符文。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33318,
+      "cardNo": "SFD·219/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/3f921f720b4347f382fa39ed1b0be0d4.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33319",
+    "name": "珍宝堆",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/34b97dad66d84019b11b6c363f25632f.png",
+    "description": "当你征服此处时，你可以选择支付{{1}}，以此打出一个休眠的“金币”装备指示物。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33319,
+      "cardNo": "SFD·220/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Caravan Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/34b97dad66d84019b11b6c363f25632f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33320",
+    "name": "月帷祭坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d99e39a14b944144b632e5cd495f8152.png",
+    "description": "当你征服此处时，你可以选择让一件友方装备变为活跃状态。如果它是一件武装，则你可以选择将其卸除。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 33320,
+      "cardNo": "SFD·221/221",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d99e39a14b944144b632e5cd495f8152.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31518",
+    "name": "团结圣坛",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/599be33b8bb1450dac810682f6dc3622.png",
+    "description": "当你据守此处时，打出一名1{{S}}的“随从”到你的基地。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31518,
+      "cardNo": "OGN·275/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "对团结的执着，是德玛西亚最强的力量，也是它最大的弱点。",
+      "productCodeList": [
+        "OGN(英雄预组 维克托)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 维克托",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/599be33b8bb1450dac810682f6dc3622.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31519",
+    "name": "攀圣长阶",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/bb1824521e45436a8a8e4a6b9ede2188.png",
+    "description": "使赢得游戏所需的分数+1。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31519,
+      "cardNo": "OGN·276/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "攀登高峰，须有强大的意志——以及充足的时间。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/bb1824521e45436a8a8e4a6b9ede2188.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31520",
+    "name": "攀圣长阶",
+    "image": "https://cdn.playloltcg.com/lol/card/20251022/d7502b90066c45d886620968ebb55676.png",
+    "description": "使赢得游戏所需的分数+1。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31520,
+      "cardNo": "OGN·276a/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "legacy_etching",
+      "extendRarityName": "异画",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "JunHuan",
+      "flavorText": "攀登高峰，须有强大的意志——以及充足的时间。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251022/d7502b90066c45d886620968ebb55676.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31521",
+    "name": "后巷酒吧",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/cfdc4c4fe19e4584b6bb612a2f99ee94.png",
+    "description": "每当一名单位从此处向别处移动时，让其本回合内{{S}}+1。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31521,
+      "cardNo": "OGN·277/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "在祖安的酒吧，“打烊了”只是一种温和的建议。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/cfdc4c4fe19e4584b6bb612a2f99ee94.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31522",
+    "name": "班德尔树",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/327788d7d62442bf99a2f5374fa405d5.png",
+    "description": "你可以选择在此处额外布置一张{{待命}}卡牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31522,
+      "cardNo": "OGN·278/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "它生长在班德尔城的正中心，保护着上古神话中的约德尔人。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/327788d7d62442bf99a2f5374fa405d5.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31523",
+    "name": "班德尔树",
+    "image": "https://cdn.playloltcg.com/lol/card/20251022/4664cb881d2a4bf288bcaeddc2cf71d0.png",
+    "description": "你可以选择在此处额外布置一张{{待命}}卡牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31523,
+      "cardNo": "OGN·278a/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "legacy_etching",
+      "extendRarityName": "异画",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "它生长在班德尔城的正中心，保护着上古神话中的约德尔人。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251022/4664cb881d2a4bf288bcaeddc2cf71d0.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31524",
+    "name": "强化阵地",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/9af544d37a0440d1b3c42e99fc9a4755.png",
+    "description": "当你防守此处时，选择一名单位，使其在本次战斗期间获得{{坚守2}}。（如果它是防守方，则{{S}}+2。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31524,
+      "cardNo": "OGN·279/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "盾墙是一种坚不可摧的防御——可惜只有一边管用。",
+      "productCodeList": [
+        "OGS",
+        "OGN(进阶补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 试炼之地",
+        "起源 进阶补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/9af544d37a0440d1b3c42e99fc9a4755.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31525",
+    "name": "帝柳之林",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/f9eb320af430462fb0bc4711e29860a0.png",
+    "description": "当你据守此处时，抽一张牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31525,
+      "cardNo": "OGN·280/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "荒野的馈赠随处可见，想拿到手却不容易。",
+      "productCodeList": [
+        "OGN(英雄预组 李青)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 李青",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/f9eb320af430462fb0bc4711e29860a0.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31526",
+    "name": "圣化之墓",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/1db54eed598b4690b37af9e73c704f34.png",
+    "description": "当你据守此处时，如果你的英雄区域已无英雄单位牌，则可以选择让该英雄从废牌堆中返回英雄区域。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31526,
+      "cardNo": "OGN·281/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "那些逝去的人，将永远活在我们心中。但对某些人来说，这样还远远不够。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/1db54eed598b4690b37af9e73c704f34.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31527",
+    "name": "希拉娜修道院",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/f790096f9b6e40fc9c7aac5800d2dcb3.png",
+    "description": "当你征服此处时，你可以选择消耗一个增益，以此抽一张牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31527,
+      "cardNo": "OGN·282/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "训练的第一步，就是忘掉你自以为是的观念。",
+      "productCodeList": [
+        "OGN(英雄预组 李青)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 李青",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/f790096f9b6e40fc9c7aac5800d2dcb3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31528",
+    "name": "纳沃利角斗场",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/94f1d0432f44427dbf01f4ffb640e067.png",
+    "description": "当你据守此处时，给予此处的一名单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31528,
+      "cardNo": "OGN·283/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "在地下搏击场，能力固然重要，但金钱能让你走得更远。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/94f1d0432f44427dbf01f4ffb640e067.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31529",
+    "name": "力量方尖碑",
+    "image": "https://cdn.playloltcg.com/lol/card/20260331/13f31cff2f7a41dcb234fc06dde54c4d.png",
+    "description": "每名玩家在各自的第一个回合开始阶段，额外召出一枚符文。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31529,
+      "cardNo": "OGN·284/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Chris Kintner",
+      "flavorText": "不择手段，不计代价，只求终极力量。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260331/13f31cff2f7a41dcb234fc06dde54c4d.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31530",
+    "name": "劫掠船巷",
+    "image": "https://cdn.playloltcg.com/lol/card/20260331/139395a6b58841e59b8d8fa63953a8c6.png",
+    "description": "当你防守此处时，你可以选择将此处的一名友方单位移动到基地。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31530,
+      "cardNo": "OGN·285/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "懦夫、流氓、恶棍……乐意为您服务。",
+      "productCodeList": [
+        "OGN(英雄预组 金克丝)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 金克丝",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260331/139395a6b58841e59b8d8fa63953a8c6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31531",
+    "name": "清算人竞技场",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/a21ae99c827a42c7b974ff1118a6f48f.png",
+    "description": "当你据守此处时，激活此处所有单位的征服效果。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31531,
+      "cardNo": "OGN·286/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "在诺克萨斯人眼中，竞技场可是无比尊荣的存在。在这里，他们可以直面自己最强的敌人——彼此。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/a21ae99c827a42c7b974ff1118a6f48f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31532",
+    "name": "雷霆之纹",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/b853e8724ea347c5877b997836a9bc72.png",
+    "description": "当你征服此处时，回收一枚你的符文。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31532,
+      "cardNo": "OGN·287/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "踏入半神之境者，必须献上一份合适的供品——自愿与否，无关紧要。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/b853e8724ea347c5877b997836a9bc72.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31533",
+    "name": "星尖峰",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/3d2b240cd7874dc1a28eacf98f1345ca.png",
+    "description": "当你据守此处时，你可以选择召出一枚休眠的符文。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31533,
+      "cardNo": "OGN·288/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "大地之石与天界之星在此交汇。",
+      "productCodeList": [
+        "OGS",
+        "OGN(进阶补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 试炼之地",
+        "起源 进阶补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/3d2b240cd7874dc1a28eacf98f1345ca.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31534",
+    "name": "巨神峰之巅",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/db9e5f0539884ecf91963b72f6cf571e.png",
+    "description": "当你征服此处时，选择两枚符文，并在本回合结束时，让它们变为活跃状态。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31534,
+      "cardNo": "OGN·289/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "巨神族总爱夸耀巨神峰顶的种种奇观，唯独会对那些真正登顶之人闭嘴。",
+      "productCodeList": [
+        "OGN(英雄预组 金克丝)",
+        "OGN(英雄预组 李青)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 金克丝",
+        "起源 英雄预组 李青",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/db9e5f0539884ecf91963b72f6cf571e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31535",
+    "name": "荣耀竞技场",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/df99548281e54c4692a0059e9c131564.png",
+    "description": "每名玩家在各自的第一个回合开始阶段，获得1分。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31535,
+      "cardNo": "OGN·290/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "胜利易逝，荣耀永存。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/df99548281e54c4692a0059e9c131564.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31536",
+    "name": "烛光圣殿",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/a6b96a44fbac462bb88b174a3ac37585.png",
+    "description": "当你征服此处时，查看主牌堆顶部的两张牌。你可以选择从这两张牌中回收任意数量的卡牌，并将其余的卡牌按任意顺序放回原处。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31536,
+      "cardNo": "OGN·291/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "祈祷如低语，随风飘到神明耳边。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/a6b96a44fbac462bb88b174a3ac37585.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31537",
+    "name": "幻梦之树",
+    "image": "https://cdn.playloltcg.com/lol/card/20260331/63bf82886586472897b002178ea1c3c4.png",
+    "description": "每回合首次：当你对此处的友方单位使用法术时，抽一张牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31537,
+      "cardNo": "OGN·292/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "众生都要休息，万物皆有梦想。神树的根系，早已在我们的心中扎根。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260331/63bf82886586472897b002178ea1c3c4.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34834",
+    "name": "宏伟广场",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/6158b88bdbd1408798dfb9368e238ad3.png",
+    "description": "当你据守此处，且在此拥有至少七名单位时，你赢得游戏胜利。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34834,
+      "cardNo": "OGN·293/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "象征着德玛西亚过去的成就与未来的希望。",
+      "productCodeList": [
+        "OGN(英雄预组 维克托)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 维克托",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/6158b88bdbd1408798dfb9368e238ad3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34835",
+    "name": "宏伟广场",
+    "image": "https://cdn.playloltcg.com/lol/card/20251022/be360e9b0dd247ca9de369dd8053f55c.png",
+    "description": "当你据守此处，且在此拥有至少七名单位时，你赢得游戏胜利。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 34835,
+      "cardNo": "OGN·293a/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "legacy_etching",
+      "extendRarityName": "异画",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "TUTU",
+      "flavorText": "象征着德玛西亚过去的成就与未来的希望。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251022/be360e9b0dd247ca9de369dd8053f55c.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31540",
+    "name": "崔法利兵营",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/bad437d156b74815913f5b396198fa94.png",
+    "description": "此处的所有单位获得{{S}}+1。（包括进攻方单位。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31540,
+      "cardNo": "OGN·294/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "诺克萨斯军团欢迎所有能拿得起武器的人加入。",
+      "productCodeList": [
+        "OGS",
+        "OGN(英雄预组 维克托)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 试炼之地",
+        "起源 英雄预组 维克托",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/bad437d156b74815913f5b396198fa94.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31541",
+    "name": "卑鄙之喉的巢穴",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/5ca7f566236f405097a2cae852d39fdc.png",
+    "description": "单位无法从此处移动到基地。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31541,
+      "cardNo": "OGN·295/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "卑鄙之喉不太喜欢客人——尤其是那些想提早离开的家伙。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/5ca7f566236f405097a2cae852d39fdc.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31542",
+    "name": "虚空之门",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/eb2789a75d9547c1ae31fe36fd5198b2.png",
+    "description": "以此处的单位作为目标的法术或技能，造成的伤害+1（每段伤害都+1）。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31542,
+      "cardNo": "OGN·296/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "艾卡西亚的法师们自取灭亡，但他们的回响直到今天仍在人们耳畔萦绕。",
+      "productCodeList": [
+        "OGS",
+        "OGN(进阶补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 试炼之地",
+        "起源 进阶补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/eb2789a75d9547c1ae31fe36fd5198b2.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31543",
+    "name": "疾风山丘",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/cb8eafb236c14508bc5a7648baa6bf64.png",
+    "description": "此处的单位获得{{游走}}。（他们可以向其他战场进行移动。）",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31543,
+      "cardNo": "OGN·297/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "浪迹天涯，四海为家。",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/cb8eafb236c14508bc5a7648baa6bf64.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31544",
+    "name": "祖安地沟",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/2ae7260e334046298114b7f51ad87eb7.png",
+    "description": "当你征服此处时，弃置一张手牌，然后抽一张牌。",
+    "projectKind": "battlefield",
+    "official": {
+      "sourceId": 31544,
+      "cardNo": "OGN·298/298",
+      "cardCategory": "battlefield",
+      "cardCategoryName": "战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_glimmer",
+      "rarityName": "不凡",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "在祖安，就连地下藏身处都有自己的地下藏身处。",
+      "productCodeList": [
+        "OGN(英雄预组 金克丝)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 金克丝",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/2ae7260e334046298114b7f51ad87eb7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  }
+]

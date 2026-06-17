@@ -66,6 +66,8 @@
   border-radius: 12px;
   background: #1c2433;
   padding: 12px;
+  height: 300px;
+  min-height: 300px;
 }
 
 .battlefield-card h3 {
@@ -137,6 +139,69 @@
   gap: 12px;
 }
 
+.player-board {
+  display: grid;
+  grid-template-columns: 250px 250px 1fr 250px;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    'legend hero base mainDeck'
+    'runeDeck runeBoard runeBoard discard';
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.zone-slot-fixed {
+  width: 250px;
+  height: 300px;
+  min-height: 300px;
+  box-sizing: border-box;
+}
+
+.zone-slot-base {
+  grid-area: base;
+  height: 300px;
+  min-height: 300px;
+}
+
+.zone-slot-rune-board {
+  grid-area: runeBoard;
+  height: 300px;
+  min-height: 300px;
+}
+
+.zone-legend {
+  grid-area: legend;
+}
+
+.zone-hero {
+  grid-area: hero;
+}
+
+.zone-main-deck {
+  grid-area: mainDeck;
+}
+
+.zone-rune-deck {
+  grid-area: runeDeck;
+}
+
+.zone-discard {
+  grid-area: discard;
+}
+
+.player-bottom-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  margin-top: 12px;
+  align-items: stretch;
+}
+
+.zone-slot-hand {
+  height: 300px;
+  min-height: 300px;
+}
+
 .opponent-compact-row {
   grid-template-columns: 1fr 1fr;
 }
@@ -163,23 +228,14 @@
   min-height: 140px;
 }
 
-.game-board > .zone-panel {
-  margin-top: 12px;
-}
-
-.bottom-row {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 12px;
-  margin-top: 12px;
-}
-
 .zone-panel {
   border: 1px solid #38445d;
   border-radius: 12px;
   background: #1c2433;
-  padding: 12px;
+  padding: 10px;
   min-height: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
 .zone-panel.highlight {
@@ -199,6 +255,34 @@
   font-size: 15px;
 }
 
+.rune-board-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rune-resource-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rune-resource {
+  font-size: 12px;
+  color: #c8d4ea;
+  background: #2f4262;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.rune-adjust-btn {
+  min-width: 24px;
+  height: 22px;
+  padding: 0 6px;
+  line-height: 1;
+}
+
 .zone-count {
   font-size: 12px;
   padding: 2px 8px;
@@ -213,9 +297,21 @@
   font-size: 13px;
 }
 
+.zone-panel .zone-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.zone-panel .zone-cards {
+  min-height: 100%;
+  align-content: start;
+}
+
 .zone-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
   gap: 8px;
 }
 
@@ -247,7 +343,8 @@
 }
 
 .game-card {
-  width: 72px;
+  width: 100%;
+  max-width: 110px;
   border: 1px solid #4a5f82;
   border-radius: 8px;
   background: #101623;
@@ -255,6 +352,7 @@
   cursor: pointer;
   color: #e8ecf1;
   transition: transform 0.15s, border-color 0.15s;
+  justify-self: center;
 }
 
 .game-card img {
@@ -290,6 +388,11 @@
   height: 96px;
   font-size: 12px;
   color: #9aabc4;
+}
+
+.battlefield-card .zone-panel {
+  height: calc(100% - 28px);
+  min-height: 0;
 }
 
 .action-bar {
@@ -531,7 +634,29 @@
     grid-template-columns: 1fr;
   }
 
-  .bottom-row {
+  .player-board {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'legend'
+      'hero'
+      'base'
+      'mainDeck'
+      'runeDeck'
+      'runeBoard'
+      'discard';
+  }
+
+  .zone-slot-fixed,
+  .zone-slot-base,
+  .zone-slot-rune-board,
+  .zone-slot-hand {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .player-bottom-row {
     grid-template-columns: 1fr;
   }
 }

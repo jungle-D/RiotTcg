@@ -2,9 +2,10 @@ import { useState } from 'react'
 import type { GameSession } from './types/game'
 import DeckBuilderPage from './pages/DeckBuilderPage'
 import GameBoardPage from './pages/GameBoardPage'
+import LegendHeroMappingPage from './pages/LegendHeroMappingPage'
 import './App.css'
 
-type AppPage = 'builder' | 'game'
+type AppPage = 'builder' | 'mapping' | 'game'
 
 function App() {
   const [page, setPage] = useState<AppPage>('builder')
@@ -19,11 +20,15 @@ function App() {
     setPage('builder')
   }
 
+  if (page === 'mapping') {
+    return <LegendHeroMappingPage onBack={handleBack} />
+  }
+
   if (page === 'game' && session) {
     return <GameBoardPage session={session} onBack={handleBack} />
   }
 
-  return <DeckBuilderPage onEnterGame={handleEnterGame} />
+  return <DeckBuilderPage onEnterGame={handleEnterGame} onOpenLegendHeroMapping={() => setPage('mapping')} />
 }
 
 export default App

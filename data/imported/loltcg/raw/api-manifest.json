@@ -1,0 +1,251 @@
+[
+  {
+    "endpoint": "/xcx/dict/getDictList",
+    "request": {
+      "pageNum": 1,
+      "pageSize": 100,
+      "type": "card_category"
+    },
+    "status": 200,
+    "elapsedMs": 308,
+    "count": 13,
+    "timestamp": "2026-06-17T08:11:23.739Z",
+    "traceId": "1a0fcb5e-8e39-4265-881c-f4219197c90c"
+  },
+  {
+    "endpoint": "/xcx/dict/getDictList",
+    "request": {
+      "pageNum": 1,
+      "pageSize": 100,
+      "type": "card_color"
+    },
+    "status": 200,
+    "elapsedMs": 51,
+    "count": 7,
+    "timestamp": "2026-06-17T08:11:24.035Z",
+    "traceId": "78f9e869-e180-4e73-9913-0aac5075e117"
+  },
+  {
+    "endpoint": "/xcx/dict/getDictList",
+    "request": {
+      "pageNum": 1,
+      "pageSize": 100,
+      "type": "card_rarity"
+    },
+    "status": 200,
+    "elapsedMs": 48,
+    "count": 5,
+    "timestamp": "2026-06-17T08:11:24.324Z",
+    "traceId": "86edd51b-23e8-467e-8c3e-b31756c95ac0"
+  },
+  {
+    "endpoint": "/xcx/product/getProductList",
+    "request": {
+      "pageNum": 1,
+      "pageSize": 1000
+    },
+    "status": 200,
+    "elapsedMs": 149,
+    "count": 15,
+    "timestamp": "2026-06-17T08:11:24.721Z",
+    "traceId": "d993849c-c5dc-442a-b36c-d896c51ae8ea"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 1,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 181,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:25.143Z",
+    "traceId": "3fee87fd-2a13-41cb-bcff-8094e948f64f"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 2,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 98,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:25.496Z",
+    "traceId": "80b05bad-23ff-495e-9111-f674c03ef11f"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 3,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 126,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:25.865Z",
+    "traceId": "ce65d650-64e9-4ffc-bcdc-f758f29cc83b"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 4,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 124,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:26.233Z",
+    "traceId": "3bbd955e-0a8d-4eb0-a1eb-24d32df962d9"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 5,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 96,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:26.575Z",
+    "traceId": "49e452bf-6091-45b6-95a1-9388ffa6cf6b"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 6,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 94,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:26.914Z",
+    "traceId": "7791bd50-f8b9-47ca-ad7e-41781d072fbc"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 7,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 93,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:27.253Z",
+    "traceId": "95d1c232-e17e-4df3-a9cf-c0c0798718a2"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 8,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 94,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:27.594Z",
+    "traceId": "ec30aac6-475e-4762-a830-37ad6d89a6f2"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 9,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 94,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:27.937Z",
+    "traceId": "afc734b5-c3d5-4cb9-80d9-5b3545d6f158"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 10,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 95,
+    "count": 100,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:28.279Z",
+    "traceId": "f9c32c3e-8344-4565-9c01-9a16eda2154c"
+  },
+  {
+    "endpoint": "/xcx/card/searchCardCraftWeb",
+    "request": {
+      "pageNum": 11,
+      "pageSize": 100,
+      "searchContent": "",
+      "cardCategoryList": [],
+      "cardColorList": [],
+      "rarityList": [],
+      "productCodeList": []
+    },
+    "status": 200,
+    "elapsedMs": 63,
+    "count": 9,
+    "total": 1009,
+    "timestamp": "2026-06-17T08:11:28.587Z",
+    "traceId": "2e4e2c6b-8907-443c-b9b3-22fd7e239bbc"
+  }
+]

@@ -1,0 +1,529 @@
+[
+  {
+    "id": "lol_31005",
+    "name": "男爵巢穴",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/564176bd9a0f4eed97cb8a34ba4c61bf.webp",
+    "description": "（开局时不能使用指示物战场。）\n单位可从任意位置移动到此处。",
+    "projectKind": "main",
+    "projectMainType": "wandering",
+    "official": {
+      "sourceId": 31005,
+      "cardNo": "UNL·T01",
+      "cardCategory": "indicator_battlefield",
+      "cardCategoryName": "指示物战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Fish Art Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/564176bd9a0f4eed97cb8a34ba4c61bf.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31006",
+    "name": "战鹰",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/d4c36bd47dc241e28ae134afd1493cfd.webp",
+    "description": "{{法盾}}（对手必须支付{{A}}才能将我选作法术或技能的目标。）",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31006,
+      "cardNo": "UNL·T02",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 1,
+      "hero": "",
+      "region": "",
+      "tag": "鸟类",
+      "artist": "Six More Vodka",
+      "flavorText": "今日多云，有时有爪子雨。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/d4c36bd47dc241e28ae134afd1493cfd.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31007",
+    "name": "草丛",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/9873502d4be74252b98fe3230a70dda9.webp",
+    "description": "此处的“鸟类”、“猫科”、“犬形”、“魄罗”属性单位和艾翁单位获得{{S}}+1。\n当你在此处得分时，你可以选择使用被此牌替代的战场来替代此牌。",
+    "projectKind": "main",
+    "projectMainType": "wandering",
+    "official": {
+      "sourceId": 31007,
+      "cardNo": "UNL·T03",
+      "cardCategory": "indicator_battlefield",
+      "cardCategoryName": "指示物战场",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/9873502d4be74252b98fe3230a70dda9.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31008",
+    "name": "金币",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/8aa98b7326e24ded883ea0e28ff9cd52.webp",
+    "description": "{{反应}} — 摧毁此牌，{{横置}}：{{获得}}{{A}}。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "defense",
+    "official": {
+      "sourceId": 31008,
+      "cardNo": "UNL·T05",
+      "cardCategory": "indicator_equipment",
+      "cardCategoryName": "指示物装备",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/8aa98b7326e24ded883ea0e28ff9cd52.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31009",
+    "name": "映像",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/a595d5e6e3c246bbb35dc5fbb666df7b.webp",
+    "description": "（当我被打出时，变为某张卡牌的复制体。我不会获得该卡牌的打出效果。）",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31009,
+      "cardNo": "UNL·T06",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 0,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/a595d5e6e3c246bbb35dc5fbb666df7b.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31010",
+    "name": "精灵",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/82b975ad446547a48821834c74598d85.webp",
+    "description": "{{瞬息}}（在你的开始阶段开始时，结算得分之前将我摧毁。）",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31010,
+      "cardNo": "UNL·T07",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 3,
+      "hero": "",
+      "region": "",
+      "tag": "仙灵",
+      "artist": "Envar Studio",
+      "flavorText": "幻梦易逝，做梦之人的心境却已然不同。",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/82b975ad446547a48821834c74598d85.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33363",
+    "name": "机器人",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/7470cf9a79de4c25aab72e17e4266c25.png",
+    "description": "确实，它们吵闹、混乱、不可靠。但说到底,人也如此。",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 33363,
+      "cardNo": "SFD·T01",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 3,
+      "hero": "",
+      "region": "",
+      "tag": "机械",
+      "artist": "Dao Trong Le",
+      "flavorText": "确实，它们吵闹、混乱、不可靠。但说到底,人也如此。",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/7470cf9a79de4c25aab72e17e4266c25.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33364",
+    "name": "黄沙士兵",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/ed7625dd888a48d9bd5ec9bd5e17f068.png",
+    "description": "它们不歇息；不迟疑；不退缩。",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 33364,
+      "cardNo": "SFD·T02",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 2,
+      "hero": "",
+      "region": "恕瑞玛",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "它们不歇息；不迟疑；不退缩。",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/ed7625dd888a48d9bd5ec9bd5e17f068.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33365",
+    "name": "金币",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f9d41b13e0e648b3a6bd5ebcc34987d2.png",
+    "description": "摧毁此牌，{{横置}}：{{反应}}—{{获得}}{{A}}。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "main",
+    "projectMainType": "defense",
+    "official": {
+      "sourceId": 33365,
+      "cardNo": "SFD·T03",
+      "cardCategory": "indicator_equipment",
+      "cardCategoryName": "指示物装备",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f9d41b13e0e648b3a6bd5ebcc34987d2.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31514",
+    "name": "随从（德玛西亚）",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/c3ebc96b834348e39d283926da91e44f.png",
+    "description": "“对我们一个人出手，就是对我们所有人出手！”",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31514,
+      "cardNo": "OGN·271/298",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 1,
+      "hero": "随从",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "“对我们一个人出手，就是对我们所有人出手！”",
+      "productCodeList": [
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/c3ebc96b834348e39d283926da91e44f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31515",
+    "name": "随从（诺克萨斯）",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/79c84e956fdf4607bfb1adc58fe4a6b3.png",
+    "description": "“要挣得崔法利的名号，可没那么容易。”",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31515,
+      "cardNo": "OGN·272/298",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 1,
+      "hero": "随从",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "“要挣得崔法利的名号，可没那么容易。”",
+      "productCodeList": [
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/79c84e956fdf4607bfb1adc58fe4a6b3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31516",
+    "name": "随从（祖安）",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/dd74fc3a8cce4bc9952153f8f4a50efb.png",
+    "description": "“我们，即是未来。”",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31516,
+      "cardNo": "OGN·273/298",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 1,
+      "hero": "随从",
+      "region": "",
+      "tag": "",
+      "artist": "Fortiche Production",
+      "flavorText": "“我们，即是未来。”",
+      "productCodeList": [
+        "OGN(英雄预组 维克托)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 维克托",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/dd74fc3a8cce4bc9952153f8f4a50efb.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31517",
+    "name": "精灵",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/50a7cae8f2f24b6b85c4a3b23a17ca37.png",
+    "description": "{{瞬息}}（在控制者的下个回合开始阶段，结算得分之前将我摧毁。）",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31517,
+      "cardNo": "OGN·274/298",
+      "cardCategory": "indicator_unit",
+      "cardCategoryName": "指示物单位",
+      "cardColorList": [
+        "colorless"
+      ],
+      "rarity": "rune_dust",
+      "rarityName": "普通",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": 3,
+      "hero": "仙灵",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "幻梦易逝，做梦之人的心境却已然不同。",
+      "productCodeList": [
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/50a7cae8f2f24b6b85c4a3b23a17ca37.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  }
+]

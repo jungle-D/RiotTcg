@@ -13,6 +13,7 @@ export type ZoneId =
   | 'discard'
 
 export type CardKind = 'legend' | 'hero' | 'main' | 'rune'
+export type RuneColor = 'red' | 'blue' | 'green' | 'purple'
 
 export type ActionMode =
   | 'draw'
@@ -57,6 +58,13 @@ export interface GameState {
   opponentBattlefieldOptions: string[]
   playerBattlefieldChoice: string | null
   opponentBattlefieldChoice: string | null
+  openingHandsReady: boolean
+  playerMulliganDone: boolean
+  opponentMulliganDone: boolean
+  secondPlayer: 'player' | 'opponent' | null
+  firstRoundSecondPlayerBonusPending: boolean
+  mana: number
+  runeEnergy: Record<RuneColor, number>
 }
 
 export interface GameSession {
@@ -71,7 +79,7 @@ export const TURN_HAND_DRAW = 1
 export const TURN_RUNE_DRAW = 2
 
 export const DRAW_SOURCE_ZONES: ZoneId[] = ['mainDeck', 'runeDeck', 'discard']
-export const LOOK_ZONES: ZoneId[] = ['mainDeck', 'discard']
+export const LOOK_ZONES: ZoneId[] = ['discard']
 export const MOVE_TARGET_ZONES: ZoneId[] = ['base', 'battlefieldA', 'battlefieldB']
 export const TAP_ZONES: ZoneId[] = ['legend', 'hero', 'base', 'runeBoard', 'battlefieldA', 'battlefieldB']
 export const DISCARD_ZONES: ZoneId[] = [

@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react'
 import type { BaseCard } from '../../types/cards'
 import type { GameCardInstance, ZoneId } from '../../types/game'
 import CardInstanceView from './CardInstanceView'
 
 interface ZonePanelProps {
   zoneId: ZoneId
-  title: string
+  title: ReactNode
   cards: GameCardInstance[]
   getCardMeta: (card: GameCardInstance) => BaseCard | null
   faceDown?: boolean

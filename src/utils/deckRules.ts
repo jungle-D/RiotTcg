@@ -93,6 +93,7 @@ export function isRuneColorAllowed(
 export function isHeroMatchedLegend(
   hero: BaseCard | null,
   legend: BaseCard | null,
+  legendHeroMapping: Record<string, string[]>,
 ): boolean {
   if (!hero) {
     return false
@@ -100,13 +101,15 @@ export function isHeroMatchedLegend(
   if (!legend) {
     return false
   }
-  return hero.name === legend.name
+  const allowedHeroIds = legendHeroMapping[legend.id] ?? []
+  return allowedHeroIds.includes(hero.id)
 }
 
 export function validateDeck(
   state: DeckState,
   mainCards: MainCard[],
   runeCards: RuneCard[],
+  legendHeroMapping: Record<string, string[]>,
 ): DeckValidation {
   const mainDeckTotal = countFromRecord(state.mainDeck)
   const runeTotal = countFromRecord(state.runeDeck)
@@ -114,7 +117,7 @@ export function validateDeck(
   const battlefieldTotal = state.battlefield.length
   const mainDeckHeroCount = countMainDeckHero(state, mainCards)
   const mainDeckNameOverLimit = getMainDeckNameOverLimit(state, mainCards)
-  const isHeroValid = isHeroMatchedLegend(state.hero, state.legend)
+  const isHeroValid = isHeroMatchedLegend(state.hero, state.legend, legendHeroMapping)
   const isRuneColorValid = runeColorCount <= RUNE_COLOR_LIMIT
 
   return {

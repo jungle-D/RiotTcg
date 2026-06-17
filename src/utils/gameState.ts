@@ -1,9 +1,11 @@
-import type { DeckState } from '../types/cards'
+import runeCards from '../data/cards.rune.json'
+import type { DeckState, RuneCard } from '../types/cards'
 import type {
   ActionMode,
   CardKind,
   GameCardInstance,
   GameState,
+  RuneColor,
   ZoneId,
 } from '../types/game'
 import {
@@ -14,6 +16,16 @@ import {
 } from '../types/game'
 
 let instanceCounter = 0
+const typedRuneCards = runeCards as RuneCard[]
+const runeColorById = new Map<string, RuneColor>(
+  typedRuneCards.map((card) => [card.id, card.color]),
+)
+const runeColorLabel: Record<RuneColor, string> = {
+  red: '红',
+  blue: '蓝',
+  green: '绿',
+  purple: '紫',
+}
 
 function nextInstanceId(): string {
   instanceCounter += 1
@@ -141,6 +153,30 @@ function untapAllFieldCards(state: GameState): GameState {
   return { ...state, zones }
 }
 
+function untapAllOpponentFieldCards(state: GameState): GameState {
+  const fieldZones: ZoneId[] = [
+    'legend',
+    'hero',
+    'base',
+    'runeBoard',
+    'battlefieldA',
+    'battlefieldB',
+  ]
+  const opponentZones = { ...state.opponentZones }
+
+  for (const zone of fieldZones) {
+    opponentZones[zone] = opponentZones[zone].map((card) => ({ ...card, tapped: false }))
+  }
+
+  return { ...state, opponentZones }
+}
+
+function drawOpeningHands(state: GameState): GameState {
+  let next = drawFromZone(state, 'mainDeck', OPENING_HAND_DRAW, 'hand')
+  next = drawOpponent(next, 'mainDeck', OPENING_HAND_DRAW, 'hand')
+  return next
+}
+
 export function initGameFromDeck(deckState: DeckState, roomId: string): GameState {
   instanceCounter = 0
   const zones = emptyZones()
@@ -174,7 +210,7 @@ export function initGameFromDeck(deckState: DeckState, roomId: string): GameStat
     moveSourceInstanceId: null,
     roomId,
     isPlayerTurn: true,
-    statusMessage: '请投掷骰子决定先手（点数大者先手）。',
+    statusMessage: '请双方先选择战场。战场确定后将自动各抽4张并进入调度。',
     lookTargetZone: null,
     playerDice: null,
     opponentDice: null,
@@ -184,6 +220,18 @@ export function initGameFromDeck(deckState: DeckState, roomId: string): GameStat
     opponentBattlefieldOptions: battlefieldOptions,
     playerBattlefieldChoice: null,
     opponentBattlefieldChoice: null,
+    openingHandsReady: false,
+    playerMulliganDone: false,
+    opponentMulliganDone: false,
+    secondPlayer: null,
+    firstRoundSecondPlayerBonusPending: false,
+    mana: 0,
+    runeEnergy: {
+      red: 0,
+      blue: 0,
+      green: 0,
+      purple: 0,
+    },
   }
 }
 
@@ -200,10 +248,28 @@ export function pickBattlefield(
   if (!options.includes(battlefieldId)) {
     return state
   }
-  if (side === 'player') {
-    return { ...state, playerBattlefieldChoice: battlefieldId }
+  const next =
+    side === 'player'
+      ? { ...state, playerBattlefieldChoice: battlefieldId }
+      : { ...state, opponentBattlefieldChoice: battlefieldId }
+
+  if (
+    next.playerBattlefieldChoice &&
+    next.opponentBattlefieldChoice &&
+    !next.openingHandsReady
+  ) {
+    const withOpening = drawOpeningHands(next)
+    return {
+      ...withOpening,
+      turnPhase: 'mulligan',
+      openingHandsReady: true,
+      playerMulliganDone: false,
+      opponentMulliganDone: true,
+      statusMessage: `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请完成调度后投掷骰子。`,
+    }
   }
-  return { ...state, opponentBattlefieldChoice: battlefieldId }
+
+  return next
 }
 
 export function rollForFirstPlayer(state: GameState): GameState {
@@ -212,6 +278,9 @@ export function rollForFirstPlayer(state: GameState): GameState {
   }
   if (!state.playerBattlefieldChoice || !state.opponentBattlefieldChoice) {
     return { ...state, statusMessage: '请先完成双方战场选择，再投掷骰子。' }
+  }
+  if (!state.openingHandsReady || !state.playerMulliganDone || !state.opponentMulliganDone) {
+    return { ...state, statusMessage: '请先完成双方开局抽牌与调度，再投掷骰子。' }
   }
 
   const playerDice = rollDice()
@@ -223,25 +292,16 @@ export function rollForFirstPlayer(state: GameState): GameState {
   const playerFirst = playerDice > opponentDice
 
   if (playerFirst) {
-    const afterOpening = drawFromZone(
-      {
-        ...state,
-        playerDice,
-        opponentDice,
-        actionMode: null,
-        mulliganSelected: [],
-        selectedInstanceIds: [],
-        moveSourceInstanceId: null,
-      },
-      'mainDeck',
-      OPENING_HAND_DRAW,
-      'hand',
-    )
-
+    const started = startRegularPlayerTurn({
+      ...state,
+      playerDice,
+      opponentDice,
+      secondPlayer: 'opponent',
+      firstRoundSecondPlayerBonusPending: true,
+    })
     return {
-      ...afterOpening,
-      turnPhase: 'mulligan',
-      statusMessage: `你掷出 ${playerDice}，对手掷出 ${opponentDice}，你获得先手。已抽 ${OPENING_HAND_DRAW} 张手牌，可进行最多 ${MULLIGAN_LIMIT} 张调度。`,
+      ...started,
+      statusMessage: `你掷出 ${playerDice}，对手掷出 ${opponentDice}，你获得先手。${started.statusMessage}`,
     }
   }
 
@@ -249,9 +309,11 @@ export function rollForFirstPlayer(state: GameState): GameState {
     ...state,
     playerDice,
     opponentDice,
+    secondPlayer: 'player',
+    firstRoundSecondPlayerBonusPending: true,
     turnPhase: 'waitingOpponent',
     isPlayerTurn: false,
-    statusMessage: `你掷出 ${playerDice}，对手掷出 ${opponentDice}，对手获得先手。对手正在开局…`,
+    statusMessage: `你掷出 ${playerDice}，对手掷出 ${opponentDice}，对手获得先手。对手回合开始中…`,
   }
 }
 
@@ -265,13 +327,17 @@ export function startRegularPlayerTurn(state: GameState): GameState {
     isPlayerTurn: true,
   })
 
+  const bonusRuneDraw =
+    next.firstRoundSecondPlayerBonusPending && next.secondPlayer === 'player' ? 3 : TURN_RUNE_DRAW
+  next = drawFromZone(next, 'runeDeck', bonusRuneDraw, 'runeBoard')
   next = drawFromZone(next, 'mainDeck', TURN_HAND_DRAW, 'hand')
-  next = drawFromZone(next, 'runeDeck', TURN_RUNE_DRAW, 'runeBoard')
 
   return {
     ...next,
+    firstRoundSecondPlayerBonusPending:
+      bonusRuneDraw === 3 ? false : next.firstRoundSecondPlayerBonusPending,
     turnPhase: 'main',
-    statusMessage: `回合开始：已抽 ${TURN_HAND_DRAW} 张手牌、${TURN_RUNE_DRAW} 张符文至符文展示区，场上卡牌已回正。`,
+    statusMessage: `回合开始：已抽 ${TURN_HAND_DRAW} 张手牌、${bonusRuneDraw} 张符文至符文展示区，场上卡牌已回正。`,
   }
 }
 
@@ -330,11 +396,12 @@ export function finishMulligan(state: GameState): GameState {
 
   return {
     ...next,
-    turnPhase: 'main',
+    turnPhase: 'diceRoll',
     actionMode: null,
     selectedInstanceIds: [],
     moveSourceInstanceId: null,
-    statusMessage: '主阶段：可使用下方操作按钮。',
+    playerMulliganDone: true,
+    statusMessage: '调度完成，请投掷骰子决定先手。',
   }
 }
 
@@ -350,7 +417,7 @@ export function setActionMode(state: GameState, mode: ActionMode): GameState {
     untap: '回正：请选择已横置的卡，再点「确认回正」。',
     move: '移动：请先选择要移动的卡，再点击目标区域（基地/战场A/战场B）。',
     recycle: '回收：请选择要回收的卡。',
-    look: '看牌：请点击主牌堆或废牌堆。',
+    look: '看牌：请点击废牌堆。',
   }
 
   return {
@@ -480,15 +547,24 @@ export function confirmTap(state: GameState): GameState {
   }
 
   let next = state
+  let manaGain = 0
   for (const instanceId of state.selectedInstanceIds) {
+    const zone = findCardZone(next, instanceId)
+    if (zone === 'runeBoard') {
+      manaGain += 1
+    }
     next = updateCard(next, instanceId, (card) => ({ ...card, tapped: true }))
   }
 
   return {
     ...next,
+    mana: next.mana + manaGain,
     actionMode: null,
     selectedInstanceIds: [],
-    statusMessage: `横置完成（${state.selectedInstanceIds.length} 张）。`,
+    statusMessage:
+      manaGain > 0
+        ? `横置完成（${state.selectedInstanceIds.length} 张），获得 ${manaGain} 点法力。`
+        : `横置完成（${state.selectedInstanceIds.length} 张）。`,
   }
 }
 
@@ -618,14 +694,26 @@ export function handleRecycle(state: GameState, instanceId: string): GameState {
 
   const targetZone: ZoneId = card.kind === 'main' ? 'mainDeck' : 'runeDeck'
 
+  const shouldGainRuneEnergy = zone === 'runeBoard' && card.kind === 'rune'
+  const runeColor = shouldGainRuneEnergy ? runeColorById.get(card.cardId) : null
+  const nextRuneEnergy = runeColor
+    ? {
+        ...state.runeEnergy,
+        [runeColor]: state.runeEnergy[runeColor] + 1,
+      }
+    : state.runeEnergy
+
   return {
     ...state,
     zones: {
       ...zones,
       [targetZone]: [...zones[targetZone], card],
     },
+    runeEnergy: nextRuneEnergy,
     actionMode: null,
-    statusMessage: '回收完成，卡牌已放回对应牌堆底部。',
+    statusMessage: runeColor
+      ? `回收完成，卡牌已放回对应牌堆底部。获得 1 点${runeColorLabel[runeColor]}符能。`
+      : '回收完成，卡牌已放回对应牌堆底部。',
   }
 }
 
@@ -633,15 +721,32 @@ export function handleLookZone(state: GameState, zone: ZoneId): GameState {
   if (state.actionMode !== 'look' || state.turnPhase !== 'main') {
     return state
   }
-  if (!['mainDeck', 'discard'].includes(zone)) {
+  if (zone !== 'discard') {
     return state
   }
 
   return {
     ...state,
     actionMode: null,
-    statusMessage: zone === 'mainDeck' ? '查看主牌堆。' : '查看废牌堆。',
+    statusMessage: '查看废牌堆。',
     lookTargetZone: zone,
+  }
+}
+
+export function adjustMana(state: GameState, delta: number): GameState {
+  return {
+    ...state,
+    mana: Math.max(0, state.mana + delta),
+  }
+}
+
+export function adjustRuneEnergy(state: GameState, color: RuneColor, delta: number): GameState {
+  return {
+    ...state,
+    runeEnergy: {
+      ...state.runeEnergy,
+      [color]: Math.max(0, state.runeEnergy[color] + delta),
+    },
   }
 }
 
@@ -677,9 +782,21 @@ export function startOpponentTurnEnd(state: GameState): GameState {
 }
 
 function simulateOpponentTurn(state: GameState): GameState {
-  let next: GameState = { ...state, opponentZones: { ...state.opponentZones } }
+  let next: GameState = untapAllOpponentFieldCards({
+    ...state,
+    opponentZones: { ...state.opponentZones },
+  })
+  const bonusRuneDraw =
+    next.firstRoundSecondPlayerBonusPending && next.secondPlayer === 'opponent'
+      ? 3
+      : TURN_RUNE_DRAW
+  next = drawOpponent(next, 'runeDeck', bonusRuneDraw, 'runeBoard')
   next = drawOpponent(next, 'mainDeck', TURN_HAND_DRAW, 'hand')
-  next = drawOpponent(next, 'runeDeck', TURN_RUNE_DRAW, 'runeBoard')
+  next = {
+    ...next,
+    firstRoundSecondPlayerBonusPending:
+      bonusRuneDraw === 3 ? false : next.firstRoundSecondPlayerBonusPending,
+  }
   return next
 }
 

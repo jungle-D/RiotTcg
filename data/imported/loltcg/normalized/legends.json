@@ -1,0 +1,4320 @@
+[
+  {
+    "id": "lol_34734",
+    "name": "戏命师",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/af04e77a6eea4a58ba2ccec4f94eb8a8.webp",
+    "description": "当你打出一个法术时，如果消耗了不低于{{4}}法力，则你可以选择将该法术放逐。如果以此方法放逐了四张法术牌，则将这些法术牌放入各自的废牌堆，召出四枚符文，并抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34734,
+      "cardNo": "UNL-181/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "烬",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/af04e77a6eea4a58ba2ccec4f94eb8a8.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34736",
+    "name": "傲之追猎者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/eccfbba40f66407ab625f1405e9945b0.webp",
+    "description": "当你打出一名单位时，让一名单位本回合内{{S}}+1。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34736,
+      "cardNo": "UNL-183/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "雷恩加尔",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/eccfbba40f66407ab625f1405e9945b0.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34738",
+    "name": "血港鬼影",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/a7d0001c454d485f9082267900df9132.webp",
+    "description": "支付{{1}}，{{横置}}：让战场上的一名友方单位返回其所属的手牌。打出一个休眠的“金币”装备指示物。（其具有“{{反应>}} 摧毁此牌，{{横置}}：{{获得}}{{A}}。”）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34738,
+      "cardNo": "UNL-185/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "派克",
+      "region": "",
+      "tag": "",
+      "artist": "TSWCK逍",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/a7d0001c454d485f9082267900df9132.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34740",
+    "name": "皮城执法官",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/18b9587cd7dc463bb9610453870c5c36.webp",
+    "description": "当你征服一处战场时，如果你给敌方单位分配了不低于3点的过量伤害，则你可以选择让我变为休眠状态，以此让一名单位变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34740,
+      "cardNo": "UNL-187/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "蔚",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/18b9587cd7dc463bb9610453870c5c36.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34742",
+    "name": "含羞蓓蕾",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/f11f475222eb4de38a50bc6b4c84b337.webp",
+    "description": "支付{{4}}，{{横置}}：打出一名处于活跃状态的3{{S}}“精灵”，它拥有{{瞬息}}。场上每存在一名拥有{{瞬息}}的友方单位，此技能费用减少{{1}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34742,
+      "cardNo": "UNL-189/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "莉莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/f11f475222eb4de38a50bc6b4c84b337.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34744",
+    "name": "无极宗师",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/07fbb94a6f9944ea8f1899370859db18.webp",
+    "description": "{{等级6>}} 你的单位获得{{S}}+1。（如果你拥有不少于6经验，则获得该效果。）\n{{等级11>}} 你的单位以活跃状态进场。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34744,
+      "cardNo": "UNL-191/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "易",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/07fbb94a6f9944ea8f1899370859db18.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34746",
+    "name": "愁云使者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/e7cb6f136a0c49f585a120babafcd9a9.webp",
+    "description": "当你或一名盟友据守一处战场时，你可以选择让我变为休眠状态，以此抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34746,
+      "cardNo": "UNL-193/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "薇古丝",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/e7cb6f136a0c49f585a120babafcd9a9.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34748",
+    "name": "翠神",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/eee6354ff4b34db78ebc6c944ccf1d91.webp",
+    "description": "当你征服或据守一处战场时，你可以选择让我变为休眠状态，以此将该战场替换为一个“草丛”战场指示物。（位于草丛的“鸟类”、“猫科”、“犬形”、“魄罗”和“艾翁”属性单位获得{{S}}+1。得分后可将其换回原战场。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34748,
+      "cardNo": "UNL-195/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "艾翁",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/eee6354ff4b34db78ebc6c944ccf1d91.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34750",
+    "name": "皎月女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/d20d7e7b06b444489a45752ec0fd3af4.webp",
+    "description": "{{反应>}} {{横置}}：{{获得}}{{1}}。此法力仅可在法术对决期间消耗。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34750,
+      "cardNo": "UNL-197/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "黛安娜",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/d20d7e7b06b444489a45752ec0fd3af4.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34752",
+    "name": "诡术妖姬",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/676159225d354706b573d8a7a8cf4e02.webp",
+    "description": "当你征服或据守一处战场时，你可以选择弃置一张手牌并让我变为休眠状态，以此在该处打出一名处于活跃状态的“映像”。该“映像”变为该处另一名单位的复制体。让其获得{{瞬息}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34752,
+      "cardNo": "UNL-199/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "乐芙兰",
+      "region": "",
+      "tag": "",
+      "artist": "黯荧岛Dark Glow",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/676159225d354706b573d8a7a8cf4e02.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34754",
+    "name": "虚空掠夺者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/62c0e05d78144bb09f89fff5f91fc642.webp",
+    "description": "当你赢得一场战斗时，获得1经验。\n消耗1经验，{{横置}}：给予一名单位{{增益}}。\n消耗2经验，{{横置}}：将战场上一名处于休眠状态的友方单位移动到其基地。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34754,
+      "cardNo": "UNL-201/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卡兹克",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/62c0e05d78144bb09f89fff5f91fc642.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34756",
+    "name": "圣锤之毅",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/ed58b231081d4ca0bbf429e8c8a741be.webp",
+    "description": "当你据守一处战场时，获得1经验。\n消耗3经验，{{横置}}：抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34756,
+      "cardNo": "UNL-203/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "波比",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/ed58b231081d4ca0bbf429e8c8a741be.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34779",
+    "name": "戏命师",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/604c77a7ca3b45b18300301bc854499b.webp",
+    "description": "当你打出一个法术时，如果消耗了不低于{{4}}法力，则你可以选择将该法术放逐。如果以此方法放逐了四张法术牌，则将这些法术牌放入各自的废牌堆，召出四枚符文，并抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34779,
+      "cardNo": "UNL-226/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "烬",
+      "region": "",
+      "tag": "",
+      "artist": "Blaine Burgos",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/604c77a7ca3b45b18300301bc854499b.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34780",
+    "name": "戏命师",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/6b6e30c00f194f10b9a1874f892fa1b2.webp",
+    "description": "当你打出一个法术时，如果消耗了不低于{{4}}法力，则你可以选择将该法术放逐。如果以此方法放逐了四张法术牌，则将这些法术牌放入各自的废牌堆，召出四枚符文，并抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34780,
+      "cardNo": "UNL-226*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "烬",
+      "region": "",
+      "tag": "",
+      "artist": "Blaine Burgos",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/6b6e30c00f194f10b9a1874f892fa1b2.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34781",
+    "name": "傲之追猎者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/0c4a034eb79b4c55a27cb1cf63cd592a.webp",
+    "description": "当你打出一名单位时，让一名单位本回合内{{S}}+1。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34781,
+      "cardNo": "UNL-227/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "雷恩加尔",
+      "region": "",
+      "tag": "",
+      "artist": "Duy Nguyen",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/0c4a034eb79b4c55a27cb1cf63cd592a.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34782",
+    "name": "傲之追猎者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/adff9c54374d47378781b91f727447b0.webp",
+    "description": "当你打出一名单位时，让一名单位本回合内{{S}}+1。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34782,
+      "cardNo": "UNL-227*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "雷恩加尔",
+      "region": "",
+      "tag": "",
+      "artist": "Duy Nguyen",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/adff9c54374d47378781b91f727447b0.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34783",
+    "name": "血港鬼影",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/f40dced162d6409182febeddbb7e4539.webp",
+    "description": "支付{{1}}，{{横置}}：让战场上的一名友方单位返回其所属的手牌。打出一个休眠的“金币”装备指示物。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34783,
+      "cardNo": "UNL-228/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "派克",
+      "region": "",
+      "tag": "",
+      "artist": "Kindlejack",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/f40dced162d6409182febeddbb7e4539.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34784",
+    "name": "血港鬼影",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/9790c48c2c624801a7a039f33450937f.webp",
+    "description": "支付{{1}}，{{横置}}：让战场上的一名友方单位返回其所属的手牌。打出一个休眠的“金币”装备指示物。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34784,
+      "cardNo": "UNL-228*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "派克",
+      "region": "",
+      "tag": "",
+      "artist": "Kindlejack",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/9790c48c2c624801a7a039f33450937f.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34785",
+    "name": "皮城执法官",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/45f6d402cd104a9e86de6f94ee6cd573.webp",
+    "description": "当你征服一处战场时，如果你给敌方单位分配了不低于3点的过量伤害，则你可以选择让我变为休眠状态，以此让一名单位变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34785,
+      "cardNo": "UNL-229/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "蔚",
+      "region": "",
+      "tag": "",
+      "artist": "Jonathan Santoro",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/45f6d402cd104a9e86de6f94ee6cd573.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34786",
+    "name": "皮城执法官",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/42756356d34045e891a858a0f7dc23dc.webp",
+    "description": "当你征服一处战场时，如果你给敌方单位分配了不低于3点的过量伤害，则你可以选择让我变为休眠状态，以此让一名单位变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34786,
+      "cardNo": "UNL-229*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "蔚",
+      "region": "",
+      "tag": "",
+      "artist": "Jonathan Santoro",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/42756356d34045e891a858a0f7dc23dc.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34787",
+    "name": "含羞蓓蕾",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/18acc541b06c4e03bf668d24c4eb862c.webp",
+    "description": "支付{{4}}，{{横置}}：打出一名处于活跃状态的3{{S}}“精灵”，它拥有{{瞬息}}。场上每存在一名拥有{{瞬息}}的友方单位，此技能费用减少{{1}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34787,
+      "cardNo": "UNL-230/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "莉莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Oussama Agazzoum",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/18acc541b06c4e03bf668d24c4eb862c.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34788",
+    "name": "含羞蓓蕾",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/b18ef3680b60403682f3d6476a4c6bb4.webp",
+    "description": "支付{{4}}，{{横置}}：打出一名处于活跃状态的3{{S}}“精灵”，它拥有{{瞬息}}。场上每存在一名拥有{{瞬息}}的友方单位，此技能费用减少{{1}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34788,
+      "cardNo": "UNL-230*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "莉莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Oussama Agazzoum",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/b18ef3680b60403682f3d6476a4c6bb4.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34789",
+    "name": "无极宗师",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/7adbd32a90b74c1fb0bd393a65c1de35.webp",
+    "description": "{{等级6>}} 你的单位获得{{S}}+1。\n{{等级11>}} 你的单位以活跃状态进场。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34789,
+      "cardNo": "UNL-231/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "易",
+      "region": "",
+      "tag": "",
+      "artist": "Shawn Lee",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/7adbd32a90b74c1fb0bd393a65c1de35.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34790",
+    "name": "无极宗师",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/22827bd3df3c4bf7b36f012930d90e68.webp",
+    "description": "{{等级6>}} 你的单位获得{{S}}+1。\n{{等级11>}} 你的单位以活跃状态进场。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34790,
+      "cardNo": "UNL-231*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "易",
+      "region": "",
+      "tag": "",
+      "artist": "Shawn Lee",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/22827bd3df3c4bf7b36f012930d90e68.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34791",
+    "name": "愁云使者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/6c6f351c83154fa68029213e156e47cb.webp",
+    "description": "当你或一名盟友据守一处战场时，你可以选择让我变为休眠状态，以此抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34791,
+      "cardNo": "UNL-232/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "薇古丝",
+      "region": "",
+      "tag": "",
+      "artist": "Hozure",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/6c6f351c83154fa68029213e156e47cb.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34792",
+    "name": "愁云使者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/5fd72aff7ba544cc98d69b37989aa7f6.webp",
+    "description": "当你或一名盟友据守一处战场时，你可以选择让我变为休眠状态，以此抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34792,
+      "cardNo": "UNL-232*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "薇古丝",
+      "region": "",
+      "tag": "",
+      "artist": "Hozure",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/5fd72aff7ba544cc98d69b37989aa7f6.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34793",
+    "name": "翠神",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/d8c1cdf10169430fb16751adff42cd83.webp",
+    "description": "当你征服或据守一处战场时，你可以选择让我变为休眠状态，以此将该战场替换为一个“草丛”战场指示物。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34793,
+      "cardNo": "UNL-233/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "艾翁",
+      "region": "",
+      "tag": "",
+      "artist": "Michelle Mauk",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/d8c1cdf10169430fb16751adff42cd83.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34794",
+    "name": "翠神",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/0d7e2459c3794f22ae2c8f0dbb39cddc.webp",
+    "description": "当你征服或据守一处战场时，你可以选择让我变为休眠状态，以此将该战场替换为一个“草丛”战场指示物。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34794,
+      "cardNo": "UNL-233*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "艾翁",
+      "region": "",
+      "tag": "",
+      "artist": "Michelle Mauk",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/0d7e2459c3794f22ae2c8f0dbb39cddc.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34795",
+    "name": "皎月女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/89d3e091c23649769b41df9c43a4f266.webp",
+    "description": "{{反应>}} {{横置}}：{{获得}}{{1}}。此法力仅可在法术对决期间消耗。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34795,
+      "cardNo": "UNL-234/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "黛安娜",
+      "region": "",
+      "tag": "",
+      "artist": "Lisha Du",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/89d3e091c23649769b41df9c43a4f266.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34796",
+    "name": "皎月女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/2290ad4d5e1243e9867bb490674b0630.webp",
+    "description": "{{反应>}} {{横置}}：{{获得}}{{1}}。此法力仅可在法术对决期间消耗。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34796,
+      "cardNo": "UNL-234*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "黛安娜",
+      "region": "",
+      "tag": "",
+      "artist": "Lisha Du",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/2290ad4d5e1243e9867bb490674b0630.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34797",
+    "name": "诡术妖姬",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/6e2e0fcd5a99440b89be7eb8eb9c0a1c.webp",
+    "description": "当你征服或据守一处战场时，你可以选择弃置一张手牌并让我变为休眠状态，以此在该处打出一名处于活跃状态的“映像”。该“映像”变为该处另一名单位的复制体。让其获得{{瞬息}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34797,
+      "cardNo": "UNL-235/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "乐芙兰",
+      "region": "",
+      "tag": "",
+      "artist": "Valentine Tran",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/6e2e0fcd5a99440b89be7eb8eb9c0a1c.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34798",
+    "name": "诡术妖姬",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/f1209ee74eb64572a09f6ba5e291d11f.webp",
+    "description": "当你征服或据守一处战场时，你可以选择弃置一张手牌并让我变为休眠状态，以此在该处打出一名处于活跃状态的“映像”。该“映像”变为该处另一名单位的复制体。让其获得{{瞬息}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34798,
+      "cardNo": "UNL-235*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "乐芙兰",
+      "region": "",
+      "tag": "",
+      "artist": "Valentine Tran",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/f1209ee74eb64572a09f6ba5e291d11f.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34799",
+    "name": "虚空掠夺者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/27c88ebf65044d6bb6d32f18886e2fdd.webp",
+    "description": "当你赢得一场战斗时，获得1经验。\n消耗1经验，{{横置}}：给予一名单位{{增益}}。\n消耗2经验，{{横置}}：将战场上一名处于休眠状态的友方单位移动到其基地。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34799,
+      "cardNo": "UNL-236/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卡兹克",
+      "region": "",
+      "tag": "",
+      "artist": "Jeffrey Chen",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/27c88ebf65044d6bb6d32f18886e2fdd.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34800",
+    "name": "虚空掠夺者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/d3c866cb8eb84129adf3ac25aa9f11b6.webp",
+    "description": "当你赢得一场战斗时，获得1经验。\n消耗1经验，{{横置}}：给予一名单位{{增益}}。\n消耗2经验，{{横置}}：将战场上一名处于休眠状态的友方单位移动到其基地。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34800,
+      "cardNo": "UNL-236*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卡兹克",
+      "region": "",
+      "tag": "",
+      "artist": "Jeffrey Chen",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/d3c866cb8eb84129adf3ac25aa9f11b6.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34801",
+    "name": "圣锤之毅",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/ba171930bb9a48dc9e7a61d636de1966.webp",
+    "description": "当你据守一处战场时，获得1经验。\n消耗3经验，{{横置}}：抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34801,
+      "cardNo": "UNL-237/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "波比",
+      "region": "",
+      "tag": "",
+      "artist": "KK Zhang",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/ba171930bb9a48dc9e7a61d636de1966.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34802",
+    "name": "圣锤之毅",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/361feda1235c424f86ee71f0830ee6b9.webp",
+    "description": "当你据守一处战场时，获得1经验。\n消耗3经验，{{横置}}：抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 34802,
+      "cardNo": "UNL-237*/219",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "波比",
+      "region": "",
+      "tag": "",
+      "artist": "KK Zhang",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/361feda1235c424f86ee71f0830ee6b9.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33279",
+    "name": "机械公敌",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/b7155d8c774a4da39e23598a6dd84216.png",
+    "description": "你的“机械”属性单位获得{{坚守}}。（如果它们是防守方，则{{S}}+1。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33279,
+      "cardNo": "SFD·181/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "兰博",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/b7155d8c774a4da39e23598a6dd84216.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33281",
+    "name": "圣枪游侠",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/204f32cb95784b66b6891c4692fdc7fc.png",
+    "description": "你的每件武装都会提供{{强攻}}。（如果配装的单位是进攻方，则{{S}}+1。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33281,
+      "cardNo": "SFD·183/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卢锡安",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/204f32cb95784b66b6891c4692fdc7fc.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33283",
+    "name": "荣耀行刑官",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/4997008d95e9413eb3866356b55a6776.png",
+    "description": "当你赢得一场战斗时，抽一张牌。（若战斗结束后只剩下你的单位，则视为你赢得战斗。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33283,
+      "cardNo": "SFD·185/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "德莱文",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/4997008d95e9413eb3866356b55a6776.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33285",
+    "name": "虚空遁地兽",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/238fcb5ed16343b5bb7fcb933a86769d.png",
+    "description": "当你征服一处战场时，你可以选择让我变为休眠状态，以此展示你主牌堆顶部的两张牌。你可以选择打出其中一张牌，然后回收其余的卡牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33285,
+      "cardNo": "SFD·187/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "雷克塞",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/238fcb5ed16343b5bb7fcb933a86769d.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33287",
+    "name": "山隐之焰",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/0396a4b4918e49a8bb4e49244f16242f.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{A}}，仅可用于打出装备或使用装备技能。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33287,
+      "cardNo": "SFD·189/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "奥恩",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/0396a4b4918e49a8bb4e49244f16242f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33291",
+    "name": "武器大师",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/430b831f6c91490bb9e8a4d4f38bbff7.png",
+    "description": "支付{{1}}，{{横置}}：将你控制的一件未贴附的武装贴附到你控制的一名单位上。\n{{横置}}：将你控制的一件已贴附的武装贴附到你控制的一名单位上。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33291,
+      "cardNo": "SFD·193/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "贾克斯",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/430b831f6c91490bb9e8a4d4f38bbff7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33293",
+    "name": "刀锋舞者",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/2a13fad013504a909ab68445b2756509.png",
+    "description": "当你将一名友方单位选为目标时，你可以选择让我变为休眠状态并支付{{A}}，以此让该单位变为活跃状态。\n当你征服一处战场时，你可以选择支付{{1}}，以此让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33293,
+      "cardNo": "SFD·195/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "艾瑞莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/2a13fad013504a909ab68445b2756509.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33294",
+    "name": "刀锋舞者",
+    "image": "https://cdn.playloltcg.com/lol/card/20260130/ed3aa219dcb84b51ba599a97a66daa4c.png",
+    "description": "当你将一名友方单位选为目标时，你可以选择让我变为休眠状态并支付{{A}}，以此让该单位变为活跃状态。\n当你征服一处战场时，你可以选择支付{{1}}，以此让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33294,
+      "cardNo": "SFD·195a/221·P",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "legacy_etching",
+      "extendRarityName": "异画",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "艾瑞莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [],
+      "productNameList": [],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260130/ed3aa219dcb84b51ba599a97a66daa4c.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33296",
+    "name": "沙漠皇帝",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/2b67f437b0174d54ac50b094b51b08f9.png",
+    "description": "你的“黄沙士兵”获得{{百炼}}。\n支付{{1}}，{{横置}}：打出一名2{{S}}的“黄沙士兵”到你的基地。只能在你本回合打出了一件武装后使用。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33296,
+      "cardNo": "SFD·197/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "阿兹尔",
+      "region": "",
+      "tag": "",
+      "artist": "蛋费鸡丁",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/2b67f437b0174d54ac50b094b51b08f9.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33298",
+    "name": "探险家",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f32f297f99ee4d76849836db61ee1b12.png",
+    "description": "{{横置}}：{{反应}} — 抽一张牌。只有当你在本回合内，两次将敌方单位或装备选为法术或单位技能的目标后，才能使用此技能。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33298,
+      "cardNo": "SFD·199/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "伊泽瑞尔",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f32f297f99ee4d76849836db61ee1b12.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33300",
+    "name": "炼金男爵",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/b233ff1a184c4f4096d3c81c909376a5.png",
+    "description": "当你或一名友方玩家据守一处战场时，你可以选择让我变为休眠状态，以此打出一个休眠的“金币”装备指示物。\n如果你的得分距离胜利得分不超过3分，则你的“金币”装备指示物的{{获得}}效果额外产生{{1}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33300,
+      "cardNo": "SFD·201/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "烈娜塔·戈拉斯克",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/b233ff1a184c4f4096d3c81c909376a5.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33302",
+    "name": "战争女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/d6f85807ca6b459ebf3f2e157ed8da02.png",
+    "description": "当你回收一枚符文时，你可以选择让我变为休眠状态，以此打出一个休眠的“金币”装备指示物。\n当任意数量的敌方单位被摧毁时，让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33302,
+      "cardNo": "SFD·203/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "希维尔",
+      "region": "",
+      "tag": "",
+      "artist": "Zhongqi Li",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/d6f85807ca6b459ebf3f2e157ed8da02.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33304",
+    "name": "无双剑姬",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/e24eef52b9c74059bcfe2ef81cf4b2f8.png",
+    "description": "当你的一名单位变为{{强力}}时，你可以选择让我变为休眠状态，以此召出一枚休眠的符文。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33304,
+      "cardNo": "SFD·205/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "菲奥娜",
+      "region": "",
+      "tag": "",
+      "artist": "Pandart Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/e24eef52b9c74059bcfe2ef81cf4b2f8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33351",
+    "name": "机械公敌",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/6c6b1addfeea4ce483ab6a1c51273350.png",
+    "description": "你的“机械”属性单位获得{{坚守}}。（如果它们是防守方，则{{S}}+1。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33351,
+      "cardNo": "SFD·240/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "兰博",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/6c6b1addfeea4ce483ab6a1c51273350.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33352",
+    "name": "圣枪游侠",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/7958079b4efa4d92a386bc8179bba143.png",
+    "description": "你的每件武装都会提供{{强攻}}。（如果配装的单位是进攻方，则{{S}}+1。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33352,
+      "cardNo": "SFD·241/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卢锡安",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/7958079b4efa4d92a386bc8179bba143.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33353",
+    "name": "荣耀行刑官",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/128733258d3c4606ae4d721dcde34f48.png",
+    "description": "当你赢得一场战斗时，抽一张牌。（若战斗结束后只剩下你的单位，则视为你赢得战斗。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33353,
+      "cardNo": "SFD·242/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "德莱文",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/128733258d3c4606ae4d721dcde34f48.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33354",
+    "name": "虚空遁地兽",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/dcd39cfe98dd49a8a25a01ef9211c014.png",
+    "description": "当你征服一处战场时，你可以选择让我变为休眠状态，以此展示你主牌堆顶部的两张牌。你可以选择打出其中一张牌，然后回收其余的卡牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33354,
+      "cardNo": "SFD·243/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "雷克塞",
+      "region": "",
+      "tag": "",
+      "artist": "TSWCK逍",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/dcd39cfe98dd49a8a25a01ef9211c014.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33355",
+    "name": "山隐之焰",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/70f4b8623653454292357a135af87475.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{A}}，仅可用于打出装备或使用装备技能。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33355,
+      "cardNo": "SFD·244/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "奥恩",
+      "region": "",
+      "tag": "",
+      "artist": "叫我小董就好了",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/70f4b8623653454292357a135af87475.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33356",
+    "name": "武器大师",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/f932204f73a54a48843b1c570c16e6cc.png",
+    "description": "支付{{1}}，{{横置}}：将你控制的一件未贴附的武装贴附到你控制的一名单位上。\n{{横置}}：将你控制的一件已贴附的武装贴附到你控制的一名单位上。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33356,
+      "cardNo": "SFD·245/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "贾克斯",
+      "region": "",
+      "tag": "",
+      "artist": "Sugar Free",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/f932204f73a54a48843b1c570c16e6cc.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33357",
+    "name": "刀锋舞者",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/4511fa94ec84440991789afe2c9ce382.png",
+    "description": "当你将一名友方单位选为目标时，你可以选择让我变为休眠状态并支付{{A}}，以此让该单位变为活跃状态。\n当你征服一处战场时，你可以选择支付{{1}}，以此让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33357,
+      "cardNo": "SFD·246/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "艾瑞莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/4511fa94ec84440991789afe2c9ce382.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33358",
+    "name": "沙漠皇帝",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/1446f29994b548848bb06051061da8a7.png",
+    "description": "你的“黄沙士兵”获得{{百炼}}。\n支付{{1}}，{{横置}}：打出一名2{{S}}的“黄沙士兵”到你的基地。只能在你本回合打出了一件武装后使用。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33358,
+      "cardNo": "SFD·247/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "阿兹尔",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/1446f29994b548848bb06051061da8a7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33359",
+    "name": "探险家",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/dfa2519ea0624fc5bde909773dec67b9.png",
+    "description": "{{横置}}：{{反应}} — 抽一张牌。只有当你在本回合内，两次将敌方单位或装备选为法术或单位技能的目标后，才能使用此技能。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33359,
+      "cardNo": "SFD·248/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "伊泽瑞尔",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/dfa2519ea0624fc5bde909773dec67b9.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33360",
+    "name": "炼金男爵",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/97b50147eeb448dca552a54cca8f1dd4.png",
+    "description": "当你或一名友方玩家据守一处战场时，你可以选择让我变为休眠状态，以此打出一个休眠的“金币”装备指示物。\n如果你的得分距离胜利得分不超过3分，则你的“金币”装备指示物的{{获得}}效果额外产生{{1}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33360,
+      "cardNo": "SFD·249/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "烈娜塔·戈拉斯克",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/97b50147eeb448dca552a54cca8f1dd4.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33361",
+    "name": "战争女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/3b8ebe2e73264109bd02a23fc33cfd39.png",
+    "description": "当你回收一枚符文时，你可以选择让我变为休眠状态，以此打出一个休眠的“金币”装备指示物。\n当任意数量的敌方单位被摧毁时，让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33361,
+      "cardNo": "SFD·250/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "希维尔",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/3b8ebe2e73264109bd02a23fc33cfd39.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33362",
+    "name": "无双剑姬",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/c35a845d0ed841b0aca456c561c4f6fe.png",
+    "description": "当你的一名单位变为{{强力}}时，你可以选择让我变为休眠状态，以此召出一枚休眠的符文。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 33362,
+      "cardNo": "SFD·251/221",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "菲奥娜",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/c35a845d0ed841b0aca456c561c4f6fe.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31596",
+    "name": "黑暗之女",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/04f1261faf7741e8abde6a96d2db8f69.png",
+    "description": "在你回合结束时，让两枚符文变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31596,
+      "cardNo": "OGS·017/024",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "安妮",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/04f1261faf7741e8abde6a96d2db8f69.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31598",
+    "name": "无极剑圣",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/0c7f618b2a6a4522b1953a16c4c0a8d1.png",
+    "description": "如果你只有一名友方单位防守一处战场，则该单位{{S}}+2。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31598,
+      "cardNo": "OGS·019/024",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "易",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio&Quy Ho",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/0c7f618b2a6a4522b1953a16c4c0a8d1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31600",
+    "name": "光辉女郎",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/43e6206fc8b74cb5821c7fd8fbe40ec3.png",
+    "description": "每当你打出一张费用不低于{{5}}的法术时，抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31600,
+      "cardNo": "OGS·021/024",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "拉克丝",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio&Maki Planas Mata",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/43e6206fc8b74cb5821c7fd8fbe40ec3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31602",
+    "name": "德玛西亚之力",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/d78d0ea699284be892886bcfc111e2c9.png",
+    "description": "当你征服一处战场时，如果你在该战场上拥有不少于四名单位，则抽两张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31602,
+      "cardNo": "OGS·023/024",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "盖伦",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/d78d0ea699284be892886bcfc111e2c9.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31489",
+    "name": "虚空之女",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/4c71cddb7b3d4f4fa84841c19fd8f1ed.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{A}}，但仅可用于打出法术。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31489,
+      "cardNo": "OGN·247/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卡莎",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/4c71cddb7b3d4f4fa84841c19fd8f1ed.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31491",
+    "name": "不灭狂雷",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/fac82805f12244f380068c3ea51a6aa1.png",
+    "description": "当你打出一名{{强力}}单位时，你可以选择让我变为休眠状态，以此召出一枚休眠的符文。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31491,
+      "cardNo": "OGN·249/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "沃利贝尔",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/fac82805f12244f380068c3ea51a6aa1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31493",
+    "name": "暴走萝莉",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/d03e4a32810c474fbd7fbaed0c4ec583.png",
+    "description": "在你的回合开始阶段，如果你的手牌不足两张，则再抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31493,
+      "cardNo": "OGN·251/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "金克丝",
+      "region": "",
+      "tag": "",
+      "artist": "Sugar Free",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(英雄预组 金克丝)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 金克丝",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/d03e4a32810c474fbd7fbaed0c4ec583.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31495",
+    "name": "诺克萨斯之手",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/6242a3258f0f4fdb8e44de21d85648ce.png",
+    "description": "{{横置}}：{{反应}}，{{鼓舞}}—{{获得}}{{1}}。（获得费用资源的技能无法成为其他法术的反应目标。如果你在本回合内已打出过其他卡牌，则发动此效果。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31495,
+      "cardNo": "OGN·253/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "德莱厄斯",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/6242a3258f0f4fdb8e44de21d85648ce.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31497",
+    "name": "九尾妖狐",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/b5c840e9c0b44b3582ae2b613f53d4e6.png",
+    "description": "当敌方单位进攻你控制的战场时，让其本回合内{{S}}-1，不得低于1{{S}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31497,
+      "cardNo": "OGN·255/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "阿狸",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/b5c840e9c0b44b3582ae2b613f53d4e6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31499",
+    "name": "盲僧",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/a4ee119634c94cb9b7c89fcd331f676b.png",
+    "description": "支付{{1}}，{{横置}}：给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31499,
+      "cardNo": "OGN·257/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "李青",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(英雄预组 李青)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 李青",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/a4ee119634c94cb9b7c89fcd331f676b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31501",
+    "name": "疾风剑豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/bac968279d52484ea7466b0664b61e3b.png",
+    "description": "支付{{2}}，{{横置}}：在战场和其所属基地之间移动一名友方单位。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31501,
+      "cardNo": "OGN·259/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "亚索",
+      "region": "",
+      "tag": "",
+      "artist": "TSWCK逍",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/bac968279d52484ea7466b0664b61e3b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31503",
+    "name": "曙光女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/a47ba2fe2a0447e0b3022976357d53a6.png",
+    "description": "每当你眩晕任意数量的敌方单位时，给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31503,
+      "cardNo": "OGN·261/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "蕾欧娜",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/a47ba2fe2a0447e0b3022976357d53a6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31505",
+    "name": "迅捷斥候",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/8ab76421b0334acfa429a70c7b063a92.png",
+    "description": "你可以选择支付{{1}}来正面朝下放置一张带有{{待命}}属性的卡牌，而不是支付{{A}}。\n支付{{1}}，{{横置}}：将你拥有的一张位于英雄区域或场上的提莫单位牌放入你的手牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31505,
+      "cardNo": "OGN·263/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "提莫",
+      "region": "",
+      "tag": "",
+      "artist": "Shawn Lee",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/8ab76421b0334acfa429a70c7b063a92.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31506",
+    "name": "迅捷斥候",
+    "image": "https://cdn.playloltcg.com/lol/card/20251022/d451ff1295244c5286a671fdf6b35f78.png",
+    "description": "你可以选择支付{{1}}来正面朝下放置一张带有{{待命}}属性的卡牌，而不是支付{{A}}。\n支付{{1}}，{{横置}}：将你拥有的一张位于英雄区域或场上的提莫单位牌放入你的手牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31506,
+      "cardNo": "OGN·263a/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "legacy_etching",
+      "extendRarityName": "异画",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "提莫",
+      "region": "",
+      "tag": "",
+      "artist": "Qifeng Lin",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251022/d451ff1295244c5286a671fdf6b35f78.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31508",
+    "name": "奥术先驱",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/20bda5999ee54dc9ad1116cb6c1609dd.png",
+    "description": "支付{{1}}，{{横置}}：打出一名1{{S}}的“随从”。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31508,
+      "cardNo": "OGN·265/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "维克托",
+      "region": "",
+      "tag": "",
+      "artist": "Fortiche Production",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(英雄预组 维克托)",
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 英雄预组 维克托",
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/20bda5999ee54dc9ad1116cb6c1609dd.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31510",
+    "name": "赏金猎人",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/23ce228041004325b311bbb89020b945.png",
+    "description": "{{横置}}：让一名单位本回合内获得{{游走}}。（它可以向其他战场进行移动。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31510,
+      "cardNo": "OGN·267/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "厄运小姐",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/23ce228041004325b311bbb89020b945.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31512",
+    "name": "腕豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/d69066792ee6406da1d69e95cefe2d50.png",
+    "description": "每当一名拥有增益且受你控制的单位被摧毁时，你可以选择支付{{A}}让我变为休眠状态，以此消耗该单位身上的增益，然后改为以休眠状态将其召回。（把该单位送回基地，此行动不算作移动。）\n当你征服一处战场时，让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31512,
+      "cardNo": "OGN·269/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "瑟提",
+      "region": "",
+      "tag": "",
+      "artist": "Envar Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/d69066792ee6406da1d69e95cefe2d50.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31545",
+    "name": "虚空之女",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/c7196f83231c42c68ad19180b4a8a455.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{A}}，但仅可用于打出法术。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31545,
+      "cardNo": "OGN·299/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卡莎",
+      "region": "",
+      "tag": "",
+      "artist": "Jason Chan",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/c7196f83231c42c68ad19180b4a8a455.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31546",
+    "name": "虚空之女",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/9333499358e245bdbcea89ca4d3bede6.png",
+    "description": "{{横置}}：{{反应}}—{{获得}}{{A}}，但仅可用于打出法术。（获得费用资源的技能无法成为其他法术的反应目标。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31546,
+      "cardNo": "OGN·299*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "卡莎",
+      "region": "",
+      "tag": "",
+      "artist": "Jason Chan",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/9333499358e245bdbcea89ca4d3bede6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31547",
+    "name": "不灭狂雷",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/b93b822bd164436faf17b63881016467.png",
+    "description": "当你打出一名{{强力}}单位时，你可以选择让我变为休眠状态，以此召出一枚休眠的符文。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31547,
+      "cardNo": "OGN·300/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "沃利贝尔",
+      "region": "",
+      "tag": "",
+      "artist": "Alex Flores",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/b93b822bd164436faf17b63881016467.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31548",
+    "name": "不灭狂雷",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/ca3108b49d0140eab3885dca780bf1a7.png",
+    "description": "当你打出一名{{强力}}单位时，你可以选择让我变为休眠状态，以此召出一枚休眠的符文。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31548,
+      "cardNo": "OGN·300*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "沃利贝尔",
+      "region": "",
+      "tag": "",
+      "artist": "Alex Flores",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/ca3108b49d0140eab3885dca780bf1a7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31549",
+    "name": "暴走萝莉",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/6b880ba9fcad44dfb51b77019eea9c18.png",
+    "description": "在你的回合开始阶段，如果你的手牌不足两张，则再抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31549,
+      "cardNo": "OGN·301/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "金克丝",
+      "region": "",
+      "tag": "",
+      "artist": "Sean Yang",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/6b880ba9fcad44dfb51b77019eea9c18.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31550",
+    "name": "暴走萝莉",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/8ef8d8705d6a48449ea98c3cd1a876e5.png",
+    "description": "在你的回合开始阶段，如果你的手牌不足两张，则再抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31550,
+      "cardNo": "OGN·301*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "金克丝",
+      "region": "",
+      "tag": "",
+      "artist": "Sean Yang",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/8ef8d8705d6a48449ea98c3cd1a876e5.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31551",
+    "name": "诺克萨斯之手",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/bc2b647d6a244a3c937d6ce503210d91.png",
+    "description": "{{横置}}：{{反应}}，{{鼓舞}}—{{获得}}{{1}}。（获得费用资源的技能无法成为其他法术的反应目标。如果你在本回合内已打出过其他卡牌，则发动此效果。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31551,
+      "cardNo": "OGN·302/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "德莱厄斯",
+      "region": "",
+      "tag": "",
+      "artist": "Peter Kim",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/bc2b647d6a244a3c937d6ce503210d91.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31552",
+    "name": "诺克萨斯之手",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/f36affe89b7a40b5ab740d632dcf33a8.png",
+    "description": "{{横置}}：{{反应}}，{{鼓舞}}—{{获得}}{{1}}。（获得费用资源的技能无法成为其他法术的反应目标。如果你在本回合内已打出过其他卡牌，则发动此效果。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31552,
+      "cardNo": "OGN·302*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "德莱厄斯",
+      "region": "",
+      "tag": "",
+      "artist": "Peter Kim",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/f36affe89b7a40b5ab740d632dcf33a8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31553",
+    "name": "九尾妖狐",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/f34da5458d3f4967a8f67f65686cad7e.png",
+    "description": "当敌方单位进攻你控制的战场时，让其本回合内{{S}}-1，不得低于1{{S}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31553,
+      "cardNo": "OGN·303/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "阿狸",
+      "region": "",
+      "tag": "",
+      "artist": "Airi Pan",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/f34da5458d3f4967a8f67f65686cad7e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31554",
+    "name": "九尾妖狐",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/c16c304a9ac5452eb6d4388b34a05408.png",
+    "description": "当敌方单位进攻你控制的战场时，让其本回合内{{S}}-1，不得低于1{{S}}。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31554,
+      "cardNo": "OGN·303*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "阿狸",
+      "region": "",
+      "tag": "",
+      "artist": "Airi Pan",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/c16c304a9ac5452eb6d4388b34a05408.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31555",
+    "name": "盲僧",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/3d17f6fd2dba4c03a4f3c8b3d8bf5eb1.png",
+    "description": "支付{{1}}，{{横置}}：给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31555,
+      "cardNo": "OGN·304/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "李青",
+      "region": "",
+      "tag": "",
+      "artist": "Loiza Chen",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/3d17f6fd2dba4c03a4f3c8b3d8bf5eb1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31556",
+    "name": "盲僧",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/5333b234c91e493b865388d3bbafc535.png",
+    "description": "支付{{1}}，{{横置}}：给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31556,
+      "cardNo": "OGN·304*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "李青",
+      "region": "",
+      "tag": "",
+      "artist": "Loiza Chen",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/5333b234c91e493b865388d3bbafc535.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31557",
+    "name": "疾风剑豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/f63c07281a7d431ebe5e7395f88679fe.png",
+    "description": "支付{{2}}，{{横置}}：在战场和其所属基地之间移动一名友方单位。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31557,
+      "cardNo": "OGN·305/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "亚索",
+      "region": "",
+      "tag": "",
+      "artist": "Quy Ho",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/f63c07281a7d431ebe5e7395f88679fe.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31558",
+    "name": "疾风剑豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/82ef674a32494a37a5d0fe09968ea6dc.png",
+    "description": "支付{{2}}，{{横置}}：在战场和其所属基地之间移动一名友方单位。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31558,
+      "cardNo": "OGN·305*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "亚索",
+      "region": "",
+      "tag": "",
+      "artist": "Quy Ho",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/82ef674a32494a37a5d0fe09968ea6dc.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31559",
+    "name": "曙光女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/43fea2004d96493b881fa05fe52224b5.png",
+    "description": "每当你眩晕任意数量的敌方单位时，给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31559,
+      "cardNo": "OGN·306/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "蕾欧娜",
+      "region": "",
+      "tag": "",
+      "artist": "Su Ke",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/43fea2004d96493b881fa05fe52224b5.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31560",
+    "name": "曙光女神",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/e933a7c9fe5f418b9883c72bedba3b70.png",
+    "description": "每当你眩晕任意数量的敌方单位时，给予一名友方单位增益。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31560,
+      "cardNo": "OGN·306*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "蕾欧娜",
+      "region": "",
+      "tag": "",
+      "artist": "Su Ke",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/e933a7c9fe5f418b9883c72bedba3b70.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31561",
+    "name": "迅捷斥候",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/42dc4a036cd94ce28654dd658ff9f565.png",
+    "description": "你可以选择支付{{1}}来正面朝下放置一张带有{{待命}}属性的卡牌，而不是支付{{A}}。\n支付{{1}}，{{横置}}：将你拥有的一张位于英雄区域或场上的提莫单位牌放入你的手牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31561,
+      "cardNo": "OGN·307/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "提莫",
+      "region": "",
+      "tag": "",
+      "artist": "Jordan Yoon",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/42dc4a036cd94ce28654dd658ff9f565.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31562",
+    "name": "迅捷斥候",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/c67e7b31e91e473488327d8ca4bb2f3f.png",
+    "description": "你可以选择支付{{1}}来正面朝下放置一张带有{{待命}}属性的卡牌，而不是支付{{A}}。\n支付{{1}}，{{横置}}：将你拥有的一张位于英雄区域或场上的提莫单位牌放入你的手牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31562,
+      "cardNo": "OGN·307*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "提莫",
+      "region": "",
+      "tag": "",
+      "artist": "Jordan Yoon",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/c67e7b31e91e473488327d8ca4bb2f3f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31563",
+    "name": "奥术先驱",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/c33d4ba4203644599538ffb610ee081f.png",
+    "description": "支付{{1}}，{{横置}}：打出一名1{{S}}的“随从”。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31563,
+      "cardNo": "OGN·308/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "维克托",
+      "region": "",
+      "tag": "",
+      "artist": "Rudy Siswanto",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/c33d4ba4203644599538ffb610ee081f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31564",
+    "name": "奥术先驱",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/98e4fbe3d24e49deb529167b20af40e6.png",
+    "description": "支付{{1}}，{{横置}}：打出一名1{{S}}的“随从”。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31564,
+      "cardNo": "OGN·308*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "维克托",
+      "region": "",
+      "tag": "",
+      "artist": "Rudy Siswanto",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/98e4fbe3d24e49deb529167b20af40e6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31565",
+    "name": "赏金猎人",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/f08ba32d6abf40d6b334a714b86f9022.png",
+    "description": "{{横置}}：让一名单位本回合内获得{{游走}}。（它可以向其他战场进行移动。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31565,
+      "cardNo": "OGN·309/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "厄运小姐",
+      "region": "",
+      "tag": "",
+      "artist": "Mindy Kang",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/f08ba32d6abf40d6b334a714b86f9022.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31566",
+    "name": "赏金猎人",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/21af2b4c044648678dbb2936526bccc9.png",
+    "description": "{{横置}}：让一名单位本回合内获得{{游走}}。（它可以向其他战场进行移动。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31566,
+      "cardNo": "OGN·309*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "厄运小姐",
+      "region": "",
+      "tag": "",
+      "artist": "Mindy Kang",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/21af2b4c044648678dbb2936526bccc9.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31567",
+    "name": "腕豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/c2cabe9fff134e77ad28b99a842fb56f.png",
+    "description": "每当一名拥有增益且受你控制的单位被摧毁时，你可以选择支付{{A}}让我变为休眠状态，以此消耗该单位身上的增益，然后改为以休眠状态将其召回。（把该单位送回基地，此行动不算作移动。）\n当你征服一处战场时，让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31567,
+      "cardNo": "OGN·310/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "exalted_script",
+      "extendRarityName": "超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "瑟提",
+      "region": "",
+      "tag": "",
+      "artist": "Gem Lim",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/c2cabe9fff134e77ad28b99a842fb56f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31568",
+    "name": "腕豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250801/9fe77615714f4726b21f6eec14d8b900.png",
+    "description": "每当一名拥有增益且受你控制的单位被摧毁时，你可以选择支付{{A}}让我变为休眠状态，以此消耗该单位身上的增益，然后改为以休眠状态将其召回。（把该单位送回基地，此行动不算作移动。）\n当你征服一处战场时，让我变为活跃状态。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31568,
+      "cardNo": "OGN·310*/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_legend",
+      "rarityName": "异画",
+      "extendRarity": "runemaster_mark",
+      "extendRarityName": "签名超编",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "瑟提",
+      "region": "",
+      "tag": "",
+      "artist": "Gem Lim",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250801/9fe77615714f4726b21f6eec14d8b900.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31576",
+    "name": "不灭狂雷",
+    "image": "https://cdn.playloltcg.com/lol/card/20250810/a50fb0ff3d904fd9a691293c53ba96d0.png",
+    "description": "当你打出一名{{强力}}单位时，你可以选择让我变为休眠状态，以此召出一枚休眠的符文。（战力达到5或以上时，即为强力单位。）",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31576,
+      "cardNo": "FND-249/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "沃利贝尔",
+      "region": "",
+      "tag": "",
+      "artist": "-",
+      "flavorText": "",
+      "productCodeList": [],
+      "productNameList": [],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250810/a50fb0ff3d904fd9a691293c53ba96d0.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31577",
+    "name": "暴走萝莉",
+    "image": "https://cdn.playloltcg.com/lol/card/20250810/79739028e67b4882919387898b3f7489.png",
+    "description": "在你的回合开始阶段，如果你的手牌不足两张，则再抽一张牌。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31577,
+      "cardNo": "FND-251/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "金克丝",
+      "region": "",
+      "tag": "",
+      "artist": "-",
+      "flavorText": "",
+      "productCodeList": [],
+      "productNameList": [],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250810/79739028e67b4882919387898b3f7489.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31578",
+    "name": "疾风剑豪",
+    "image": "https://cdn.playloltcg.com/lol/card/20250810/a0a8b651062241449a180676f417fb34.png",
+    "description": "支付{{2}}，{{横置}}：在战场和其所属基地之间移动一名友方单位。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31578,
+      "cardNo": "FND-259/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "亚索",
+      "region": "",
+      "tag": "",
+      "artist": "-",
+      "flavorText": "",
+      "productCodeList": [],
+      "productNameList": [],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250810/a0a8b651062241449a180676f417fb34.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31579",
+    "name": "奥术先驱",
+    "image": "https://cdn.playloltcg.com/lol/card/20250810/9a477a758a6c4bf58f6ffe198521cfe6.png",
+    "description": "支付{{1}}，{{横置}}：打出一名1{{S}}的“随从”。",
+    "projectKind": "legend",
+    "official": {
+      "sourceId": 31579,
+      "cardNo": "FND-265/298",
+      "cardCategory": "legendary",
+      "cardCategoryName": "传奇",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_shard",
+      "rarityName": "稀有",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": null,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "维克托",
+      "region": "",
+      "tag": "",
+      "artist": "-",
+      "flavorText": "",
+      "productCodeList": [],
+      "productNameList": [],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250810/9a477a758a6c4bf58f6ffe198521cfe6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  }
+]

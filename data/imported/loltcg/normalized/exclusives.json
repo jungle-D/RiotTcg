@@ -1,0 +1,1766 @@
+[
+  {
+    "id": "lol_34735",
+    "name": "完美谢幕",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/65daefd861db489b90d9d65c8c3d6009.webp",
+    "description": "{{回响}} — 支付{{1}}/支付{{A}}/支付{{1}}和{{A}}（你可以选择支付各额外费用一次，以重复多次此法术效果。）\n从以下中选择一个未选过的效果 —\n- 抽一张牌。\n- 对战场上的一名单位造成2点伤害。\n- 对基地中的一名单位造成3点伤害。\n- 让战场上的一名单位在本回合内{{S}}-4。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34735,
+      "cardNo": "UNL-182/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "烬",
+      "region": "",
+      "tag": "",
+      "artist": "华锐",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/65daefd861db489b90d9d65c8c3d6009.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34737",
+    "name": "狩猎律动",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/985de89c066e4cf3b9cc69eec71dc30a.webp",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n放逐一名友方单位，然后让其拥有者将其打出到任意一处战场，无视其费用。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34737,
+      "cardNo": "UNL-184/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "雷恩加尔",
+      "region": "",
+      "tag": "",
+      "artist": "华锐",
+      "flavorText": "“多么辉煌的狩猎啊！”\n——雷恩加尔",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/985de89c066e4cf3b9cc69eec71dc30a.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34739",
+    "name": "涌泉之恨",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/c6516c4191274467b9f971cc4fb8a106.webp",
+    "description": "摧毁战场上的一名单位。然后，如果该单位不高于3{{S}}，则进行一次：你可以选择支付{{A}}，以此将此牌从废牌堆中打出。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34739,
+      "cardNo": "UNL-186/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "派克",
+      "region": "",
+      "tag": "",
+      "artist": "莺之歌",
+      "flavorText": "“把一个人放下去，时间一长，阴沟也成了他的地盘。”\n——派克",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/c6516c4191274467b9f971cc4fb8a106.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34741",
+    "name": "海克斯科技护手",
+    "image": "https://cdn.playloltcg.com/lol/card/20260320/bf4279fe48f54deb9eeb9bb5e6ebec41.webp",
+    "description": "{{装配}}{{3}}{{A}}。此技能的法力费用减少你所选单位的战力。（支付此费用：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 34741,
+      "cardNo": "UNL-188/219",
+      "cardCategory": "exclusive_equipment",
+      "cardCategoryName": "专属装备",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": 3,
+      "hero": "蔚",
+      "region": "",
+      "tag": "武装",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 蔚）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 蔚"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260320/bf4279fe48f54deb9eeb9bb5e6ebec41.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34743",
+    "name": "夜阑谣",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/912aca11d0f54a78ba72b11fa19a2051.webp",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n无效化一个法术。其控制者在本回合内无法打出法术。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34743,
+      "cardNo": "UNL-190/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "莉莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Wild Blue Studios/莺之歌",
+      "flavorText": "“该睡觉咯！”\n——莉莉娅",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/912aca11d0f54a78ba72b11fa19a2051.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34745",
+    "name": "阿尔法突袭",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/7cad3b2078d546bbade988723bb6b2c6.webp",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n选择一名友方单位。该单位对战场上的敌方单位合计造成等同于其战力的伤害，可在多名敌方单位之间分摊。每有一名单位因此被摧毁，则进行一次：获得1经验。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34745,
+      "cardNo": "UNL-192/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "易",
+      "region": "",
+      "tag": "",
+      "artist": "莺之歌",
+      "flavorText": "“敌人虽众，一击皆斩！”\n——易",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/7cad3b2078d546bbade988723bb6b2c6.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34747",
+    "name": "黑影",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/fb950031c4b6464d84fb55717f017020.webp",
+    "description": "如果你将我打出至一处战场，则我以活跃状态进场。\n{{迅捷>}} 支付{{1}}和{{A}}，{{横置}}：{{眩晕}}一名进攻此处的敌方单位。（使其在本回合内无法造成战斗伤害。）",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 34747,
+      "cardNo": "UNL-194/219",
+      "cardCategory": "exclusive_unit",
+      "cardCategoryName": "专属单位",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": 3,
+      "hero": "薇古丝",
+      "region": "暗影岛",
+      "tag": "",
+      "artist": "莺之歌",
+      "flavorText": "“又一个要处理的家伙。黑影，你能解决吗？”\n——薇古丝",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)",
+        "UNL（英雄预组 薇古丝）"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包",
+        "破限系列 英雄预组 薇古丝"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/fb950031c4b6464d84fb55717f017020.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34749",
+    "name": "小菊！",
+    "image": "https://cdn.playloltcg.com/lol/card/20260324/2a24ea02754748dcadbba15e6ad8dc90.webp",
+    "description": "我以活跃状态进场。\n你的单位中每有一种以下属性标签，我的费用便减少{{1}} — “鸟类”、“猫科”、“犬形”、“魄罗”。\n当我进攻时，如果你的单位具有以上全部四种属性标签，则{{眩晕}}此处的一名敌方单位。（使其在本回合内无法造成战斗伤害。）",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 34749,
+      "cardNo": "UNL-196/219",
+      "cardCategory": "exclusive_unit",
+      "cardCategoryName": "专属单位",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 9,
+      "returnEnergy": 2,
+      "power": 8,
+      "hero": "艾翁",
+      "region": "艾欧尼亚",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260324/2a24ea02754748dcadbba15e6ad8dc90.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34751",
+    "name": "月之降临",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/c0edba2c21f7498493c0d00c308f1d7a.webp",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n选择一处你拥有单位的战场。你可以选择将最多一名敌方单位移动至该战场，然后让该处的敌方单位本回合内{{S}}-2。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34751,
+      "cardNo": "UNL-198/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "黛安娜",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "“夜色降临！”\n——黛安娜",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/c0edba2c21f7498493c0d00c308f1d7a.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34753",
+    "name": "镜花水月",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/9264bffd383a476da0a3126d4f513367.webp",
+    "description": "选择一名单位。将一名活跃状态的“映像”打出到你的基地。该“映像”变为所选单位的复制体。并让其获得{{瞬息}}。（在其控制者的开始阶段开始时，结算得分之前将其摧毁。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34753,
+      "cardNo": "UNL-200/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "乐芙兰",
+      "region": "",
+      "tag": "",
+      "artist": "华锐",
+      "flavorText": "“最好的谎言，总是美丽的。”\n——乐芙兰",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/9264bffd383a476da0a3126d4f513367.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34755",
+    "name": "虚空来袭",
+    "image": "https://cdn.playloltcg.com/lol/card/20260321/992138a2ecc84f6baa50f513949b3a02.webp",
+    "description": "移动一名友方单位，然后移动一名敌方单位。（如果它们都移动到一处不受你控制的战场，则你视为进攻方。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34755,
+      "cardNo": "UNL-202/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "卡兹克",
+      "region": "",
+      "tag": "",
+      "artist": "莺之歌",
+      "flavorText": "“如果我把你吃掉的话，能学会如何去死吗？”\n——卡兹克",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260321/992138a2ecc84f6baa50f513949b3a02.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_34757",
+    "name": "持卫的裁决",
+    "image": "https://cdn.playloltcg.com/lol/card/20260319/2fc6d1f3d34f4fc29ba2ad1699927bc9.webp",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n选择战场上的一名敌方单位。其拥有者将该单位放到其主牌堆的顶部或底部。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 34757,
+      "cardNo": "UNL-204/219",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "波比",
+      "region": "",
+      "tag": "",
+      "artist": "莺之歌",
+      "flavorText": "“然后别回来了！”\n——波比",
+      "productCodeList": [
+        "UNL(进阶补充包)",
+        "UNL(标准补充包)"
+      ],
+      "productNameList": [
+        "破限系列 进阶补充包",
+        "破限系列 基础补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20260319/2fc6d1f3d34f4fc29ba2ad1699927bc9.webp",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33280",
+    "name": "危险温度",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/04ce1fd1510547e9b2d2796c91bbcc92.png",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n{{回响}}{{1}}{{A}}（你可以选择支付此额外费用，以重复此法术效果。）\n你的“机械”属性单位本回合内{{S}}+1。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33280,
+      "cardNo": "SFD·182/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "兰博",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(英雄预组 兰博)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 兰博",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/04ce1fd1510547e9b2d2796c91bbcc92.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33282",
+    "name": "冷酷追击",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/bb29ef1e74e04d7b8fceec4ea518b32a.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n移动一名友方单位。你可以选择为其贴附其控制者的一件武装。在本回合内，该单位拥有“当我征服一处战场时，你可以选择将我移动到我的基地”。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33282,
+      "cardNo": "SFD·184/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "卢锡安",
+      "region": "",
+      "tag": "",
+      "artist": "Max Grecke",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/bb29ef1e74e04d7b8fceec4ea518b32a.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33284",
+    "name": "旋转飞斧",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/0639abe218a74627b49ab15846218ea6.png",
+    "description": "{{灵便}}（此牌获得{{反应}}。当你打出此牌时，将它贴附到你控制的一名单位上。）\n{{装配}}{{A}}（支付{{A}}：将此牌贴附到你控制的一名单位上。）\n{{瞬息}}（如果此牌未贴附，则在其控制者的下个回合开始阶段，结算得分之前将其摧毁。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33284,
+      "cardNo": "SFD·186/221",
+      "cardCategory": "exclusive_equipment",
+      "cardCategoryName": "专属装备",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "德莱文",
+      "region": "",
+      "tag": "武装",
+      "artist": "Six More Vodka",
+      "flavorText": "“斧头在手，只欠猎物。”\n——德莱文",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/0639abe218a74627b49ab15846218ea6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33286",
+    "name": "虚空猛冲",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/b478472e661d4a9994693e654b18932e.png",
+    "description": "展示你主牌堆顶部的两张牌。你可以选择其中一张，将其费用减少{{2}}后打出。抽取其中未以此方式打出的卡牌。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33286,
+      "cardNo": "SFD·188/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "雷克塞",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/b478472e661d4a9994693e654b18932e.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33288",
+    "name": "炉火斗篷",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/3a33a78a86674d2ea12dab75faefca49.png",
+    "description": "{{唯我}}（你的卡组中只能拥有一张同名的此牌。）\n{{装配A}}（支付{{A}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33288,
+      "cardNo": "SFD·190/221",
+      "cardCategory": "exclusive_equipment",
+      "cardCategoryName": "专属装备",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "奥恩",
+      "region": "",
+      "tag": "武装",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/3a33a78a86674d2ea12dab75faefca49.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": 1
+    }
+  },
+  {
+    "id": "lol_33289",
+    "name": "灭世者的死亡之冠",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/67c65e3a2f854381948c55e1ba47ea5a.png",
+    "description": "{{唯我}}（你的卡组中只能拥有一张同名的此牌。）\n{{装配A}}（支付{{A}}：将此牌贴附到你控制的一名单位上。）",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33289,
+      "cardNo": "SFD·191/221",
+      "cardCategory": "exclusive_equipment",
+      "cardCategoryName": "专属装备",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "奥恩",
+      "region": "",
+      "tag": "武装",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/67c65e3a2f854381948c55e1ba47ea5a.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": 1
+    }
+  },
+  {
+    "id": "lol_33290",
+    "name": "舒瑞娅的安魂曲",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/679bf5b2aa4c46d1a0a58cb640992a50.png",
+    "description": "{{唯我}}（你的卡组中只能拥有一张同名的此牌。）\n{{装配A}}（支付{{A}}：将此牌贴附到你控制的一名单位上。）\n当你打出此牌时，让你的所有单位变为活跃状态。",
+    "projectKind": "main",
+    "projectMainType": "equipment",
+    "official": {
+      "sourceId": 33290,
+      "cardNo": "SFD·192/221",
+      "cardCategory": "exclusive_equipment",
+      "cardCategoryName": "专属装备",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "奥恩",
+      "region": "",
+      "tag": "武装",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/679bf5b2aa4c46d1a0a58cb640992a50.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": 1
+    }
+  },
+  {
+    "id": "lol_33292",
+    "name": "反击风暴",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/bd0cf7e5a1374e21810748fe55e538a1.png",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n选择一名单位，在本回合内，抵挡该单位下一次受到的伤害。抽一张牌。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33292,
+      "cardNo": "SFD·194/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "贾克斯",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“你就这点本事？！”\n——贾克斯",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/bd0cf7e5a1374e21810748fe55e538a1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33295",
+    "name": "距破之舞",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/90cdd63eae334ea3b53a4c35a093c8a6.png",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n本回合内，让一名单位{{S}}+2，另一名单位{{S}}-2。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33295,
+      "cardNo": "SFD·196/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "艾瑞莉娅",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“我既是平静的海面，又是汹涌的风暴。”\n——艾瑞莉娅",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/90cdd63eae334ea3b53a4c35a093c8a6.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33297",
+    "name": "沙兵现身",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/ed5754d015eb47c8968a0ab57119761b.png",
+    "description": "你每控制一件武装，便打出一名2{{S}}的“黄沙士兵”。然后让两名“黄沙士兵”变为活跃状态。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33297,
+      "cardNo": "SFD·198/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 6,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "阿兹尔",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“命令已下达！”\n——阿兹尔",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/ed5754d015eb47c8968a0ab57119761b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33299",
+    "name": "奥术跃迁",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/1eeb07511d994367a650e619e8c5655f.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n放逐一名友方单位，然后让其拥有者将其打出，无视其费用。对战场上的一名敌方单位造成3点伤害。放逐此牌。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33299,
+      "cardNo": "SFD·200/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "伊泽瑞尔",
+      "region": "",
+      "tag": "",
+      "artist": "Original Force",
+      "flavorText": "“哈！我闭着眼睛也能射中。”\n——伊泽瑞尔",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/1eeb07511d994367a650e619e8c5655f.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33301",
+    "name": "恶意收购",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/1de19b8005bf4a108f7fb91430458cc3.png",
+    "description": "{{待命}}（支付{{A}}正面朝下放置此牌，之后可支付{{0}}将其当作反应牌打出。）\n获得战场上一名敌方单位的控制权。让其变为活跃状态。（如果该战场上存在其他敌方单位，则开始战斗。否则征服此战场。）\n回合结束时，失去该单位的控制权，然后将它召回。（把它送回基地，此行动不算作移动。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33301,
+      "cardNo": "SFD·202/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 5,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "烈娜塔·戈拉斯克",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/1de19b8005bf4a108f7fb91430458cc3.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33303",
+    "name": "狩猎",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/b560f47567fe478c8ca7b63377e000ee.png",
+    "description": "让你的所有单位变为活跃状态。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33303,
+      "cardNo": "SFD·204/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "希维尔",
+      "region": "",
+      "tag": "",
+      "artist": "Grafit Studio",
+      "flavorText": "“脚步要轻，下手要狠。”\n——希维尔",
+      "productCodeList": [
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/b560f47567fe478c8ca7b63377e000ee.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_33305",
+    "name": "劳伦特心眼刀",
+    "image": "https://cdn.playloltcg.com/lol/card/20251217/24351503751341d689fab3162f5ba387.png",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n选择一名友方单位和一个法术。无效化该法术，并让该单位在本回合内获得等同于该法术法力费用的+{{s}}加成。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 33305,
+      "cardNo": "SFD·206/221",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "菲奥娜",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "“动作真慢！”\n——菲奥娜",
+      "productCodeList": [
+        "SFD(英雄预组 菲奥娜)",
+        "SFD(标准补充包)",
+        "SFD(进阶补充包)"
+      ],
+      "productNameList": [
+        "铸魂淬炼 英雄预组 菲奥娜",
+        "铸魂淬炼 标准补充包",
+        "铸魂淬炼 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20251217/24351503751341d689fab3162f5ba387.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31597",
+    "name": "提伯斯",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/fc1238b1e6da4dcebc024d6dca76ee38.png",
+    "description": "当你打出我时，对所有战场上的单位各造成3点伤害。",
+    "projectKind": "main",
+    "projectMainType": "unit",
+    "official": {
+      "sourceId": 31597,
+      "cardNo": "OGS·018/024",
+      "cardCategory": "exclusive_unit",
+      "cardCategoryName": "专属单位",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 8,
+      "returnEnergy": 2,
+      "power": 7,
+      "hero": "安妮",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "“你看见过我的小熊吗？”\n——安妮",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/fc1238b1e6da4dcebc024d6dca76ee38.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31599",
+    "name": "高原血统",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/25330aaee06b44cfb35b45404422aab8.png",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n选择一名友方单位。如果该单位在本回合内被摧毁，则改为以休眠状态将其召回。（把该单位送回基地，此行动不算作移动。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31599,
+      "cardNo": "OGS·020/024",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "易",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/25330aaee06b44cfb35b45404422aab8.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31601",
+    "name": "终极闪光",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/b1ff99bcd0314dd68f42e0d9417a7713.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n对一名单位造成8点伤害。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31601,
+      "cardNo": "OGS·022/024",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 8,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "拉克丝",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/b1ff99bcd0314dd68f42e0d9417a7713.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31603",
+    "name": "致命打击",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/f28cb924915742b2a1b49873935e664b.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n在本回合内，让所有友方单位{{S}}+2。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31603,
+      "cardNo": "OGS·024/024",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 5,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "盖伦",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGS"
+      ],
+      "productNameList": [
+        "起源 试炼之地"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/f28cb924915742b2a1b49873935e664b.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31490",
+    "name": "艾卡西亚暴雨",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/7415e8e72aaa4788b174670a7da5eeaa.png",
+    "description": "进行六次：\n对一名单位造成2点伤害。（你可以选择不同的单位。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31490,
+      "cardNo": "OGN·248/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 7,
+      "returnEnergy": 3,
+      "power": null,
+      "hero": "卡莎",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/7415e8e72aaa4788b174670a7da5eeaa.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31492",
+    "name": "天声震落",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/1e8c56da52304418b369cae0054e5ada.png",
+    "description": "选择你基地中的一名友方单位，对一处战场上的所有敌方单位造成等同于该友方单位战力的伤害，然后将该友方单位移动到此战场。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31492,
+      "cardNo": "OGN·250/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 6,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "沃利贝尔",
+      "region": "",
+      "tag": "",
+      "artist": "Polar Engine Studio",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/1e8c56da52304418b369cae0054e5ada.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31494",
+    "name": "超究极死神飞弹！",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/a946adabf8af4d4aacb5b422dc795f71.png",
+    "description": "对一名单位造成5点伤害。\n每当你征服一处战场时，你可以选择弃置一张手牌，以此让此牌从废牌堆返回你的手牌。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31494,
+      "cardNo": "OGN·252/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "金克丝",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/a946adabf8af4d4aacb5b422dc795f71.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31496",
+    "name": "诺克萨斯断头台",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/eff27c42dafb42289a87e4f355ee0558.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n选择一名单位，在它本回合下次受到伤害时，将其摧毁。\n{{鼓舞}}—改为立即将其摧毁。（如果你在本回合内已打出过其他卡牌，则发动此效果。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31496,
+      "cardNo": "OGN·254/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "red",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "德莱厄斯",
+      "region": "",
+      "tag": "",
+      "artist": "Six More Vodka",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/eff27c42dafb42289a87e4f355ee0558.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31498",
+    "name": "妖异狐火",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/0f0800f31f574f089d1a806a9fd93fca.png",
+    "description": "{{待命}}（支付{{A}}正面朝下放置此牌，之后可支付{{0}}将其当作反应牌打出。）\n{{迅捷}}（可在你的回合或法术对决中打出。）\n摧毁一处战场中任意数量的单位，这些单位总计战力不得高于4。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31498,
+      "cardNo": "OGN·256/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "blue"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "阿狸",
+      "region": "",
+      "tag": "",
+      "artist": "League Splash Team",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/0f0800f31f574f089d1a806a9fd93fca.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31500",
+    "name": "猛龙摆尾",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/353f98b0648047d39f30ad68663508c2.png",
+    "description": "移动一名敌方单位。随后，在其目的地处选择另一名敌方单位，让这两名单位相互以自身战力给对方造成伤害。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31500,
+      "cardNo": "OGN·258/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "orange"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 4,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "李青",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/353f98b0648047d39f30ad68663508c2.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31502",
+    "name": "狂风绝息斩",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/5bfea89dfc6d44329dc873bc0b8ca9c1.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n让一名友方单位变为活跃状态，并对任意战场上的一名敌方单位造成等同于该友方单位战力的伤害。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31502,
+      "cardNo": "OGN·260/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "亚索",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/5bfea89dfc6d44329dc873bc0b8ca9c1.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31504",
+    "name": "天顶之刃",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/16d9c1e49cdf4ac3a7ccf57f1ed82b1a.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n眩晕任意战场上的一名敌方单位。你可以选择将一名友方单位移动至该敌方单位的战场上。（被眩晕的单位在本回合内无法造成战斗伤害。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31504,
+      "cardNo": "OGN·262/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "green",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 3,
+      "returnEnergy": 2,
+      "power": null,
+      "hero": "蕾欧娜",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/16d9c1e49cdf4ac3a7ccf57f1ed82b1a.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31507",
+    "name": "游击战",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/17feac0fb12043d88aaa07ecd1d26719.png",
+    "description": "让最多两张{{待命}}卡牌从废牌堆里返回你的手牌。在本回合内，你可以无视费用地正面朝下布置待命卡牌。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31507,
+      "cardNo": "OGN·264/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "提莫",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/17feac0fb12043d88aaa07ecd1d26719.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31509",
+    "name": "虹吸能量",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/7856ac1b256044c8bddbf052cfbd85a7.png",
+    "description": "{{反应}}（可在任意时机打出，甚至先于其他法术和技能的结算。）\n选择一个战场，让该处的所有友方单位{{S}}+1，而敌方单位{{S}}-1，不得低于1{{S}}，直到回合结束。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31509,
+      "cardNo": "OGN·266/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "blue",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 2,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "维克托",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/7856ac1b256044c8bddbf052cfbd85a7.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31511",
+    "name": "弹幕时间",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/5b6da04b01cf4a80b12c6a77d5683bcb.png",
+    "description": "{{迅捷}}（可在你的回合或法术对决中打出。）\n支付任意数量的{{A}}，对一处战场上的所有敌方单位造成等同于该数量的伤害。",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31511,
+      "cardNo": "OGN·268/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "purple"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": null,
+      "power": null,
+      "hero": "厄运小姐",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/5b6da04b01cf4a80b12c6a77d5683bcb.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  },
+  {
+    "id": "lol_31513",
+    "name": "叹为观止",
+    "image": "https://cdn.playloltcg.com/lol/card/20250731/afd688b9f6ac4583847a46a625a1d361.png",
+    "description": "给予你基地中的一名友方单位增益， 然后将其移动到一处战场。（如果该单位未拥有增益，则获得一个{{S}}+1增益。）",
+    "projectKind": "main",
+    "projectMainType": "spell",
+    "official": {
+      "sourceId": 31513,
+      "cardNo": "OGN·270/298",
+      "cardCategory": "exclusive_spell",
+      "cardCategoryName": "专属法术",
+      "cardColorList": [
+        "orange",
+        "yellow"
+      ],
+      "rarity": "rune_core",
+      "rarityName": "史诗",
+      "extendRarity": "base_inscript",
+      "extendRarityName": "平卡",
+      "energy": 1,
+      "returnEnergy": 1,
+      "power": null,
+      "hero": "瑟提",
+      "region": "",
+      "tag": "",
+      "artist": "Kudos Productions",
+      "flavorText": "",
+      "productCodeList": [
+        "OGN(标准补充包)",
+        "OGN(进阶补充包)"
+      ],
+      "productNameList": [
+        "起源 标准补充包",
+        "起源 进阶补充包"
+      ],
+      "frontImage": "https://cdn.playloltcg.com/lol/card/20250731/afd688b9f6ac4583847a46a625a1d361.png",
+      "backImage": "",
+      "status": 1,
+      "cardGroupLimit": null
+    }
+  }
+]

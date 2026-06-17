@@ -1,0 +1,37 @@
+{
+  "source": "https://playloltcg.com/card.html",
+  "generatedAt": "2026-06-17T08:11:28.647Z",
+  "totals": {
+    "expected": 1009,
+    "fetched": 1009,
+    "normalized": 1009
+  },
+  "files": {
+    "legends": 106,
+    "heroes": 235,
+    "battlefields": 57,
+    "runes": 48,
+    "units": 257,
+    "spells": 158,
+    "equipment": 93,
+    "indicators": 13,
+    "exclusives": 42,
+    "allCards": 1009
+  },
+  "categoryCounts": {
+    "indicator_battlefield": 2,
+    "indicator_unit": 9,
+    "indicator_equipment": 2,
+    "unit": 257,
+    "spell": 158,
+    "equipment": 93,
+    "hero_unit": 235,
+    "legendary": 106,
+    "exclusive_spell": 34,
+    "exclusive_equipment": 5,
+    "exclusive_unit": 3,
+    "battlefield": 57,
+    "rune": 48
+  },
+  "warnings": []
+}

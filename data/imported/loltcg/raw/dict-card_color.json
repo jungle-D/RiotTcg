@@ -1,0 +1,51 @@
+[
+  {
+    "id": 16,
+    "type": "card_color",
+    "code": "red",
+    "name": "红色",
+    "sort": 7
+  },
+  {
+    "id": 17,
+    "type": "card_color",
+    "code": "green",
+    "name": "绿色",
+    "sort": 6
+  },
+  {
+    "id": 18,
+    "type": "card_color",
+    "code": "blue",
+    "name": "蓝色",
+    "sort": 5
+  },
+  {
+    "id": 19,
+    "type": "card_color",
+    "code": "orange",
+    "name": "橙色",
+    "sort": 4
+  },
+  {
+    "id": 20,
+    "type": "card_color",
+    "code": "purple",
+    "name": "紫色",
+    "sort": 3
+  },
+  {
+    "id": 21,
+    "type": "card_color",
+    "code": "yellow",
+    "name": "黄色",
+    "sort": 2
+  },
+  {
+    "id": 22,
+    "type": "card_color",
+    "code": "colorless",
+    "name": "无",
+    "sort": 1
+  }
+]

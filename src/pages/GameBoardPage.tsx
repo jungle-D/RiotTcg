@@ -7,9 +7,11 @@ import heroCards from '../data/cards.hero.json'
 import legendCards from '../data/cards.legend.json'
 import mainCards from '../data/cards.main.json'
 import runeCards from '../data/cards.rune.json'
-import type { BaseCard, MainCard } from '../types/cards'
-import type { ActionMode, GameCardInstance, GameSession, ZoneId } from '../types/game'
+import type { BaseCard, MainCard, RuneCard } from '../types/cards'
+import type { ActionMode, GameCardInstance, GameSession, RuneColor, ZoneId } from '../types/game'
 import {
+  adjustMana,
+  adjustRuneEnergy,
   adjustScore,
   clearLookTarget,
   confirmDiscard,
@@ -38,7 +40,7 @@ import './GameBoardPage.css'
 const typedMainCards = mainCards as MainCard[]
 const typedLegendCards = legendCards as BaseCard[]
 const typedHeroCards = heroCards as BaseCard[]
-const typedRuneCards = runeCards as BaseCard[]
+const typedRuneCards = runeCards as RuneCard[]
 const typedBattlefieldCards = battlefieldCards as BaseCard[]
 
 const cardCatalog = new Map<string, BaseCard>()
@@ -92,6 +94,9 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
     game.turnPhase === 'diceRoll' &&
     game.playerBattlefieldChoice !== null &&
     game.opponentBattlefieldChoice !== null &&
+    game.openingHandsReady &&
+    game.playerMulliganDone &&
+    game.opponentMulliganDone &&
     game.playerDice === null
 
   const handleAction = useCallback((mode: ActionMode) => {
@@ -145,7 +150,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
       return new Set<ZoneId>(['mainDeck', 'runeDeck', 'discard'])
     }
     if (game.actionMode === 'look') {
-      return new Set<ZoneId>(['mainDeck', 'discard'])
+      return new Set<ZoneId>(['discard'])
     }
     if (game.actionMode === 'move' && game.moveSourceInstanceId) {
       return new Set<ZoneId>(['base', 'battlefieldA', 'battlefieldB'])
@@ -157,6 +162,33 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
     (instanceId: string) => isCardSelected(game, instanceId),
     [game],
   )
+  const runeColors: RuneColor[] = ['red', 'blue', 'green', 'purple']
+  const runeColorLabel: Record<RuneColor, string> = {
+    red: '红',
+    blue: '蓝',
+    green: '绿',
+    purple: '紫',
+  }
+  const runeColorById = useMemo(
+    () =>
+      new Map<string, RuneColor>(
+        typedRuneCards.map((card) => [card.id, card.color]),
+      ),
+    [],
+  )
+  const activeRuneColors = useMemo(() => {
+    const colorSet = new Set<RuneColor>()
+    for (const [cardId, count] of Object.entries(session.deckState.runeDeck)) {
+      if (count <= 0) {
+        continue
+      }
+      const color = runeColorById.get(cardId)
+      if (color) {
+        colorSet.add(color)
+      }
+    }
+    return [...colorSet]
+  }, [session.deckState.runeDeck, runeColorById])
 
   return (
     <main className="game-board">
@@ -328,7 +360,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
         </div>
       </section>
 
-      <section className="top-zones">
+      <section className="player-board">
         <ZonePanel
           zoneId="legend"
           title="Legend 传奇区"
@@ -336,6 +368,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           getCardMeta={getCardMeta}
           onCardClick={handleCardClick}
           isCardSelected={isSelected}
+          className="zone-slot-fixed zone-legend"
         />
         <ZonePanel
           zoneId="hero"
@@ -344,15 +377,18 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           getCardMeta={getCardMeta}
           onCardClick={handleCardClick}
           isCardSelected={isSelected}
+          className="zone-slot-fixed zone-hero"
         />
         <ZonePanel
-          zoneId="runeDeck"
-          title="符文堆"
-          cards={game.zones.runeDeck}
+          zoneId="base"
+          title="基地区"
+          cards={game.zones.base}
           getCardMeta={getCardMeta}
-          faceDown
-          highlight={zoneHighlight.has('runeDeck')}
-          onZoneClick={() => handleZoneClick('runeDeck')}
+          highlight={zoneHighlight.has('base')}
+          onZoneClick={() => handleZoneClick('base')}
+          onCardClick={handleCardClick}
+          isCardSelected={isSelected}
+          className="zone-slot-base"
         />
         <ZonePanel
           zoneId="mainDeck"
@@ -362,43 +398,83 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           faceDown
           highlight={zoneHighlight.has('mainDeck')}
           onZoneClick={() => handleZoneClick('mainDeck')}
+          className="zone-slot-fixed zone-main-deck"
         />
-      </section>
-
-      <ZonePanel
-        zoneId="base"
-        title="基地区"
-        cards={game.zones.base}
-        getCardMeta={getCardMeta}
-        highlight={zoneHighlight.has('base')}
-        onZoneClick={() => handleZoneClick('base')}
-        onCardClick={handleCardClick}
-        isCardSelected={isSelected}
-        className="field-zone"
-      />
-
-      <ZonePanel
-        zoneId="runeBoard"
-        title="符文展示区"
-        cards={game.zones.runeBoard}
-        getCardMeta={getCardMeta}
-        onCardClick={handleCardClick}
-        isCardSelected={isSelected}
-        className="field-zone"
-      />
-
-      <ZonePanel
-        zoneId="hand"
-        title="手牌区"
-        cards={game.zones.hand}
-        getCardMeta={getCardMeta}
-        highlight={zoneHighlight.has('hand')}
-        onZoneClick={() => handleZoneClick('hand')}
-        onCardClick={handleCardClick}
-        isCardSelected={isSelected}
-      />
-
-      <section className="bottom-row">
+        <ZonePanel
+          zoneId="runeDeck"
+          title="符文堆"
+          cards={game.zones.runeDeck}
+          getCardMeta={getCardMeta}
+          faceDown
+          highlight={zoneHighlight.has('runeDeck')}
+          onZoneClick={() => handleZoneClick('runeDeck')}
+          className="zone-slot-fixed zone-rune-deck"
+        />
+        <ZonePanel
+          zoneId="runeBoard"
+          title={
+            <span className="rune-board-title">
+              符文展示区
+              <span className="rune-resource-group">
+                <span className="rune-resource">法力 {game.mana}</span>
+                <button
+                  type="button"
+                  className="btn rune-adjust-btn"
+                  onClick={(event) => {
+                    event.stopPropagation()
+                    setGame((prev) => adjustMana(prev, -1))
+                  }}
+                  aria-label="法力减少1"
+                >
+                  −
+                </button>
+                <button
+                  type="button"
+                  className="btn rune-adjust-btn"
+                  onClick={(event) => {
+                    event.stopPropagation()
+                    setGame((prev) => adjustMana(prev, 1))
+                  }}
+                  aria-label="法力增加1"
+                >
+                  +
+                </button>
+              </span>
+              {(activeRuneColors.length > 0 ? activeRuneColors : runeColors).map((color) => (
+                <span key={color} className="rune-resource-group">
+                  <span className="rune-resource">{runeColorLabel[color]}符能 {game.runeEnergy[color]}</span>
+                  <button
+                    type="button"
+                    className="btn rune-adjust-btn"
+                    onClick={(event) => {
+                      event.stopPropagation()
+                      setGame((prev) => adjustRuneEnergy(prev, color, -1))
+                    }}
+                    aria-label={`${runeColorLabel[color]}符能减少1`}
+                  >
+                    −
+                  </button>
+                  <button
+                    type="button"
+                    className="btn rune-adjust-btn"
+                    onClick={(event) => {
+                      event.stopPropagation()
+                      setGame((prev) => adjustRuneEnergy(prev, color, 1))
+                    }}
+                    aria-label={`${runeColorLabel[color]}符能增加1`}
+                  >
+                    +
+                  </button>
+                </span>
+              ))}
+            </span>
+          }
+          cards={game.zones.runeBoard}
+          getCardMeta={getCardMeta}
+          onCardClick={handleCardClick}
+          isCardSelected={isSelected}
+          className="zone-slot-rune-board"
+        />
         <ZonePanel
           zoneId="discard"
           title="废牌堆"
@@ -408,6 +484,21 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           onZoneClick={() => handleZoneClick('discard')}
           onCardClick={handleCardClick}
           isCardSelected={isSelected}
+          className="zone-slot-fixed zone-discard"
+        />
+      </section>
+
+      <section className="player-bottom-row">
+        <ZonePanel
+          zoneId="hand"
+          title="手牌区"
+          cards={game.zones.hand}
+          getCardMeta={getCardMeta}
+          highlight={zoneHighlight.has('hand')}
+          onZoneClick={() => handleZoneClick('hand')}
+          onCardClick={handleCardClick}
+          isCardSelected={isSelected}
+          className="zone-slot-hand"
         />
         <ActionBar
           actionMode={game.actionMode}
@@ -429,7 +520,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
 
       <LookPileModal
         open={lookOpen}
-        title={game.lookTargetZone === 'mainDeck' ? '主牌堆' : '废牌堆'}
+        title="废牌堆"
         cards={game.lookTargetZone ? game.zones[game.lookTargetZone] : []}
         getCardMeta={getCardMeta}
         onClose={() => setGame((prev) => clearLookTarget(prev))}

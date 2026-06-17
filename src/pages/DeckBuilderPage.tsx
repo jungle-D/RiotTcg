@@ -1,12 +1,17 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import type { ChangeEvent } from 'react'
 import CardSelectModal from '../components/CardSelectModal'
 import DeckSectionCard from '../components/DeckSectionCard'
 import JoinRoomModal from '../components/game/JoinRoomModal'
-import battlefieldCards from '../data/cards.battlefield.json'
-import heroCards from '../data/cards.hero.json'
-import legendCards from '../data/cards.legend.json'
-import mainCards from '../data/cards.main.json'
-import runeCards from '../data/cards.rune.json'
+import battlefieldsData from '../../data/imported/loltcg/normalized/battlefields.json'
+import equipmentData from '../../data/imported/loltcg/normalized/equipment.json'
+import exclusivesData from '../../data/imported/loltcg/normalized/exclusives.json'
+import heroesData from '../../data/imported/loltcg/normalized/heroes.json'
+import legendsData from '../../data/imported/loltcg/normalized/legends.json'
+import legendHeroMappingData from '../../data/imported/loltcg/normalized/legend2hero.json'
+import runesData from '../../data/imported/loltcg/normalized/runes.json'
+import spellsData from '../../data/imported/loltcg/normalized/spells.json'
+import unitsData from '../../data/imported/loltcg/normalized/units.json'
 import type { BaseCard, DeckState, MainCard, RuneCard } from '../types/cards'
 import type { GameSession } from '../types/game'
 import { createRoom, joinRoom } from '../services/roomService'
@@ -26,13 +31,141 @@ import {
 } from '../utils/deckRules'
 import './DeckBuilderPage.css'
 
-const typedMainCards = mainCards as MainCard[]
-const typedRuneCards = runeCards as RuneCard[]
-const typedLegendCards = legendCards as BaseCard[]
-const typedHeroCards = heroCards as BaseCard[]
-const typedBattlefieldCards = battlefieldCards as BaseCard[]
+interface ImportedCard {
+  id: string
+  name: string
+  image: string
+  description: string
+  projectMainType?: string
+  official?: {
+    cardCategory?: string
+    cardColorList?: string[]
+  }
+}
+
+const importedLegends = legendsData as ImportedCard[]
+const importedHeroes = heroesData as ImportedCard[]
+const importedRunes = runesData as ImportedCard[]
+const importedBattlefields = battlefieldsData as ImportedCard[]
+const importedUnits = unitsData as ImportedCard[]
+const importedSpells = spellsData as ImportedCard[]
+const importedEquipment = equipmentData as ImportedCard[]
+const importedExclusives = exclusivesData as ImportedCard[]
+
+function toBaseCard(card: ImportedCard): BaseCard {
+  return {
+    id: card.id,
+    name: card.name,
+    image: card.image,
+    description: card.description,
+  }
+}
+
+function toMainType(card: ImportedCard): MainCard['type'] {
+  if (card.official?.cardCategory === 'hero_unit') return 'hero'
+  const explicit = card.projectMainType
+  if (explicit === 'spell') return 'spell'
+  if (explicit === 'hero') return 'hero'
+  if (explicit === 'wandering') return 'wandering'
+  if (explicit === 'defense') return 'defense'
+  if (explicit === 'equipment') return 'defense'
+  return 'unit'
+}
+
+function toMainCard(card: ImportedCard): MainCard {
+  return {
+    ...toBaseCard(card),
+    type: toMainType(card),
+  }
+}
+
+function toRuneCard(card: ImportedCard): RuneCard | null {
+  const colors = card.official?.cardColorList ?? []
+  const color = colors.find((item) => ['red', 'blue', 'green', 'purple'].includes(item))
+  if (!color) {
+    return null
+  }
+  return {
+    ...toBaseCard(card),
+    color: color as RuneCard['color'],
+  }
+}
 
 type ModalType = 'legend' | 'hero' | 'main' | 'rune' | 'battlefield' | null
+interface DeckExportPayload {
+  version: 1
+  exportedAt: string
+  deck: {
+    legendId: string | null
+    heroId: string | null
+    mainDeck: Record<string, number>
+    runeDeck: Record<string, number>
+    battlefield: string[]
+  }
+}
+const MAIN_DECK_DRAFT_STORAGE_KEY = 'riottcg.mainDeckDraft'
+const LEGEND_DRAFT_STORAGE_KEY = 'riottcg.legendDraftId'
+const HERO_DRAFT_STORAGE_KEY = 'riottcg.heroDraftId'
+const RUNE_DECK_DRAFT_STORAGE_KEY = 'riottcg.runeDeckDraft'
+const BATTLEFIELD_DRAFT_STORAGE_KEY = 'riottcg.battlefieldDraft'
+
+function loadDraftIdFromStorage(storageKey: string): string | null {
+  try {
+    const raw = window.localStorage.getItem(storageKey)
+    return raw && raw.trim().length > 0 ? raw : null
+  } catch {
+    return null
+  }
+}
+
+function loadMainDeckDraftFromStorage(): Record<string, number> {
+  try {
+    const raw = window.localStorage.getItem(MAIN_DECK_DRAFT_STORAGE_KEY)
+    if (!raw) {
+      return {}
+    }
+    const parsed = JSON.parse(raw) as Record<string, unknown>
+    const filtered = Object.fromEntries(
+      Object.entries(parsed).filter(
+        ([, value]) => Number.isFinite(value) && Number(value) > 0,
+      ),
+    )
+    return filtered as Record<string, number>
+  } catch {
+    return {}
+  }
+}
+
+function loadCounterDraftFromStorage(storageKey: string): Record<string, number> {
+  try {
+    const raw = window.localStorage.getItem(storageKey)
+    if (!raw) {
+      return {}
+    }
+    const parsed = JSON.parse(raw) as Record<string, unknown>
+    return Object.fromEntries(
+      Object.entries(parsed).filter(([, value]) => Number.isFinite(value) && Number(value) > 0),
+    ) as Record<string, number>
+  } catch {
+    return {}
+  }
+}
+
+function loadArrayDraftFromStorage(storageKey: string): string[] {
+  try {
+    const raw = window.localStorage.getItem(storageKey)
+    if (!raw) {
+      return []
+    }
+    const parsed = JSON.parse(raw) as unknown
+    if (!Array.isArray(parsed)) {
+      return []
+    }
+    return parsed.filter((item): item is string => typeof item === 'string' && item.length > 0)
+  } catch {
+    return []
+  }
+}
 
 function getCardName(cardId: string, cards: BaseCard[]): string {
   return cards.find((card) => card.id === cardId)?.name ?? cardId
@@ -40,9 +173,10 @@ function getCardName(cardId: string, cards: BaseCard[]): string {
 
 interface DeckBuilderPageProps {
   onEnterGame: (session: GameSession) => void
+  onOpenLegendHeroMapping: () => void
 }
 
-function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
+function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPageProps) {
   const [deckState, setDeckState] = useState<DeckState>({
     legend: null,
     hero: null,
@@ -52,20 +186,201 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
   })
   const [activeModal, setActiveModal] = useState<ModalType>(null)
 
-  const [draftLegendId, setDraftLegendId] = useState<string | null>(null)
-  const [draftHeroId, setDraftHeroId] = useState<string | null>(null)
-  const [draftMainDeck, setDraftMainDeck] = useState<Record<string, number>>({})
-  const [draftRuneDeck, setDraftRuneDeck] = useState<Record<string, number>>({})
-  const [draftBattlefield, setDraftBattlefield] = useState<string[]>([])
+  const [draftLegendId, setDraftLegendId] = useState<string | null>(() =>
+    loadDraftIdFromStorage(LEGEND_DRAFT_STORAGE_KEY),
+  )
+  const [legendDraftInitialized, setLegendDraftInitialized] = useState(
+    () => loadDraftIdFromStorage(LEGEND_DRAFT_STORAGE_KEY) !== null,
+  )
+  const [draftHeroId, setDraftHeroId] = useState<string | null>(() =>
+    loadDraftIdFromStorage(HERO_DRAFT_STORAGE_KEY),
+  )
+  const [heroDraftInitialized, setHeroDraftInitialized] = useState(
+    () => loadDraftIdFromStorage(HERO_DRAFT_STORAGE_KEY) !== null,
+  )
+  const [draftMainDeck, setDraftMainDeck] = useState<Record<string, number>>(() =>
+    loadMainDeckDraftFromStorage(),
+  )
+  const [mainDeckDraftInitialized, setMainDeckDraftInitialized] = useState(
+    () => Object.keys(loadMainDeckDraftFromStorage()).length > 0,
+  )
+  const [draftRuneDeck, setDraftRuneDeck] = useState<Record<string, number>>(() =>
+    loadCounterDraftFromStorage(RUNE_DECK_DRAFT_STORAGE_KEY),
+  )
+  const [runeDeckDraftInitialized, setRuneDeckDraftInitialized] = useState(
+    () => Object.keys(loadCounterDraftFromStorage(RUNE_DECK_DRAFT_STORAGE_KEY)).length > 0,
+  )
+  const [draftBattlefield, setDraftBattlefield] = useState<string[]>(() =>
+    loadArrayDraftFromStorage(BATTLEFIELD_DRAFT_STORAGE_KEY),
+  )
+  const [battlefieldDraftInitialized, setBattlefieldDraftInitialized] = useState(
+    () => loadArrayDraftFromStorage(BATTLEFIELD_DRAFT_STORAGE_KEY).length > 0,
+  )
   const [mainDeckError, setMainDeckError] = useState('')
   const [runeError, setRuneError] = useState('')
   const [battlefieldError, setBattlefieldError] = useState('')
   const [joinModalOpen, setJoinModalOpen] = useState(false)
   const [joinError, setJoinError] = useState('')
+  const [importError, setImportError] = useState('')
+
+  useEffect(() => {
+    try {
+      if (Object.keys(draftMainDeck).length === 0) {
+        window.localStorage.removeItem(MAIN_DECK_DRAFT_STORAGE_KEY)
+        return
+      }
+      window.localStorage.setItem(
+        MAIN_DECK_DRAFT_STORAGE_KEY,
+        JSON.stringify(draftMainDeck),
+      )
+    } catch {
+      // ignore storage write errors
+    }
+  }, [draftMainDeck])
+
+  useEffect(() => {
+    try {
+      if (!draftLegendId) {
+        window.localStorage.removeItem(LEGEND_DRAFT_STORAGE_KEY)
+        return
+      }
+      window.localStorage.setItem(LEGEND_DRAFT_STORAGE_KEY, draftLegendId)
+    } catch {
+      // ignore storage write errors
+    }
+  }, [draftLegendId])
+
+  useEffect(() => {
+    try {
+      if (!draftHeroId) {
+        window.localStorage.removeItem(HERO_DRAFT_STORAGE_KEY)
+        return
+      }
+      window.localStorage.setItem(HERO_DRAFT_STORAGE_KEY, draftHeroId)
+    } catch {
+      // ignore storage write errors
+    }
+  }, [draftHeroId])
+
+  useEffect(() => {
+    try {
+      if (Object.keys(draftRuneDeck).length === 0) {
+        window.localStorage.removeItem(RUNE_DECK_DRAFT_STORAGE_KEY)
+        return
+      }
+      window.localStorage.setItem(RUNE_DECK_DRAFT_STORAGE_KEY, JSON.stringify(draftRuneDeck))
+    } catch {
+      // ignore storage write errors
+    }
+  }, [draftRuneDeck])
+
+  useEffect(() => {
+    try {
+      if (draftBattlefield.length === 0) {
+        window.localStorage.removeItem(BATTLEFIELD_DRAFT_STORAGE_KEY)
+        return
+      }
+      window.localStorage.setItem(BATTLEFIELD_DRAFT_STORAGE_KEY, JSON.stringify(draftBattlefield))
+    } catch {
+      // ignore storage write errors
+    }
+  }, [draftBattlefield])
+
+  const legendHeroMapping = legendHeroMappingData.mapping as Record<string, string[]>
+  const isLegendHeroMappingEnabled =
+    String(import.meta.env.VITE_ENABLE_LEGEND_HERO_MAPPING ?? '').toLowerCase() === 'true'
+  const typedLegendCards = useMemo(() => importedLegends.map(toBaseCard), [])
+  const typedHeroCards = useMemo(() => importedHeroes.map(toBaseCard), [])
+  const typedBattlefieldCards = useMemo(() => importedBattlefields.map(toBaseCard), [])
+
+  const legendColorMap = useMemo(() => {
+    const map = new Map<string, Set<string>>()
+    for (const legend of importedLegends) {
+      map.set(legend.id, new Set(legend.official?.cardColorList ?? []))
+    }
+    return map
+  }, [])
+
+  const selectedLegendColors = useMemo(
+    () => (deckState.legend ? legendColorMap.get(deckState.legend.id) ?? new Set<string>() : new Set<string>()),
+    [deckState.legend, legendColorMap],
+  )
+
+  const allowByLegendColors = (colors: string[]): boolean => {
+    if (colors.includes('colorless')) {
+      return true
+    }
+    if (selectedLegendColors.size === 0) {
+      return false
+    }
+    return colors.some((color) => selectedLegendColors.has(color))
+  }
+
+  const mainDeckCandidates = useMemo(() => {
+    const source = [
+      ...importedUnits,
+      ...importedSpells,
+      ...importedEquipment,
+      ...importedHeroes,
+      ...importedExclusives,
+    ]
+    return source
+      .filter((card) => {
+        const category = card.official?.cardCategory ?? ''
+        if (
+          category === 'legendary' ||
+          category === 'rune' ||
+          category === 'battlefield' ||
+          category.startsWith('indicator_')
+        ) {
+          return false
+        }
+        const colors = card.official?.cardColorList ?? []
+        if (category.startsWith('exclusive_')) {
+          const nonColorless = colors.filter((color) => color !== 'colorless')
+          if (nonColorless.length === 0) {
+            return true
+          }
+          if (selectedLegendColors.size === 0) {
+            return false
+          }
+          return nonColorless.every((color) => selectedLegendColors.has(color))
+        }
+        return allowByLegendColors(colors)
+      })
+      .map(toMainCard)
+  }, [
+    selectedLegendColors,
+  ])
+
+  const typedRuneCards = useMemo(
+    () =>
+      importedRunes
+        .map(toRuneCard)
+        .filter((card): card is RuneCard => card !== null)
+        .filter((card) => selectedLegendColors.has(card.color)),
+    [selectedLegendColors],
+  )
+
+  const typedMainCards = useMemo(() => mainDeckCandidates, [mainDeckCandidates])
+  const legendById = useMemo(
+    () => new Map(typedLegendCards.map((card) => [card.id, card])),
+    [typedLegendCards],
+  )
+  const heroById = useMemo(
+    () => new Map(typedHeroCards.map((card) => [card.id, card])),
+    [typedHeroCards],
+  )
+  const mainCardIdSet = useMemo(() => new Set(typedMainCards.map((card) => card.id)), [typedMainCards])
+  const runeCardIdSet = useMemo(() => new Set(typedRuneCards.map((card) => card.id)), [typedRuneCards])
+  const battlefieldCardIdSet = useMemo(
+    () => new Set(typedBattlefieldCards.map((card) => card.id)),
+    [typedBattlefieldCards],
+  )
 
   const validation = useMemo(
-    () => validateDeck(deckState, typedMainCards, typedRuneCards),
-    [deckState],
+    () => validateDeck(deckState, typedMainCards, typedRuneCards, legendHeroMapping),
+    [deckState, legendHeroMapping],
   )
 
   const deckComplete = useMemo(
@@ -102,35 +417,51 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
 
   const heroCandidates = useMemo(() => {
     if (!deckState.legend) {
-      return typedHeroCards
+      return []
     }
-    return typedHeroCards.filter((hero) => hero.name === deckState.legend?.name)
-  }, [deckState.legend])
+    const allowedIds = legendHeroMapping[deckState.legend.id] ?? []
+    return typedHeroCards.filter((hero) => allowedIds.includes(hero.id))
+  }, [deckState.legend, legendHeroMapping])
 
   const openLegendModal = () => {
-    setDraftLegendId(deckState.legend?.id ?? null)
+    if (!legendDraftInitialized) {
+      setDraftLegendId(deckState.legend?.id ?? null)
+      setLegendDraftInitialized(true)
+    }
     setActiveModal('legend')
   }
 
   const openHeroModal = () => {
-    setDraftHeroId(deckState.hero?.id ?? null)
+    if (!heroDraftInitialized) {
+      setDraftHeroId(deckState.hero?.id ?? null)
+      setHeroDraftInitialized(true)
+    }
     setActiveModal('hero')
   }
 
   const openMainDeckModal = () => {
-    setDraftMainDeck(deckState.mainDeck)
+    if (!mainDeckDraftInitialized) {
+      setDraftMainDeck(deckState.mainDeck)
+      setMainDeckDraftInitialized(true)
+    }
     setMainDeckError('')
     setActiveModal('main')
   }
 
   const openRuneModal = () => {
-    setDraftRuneDeck(deckState.runeDeck)
+    if (!runeDeckDraftInitialized) {
+      setDraftRuneDeck(deckState.runeDeck)
+      setRuneDeckDraftInitialized(true)
+    }
     setRuneError('')
     setActiveModal('rune')
   }
 
   const openBattlefieldModal = () => {
-    setDraftBattlefield(deckState.battlefield)
+    if (!battlefieldDraftInitialized) {
+      setDraftBattlefield(deckState.battlefield)
+      setBattlefieldDraftInitialized(true)
+    }
     setBattlefieldError('')
     setActiveModal('battlefield')
   }
@@ -138,22 +469,31 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
   const handleLegendConfirm = () => {
     const nextLegend = typedLegendCards.find((card) => card.id === draftLegendId) ?? null
     setDeckState((prev) => {
-      const shouldClearHero = prev.hero && nextLegend && prev.hero.name !== nextLegend.name
+      const shouldClearHero =
+        prev.hero && nextLegend && !(legendHeroMapping[nextLegend.id] ?? []).includes(prev.hero.id)
       return {
         ...prev,
         legend: nextLegend,
         hero: shouldClearHero ? null : prev.hero,
       }
     })
+    setDraftLegendId(null)
+    setLegendDraftInitialized(false)
     setActiveModal(null)
   }
 
   const handleHeroConfirm = () => {
     const nextHero = typedHeroCards.find((card) => card.id === draftHeroId) ?? null
-    if (nextHero && deckState.legend && nextHero.name !== deckState.legend.name) {
+    if (
+      nextHero &&
+      deckState.legend &&
+      !(legendHeroMapping[deckState.legend.id] ?? []).includes(nextHero.id)
+    ) {
       return
     }
     setDeckState((prev) => ({ ...prev, hero: nextHero }))
+    setDraftHeroId(null)
+    setHeroDraftInitialized(false)
     setActiveModal(null)
   }
 
@@ -207,7 +547,12 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
       ...deckState,
       mainDeck: draftMainDeck,
     }
-    const candidateValidation = validateDeck(candidate, typedMainCards, typedRuneCards)
+    const candidateValidation = validateDeck(
+      candidate,
+      typedMainCards,
+      typedRuneCards,
+      legendHeroMapping,
+    )
 
     if (candidateValidation.mainDeckTotal !== MAIN_DECK_TARGET) {
       setMainDeckError(`主牌堆需要 ${MAIN_DECK_TARGET} 张，当前 ${candidateValidation.mainDeckTotal} 张。`)
@@ -227,6 +572,8 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
     }
 
     setDeckState((prev) => ({ ...prev, mainDeck: draftMainDeck }))
+    setDraftMainDeck({})
+    setMainDeckDraftInitialized(false)
     setActiveModal(null)
   }
 
@@ -243,6 +590,8 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
       return
     }
     setDeckState((prev) => ({ ...prev, runeDeck: draftRuneDeck }))
+    setDraftRuneDeck({})
+    setRuneDeckDraftInitialized(false)
     setActiveModal(null)
   }
 
@@ -264,6 +613,8 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
       return
     }
     setDeckState((prev) => ({ ...prev, battlefield: draftBattlefield }))
+    setDraftBattlefield([])
+    setBattlefieldDraftInitialized(false)
     setActiveModal(null)
   }
 
@@ -294,12 +645,99 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
     onEnterGame({ deckState, roomId: roomId.trim(), role: 'guest' })
   }
 
+  const handleExportDeck = () => {
+    const payload: DeckExportPayload = {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      deck: {
+        legendId: deckState.legend?.id ?? null,
+        heroId: deckState.hero?.id ?? null,
+        mainDeck: deckState.mainDeck,
+        runeDeck: deckState.runeDeck,
+        battlefield: deckState.battlefield,
+      },
+    }
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `deck-${Date.now()}.json`
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  const handleImportDeck = (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (!file) {
+      return
+    }
+    const reader = new FileReader()
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(String(reader.result)) as DeckExportPayload
+        const incoming = parsed.deck
+        if (!incoming) {
+          throw new Error('文件缺少 deck 字段')
+        }
+        const legend = incoming.legendId ? legendById.get(incoming.legendId) ?? null : null
+        const hero = incoming.heroId ? heroById.get(incoming.heroId) ?? null : null
+        const mainDeck = Object.fromEntries(
+          Object.entries(incoming.mainDeck ?? {}).filter(
+            ([id, count]) => mainCardIdSet.has(id) && Number(count) > 0,
+          ),
+        )
+        const runeDeck = Object.fromEntries(
+          Object.entries(incoming.runeDeck ?? {}).filter(
+            ([id, count]) => runeCardIdSet.has(id) && Number(count) > 0,
+          ),
+        )
+        const battlefield = (incoming.battlefield ?? []).filter((id) => battlefieldCardIdSet.has(id))
+        setDeckState({
+          legend,
+          hero,
+          mainDeck,
+          runeDeck,
+          battlefield,
+        })
+        setImportError('')
+      } catch (error) {
+        setImportError(`导入失败：${error instanceof Error ? error.message : 'JSON 格式错误'}`)
+      } finally {
+        event.target.value = ''
+      }
+    }
+    reader.readAsText(file, 'utf8')
+  }
+
   return (
     <main className="deck-page">
       <header>
         <h1>卡组构建</h1>
         <p>先用本地 JSON 模拟数据打通流程，后续可切到联网获取数据。</p>
+        <button
+          type="button"
+          className="btn ghost"
+          onClick={onOpenLegendHeroMapping}
+          disabled={!isLegendHeroMappingEnabled}
+          title={
+            isLegendHeroMappingEnabled
+              ? '打开传奇-英雄映射配置'
+              : '默认禁用，可通过 VITE_ENABLE_LEGEND_HERO_MAPPING=true 启用'
+          }
+        >
+          配置传奇-英雄映射
+        </button>
       </header>
+      <section className="deck-file-actions">
+        <button type="button" className="btn" onClick={handleExportDeck}>
+          保存当前卡组 JSON
+        </button>
+        <label className="btn ghost deck-import-btn">
+          导入卡组 JSON
+          <input type="file" accept="application/json,.json" onChange={handleImportDeck} />
+        </label>
+      </section>
+      {importError ? <p className="join-error">{importError}</p> : null}
 
       <section className="section-grid">
         <DeckSectionCard
@@ -313,7 +751,7 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
 
         <DeckSectionCard
           title="Hero 英雄单位"
-          subtitle="只能选择与传奇卡同名的英雄卡。"
+          subtitle="仅可选择当前传奇映射的英雄单位。"
           valueText={deckState.hero ? `已选：${deckState.hero.name}` : '尚未选择'}
           statusText={
             !deckState.hero
@@ -329,7 +767,7 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
 
         <DeckSectionCard
           title="主牌堆"
-          subtitle="选择 39 张；英雄单位最多 5；单卡最多 3。"
+          subtitle="仅传奇支持颜色，且不含传奇/符文/战场/指示物。"
           valueText={mainDeckSummary}
           statusText={validation.isMainDeckValid ? '规则通过' : '未达标'}
           statusType={validation.isMainDeckValid ? 'ok' : 'warn'}
@@ -338,7 +776,7 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
 
         <DeckSectionCard
           title="符文堆"
-          subtitle={`最多 ${RUNE_COLOR_LIMIT} 种颜色，合计 ${RUNE_DECK_TARGET} 张。`}
+          subtitle="仅可选择传奇支持颜色的符文。"
           valueText={runeSummary}
           statusText={validation.isRuneValid ? '规则通过' : '未达标'}
           statusType={validation.isRuneValid ? 'ok' : 'warn'}
@@ -393,7 +831,7 @@ function DeckBuilderPage({ onEnterGame }: DeckBuilderPageProps) {
         selectedId={draftHeroId}
         helperText={
           deckState.legend
-            ? `当前传奇为 ${deckState.legend.name}，仅展示同名英雄。`
+            ? `当前传奇为 ${deckState.legend.name}，仅展示已映射英雄。`
             : '请先选择传奇卡。'
         }
         onSingleChoose={setDraftHeroId}

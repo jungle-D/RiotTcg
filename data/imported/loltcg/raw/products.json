@@ -1,0 +1,152 @@
+[
+  {
+    "id": 24,
+    "code": "UNL（英雄预组 薇古丝）",
+    "name": "破限系列 英雄预组 薇古丝",
+    "productType": 1,
+    "saleTime": "2026-04-10",
+    "image": "https://cdn.playloltcg.com/lol/2026/04/2026-04-01/4055b944ae1643e38a4a7e2ecb3d072f.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 23,
+    "code": "UNL（英雄预组 蔚）",
+    "name": "破限系列 英雄预组 蔚",
+    "productType": 1,
+    "saleTime": "2026-04-10",
+    "image": "https://cdn.playloltcg.com/lol/2026/04/2026-04-01/6440153ef5774c69a88f28025185bdcf.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 22,
+    "code": "UNL(标准补充包)",
+    "name": "破限系列 基础补充包",
+    "productType": 0,
+    "saleTime": "2026-04-10",
+    "image": "https://cdn.playloltcg.com/lol/2026/04/2026-04-01/ba1c860650d848afa8c3c20e2bdefb70.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 21,
+    "code": "UNL(进阶补充包)",
+    "name": "破限系列 进阶补充包",
+    "productType": 0,
+    "saleTime": "2026-04-10",
+    "image": "https://cdn.playloltcg.com/lol/2026/04/2026-04-01/a45608e7d9e344b7b110937a5b2c2fe3.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 16,
+    "code": "SFD(进阶补充包)",
+    "name": "铸魂淬炼 进阶补充包",
+    "productType": 0,
+    "saleTime": "2025-12-12",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/8c6744c72d394abc9f9436c3e64279a4.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 15,
+    "code": "SFD(标准补充包)",
+    "name": "铸魂淬炼 标准补充包",
+    "productType": 0,
+    "saleTime": "2025-12-12",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/98da0c8159e648a689a6b12a9eb27a59.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 14,
+    "code": "SFD(英雄预组 菲奥娜)",
+    "name": "铸魂淬炼 英雄预组 菲奥娜",
+    "productType": 1,
+    "saleTime": "2025-12-12",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/f0a76155351d439d8ae5d80c2036784c.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 13,
+    "code": "SFD(英雄预组 兰博)",
+    "name": "铸魂淬炼 英雄预组 兰博",
+    "productType": 1,
+    "saleTime": "2025-12-12",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/018db1a349f24b838104c7e2e902fd06.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 11,
+    "code": "OGN(进阶补充包)",
+    "name": "起源 进阶补充包",
+    "productType": 0,
+    "saleTime": "2025-08-01",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/1d1649de6b924654ab131a3dbcb912d1.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 10,
+    "code": "OGN(标准补充包)",
+    "name": "起源 标准补充包",
+    "productType": 0,
+    "saleTime": "2025-08-01",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/7c9f3685cbfb4cce8625b017e6d1d8ac.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 9,
+    "code": "OGN(英雄预组 李青)",
+    "name": "起源 英雄预组 李青",
+    "productType": 1,
+    "saleTime": "2025-08-01",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/7279c02a107e437d95a73c2bffa5a995.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 8,
+    "code": "OGN(英雄预组 维克托)",
+    "name": "起源 英雄预组 维克托",
+    "productType": 1,
+    "saleTime": "2025-08-01",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/4b2d58e3a976413fb635abcefcdc3744.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 7,
+    "code": "OGN(英雄预组 金克丝)",
+    "name": "起源 英雄预组 金克丝",
+    "productType": 1,
+    "saleTime": "2025-08-01",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/16beac5a3e2a45e4b28e90c5c4c2b4ad.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 6,
+    "code": "OGS",
+    "name": "起源 试炼之地",
+    "productType": 2,
+    "saleTime": "2025-08-01",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/12f1bf237b0c4ed9a843eb4018a0016d.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  },
+  {
+    "id": 5,
+    "code": "ARC",
+    "name": " 双城之战主题礼盒",
+    "productType": 2,
+    "saleTime": "2024-12-13",
+    "image": "https://cdn.playloltcg.com/lol/2025/12/2025-12-09/0d20ea83e9ee4cae932e0e354de10b01.png",
+    "buyUrl": "",
+    "isRelatedCard": true
+  }
+]

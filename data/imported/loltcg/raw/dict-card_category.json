@@ -1,0 +1,93 @@
+[
+  {
+    "id": 3,
+    "type": "card_category",
+    "code": "legendary",
+    "name": "传奇",
+    "sort": 100
+  },
+  {
+    "id": 4,
+    "type": "card_category",
+    "code": "hero_unit",
+    "name": "英雄单位",
+    "sort": 90
+  },
+  {
+    "id": 5,
+    "type": "card_category",
+    "code": "exclusive_unit",
+    "name": "专属单位",
+    "sort": 80
+  },
+  {
+    "id": 6,
+    "type": "card_category",
+    "code": "unit",
+    "name": "单位",
+    "sort": 70
+  },
+  {
+    "id": 7,
+    "type": "card_category",
+    "code": "indicator_unit",
+    "name": "指示物单位",
+    "sort": 60
+  },
+  {
+    "id": 40,
+    "type": "card_category",
+    "code": "exclusive_spell",
+    "name": "专属法术",
+    "sort": 50
+  },
+  {
+    "id": 8,
+    "type": "card_category",
+    "code": "spell",
+    "name": "法术",
+    "sort": 40
+  },
+  {
+    "id": 77,
+    "type": "card_category",
+    "code": "exclusive_equipment",
+    "name": "专属装备",
+    "sort": 35
+  },
+  {
+    "id": 83,
+    "type": "card_category",
+    "code": "indicator_equipment",
+    "name": "指示物装备",
+    "sort": 33
+  },
+  {
+    "id": 9,
+    "type": "card_category",
+    "code": "equipment",
+    "name": "装备",
+    "sort": 30
+  },
+  {
+    "id": 85,
+    "type": "card_category",
+    "code": "indicator_battlefield",
+    "name": "指示物战场",
+    "sort": 25
+  },
+  {
+    "id": 10,
+    "type": "card_category",
+    "code": "battlefield",
+    "name": "战场",
+    "sort": 20
+  },
+  {
+    "id": 11,
+    "type": "card_category",
+    "code": "rune",
+    "name": "符文",
+    "sort": 10
+  }
+]
