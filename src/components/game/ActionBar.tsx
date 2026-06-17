@@ -11,10 +11,13 @@ interface ActionBarProps {
   onConfirmDiscard: () => void
   onConfirmTap: () => void
   onConfirmUntap: () => void
+  onConfirmRecycle: () => void
   onFinishMulligan: () => void
   onRollDice: () => void
+  onUndo: () => void
   selectedActionCount: number
   canRollDice: boolean
+  canUndo: boolean
 }
 
 const ACTIONS: { mode: NonNullable<ActionMode>; label: string }[] = [
@@ -38,20 +41,31 @@ function ActionBar({
   onConfirmDiscard,
   onConfirmTap,
   onConfirmUntap,
+  onConfirmRecycle,
   onFinishMulligan,
   onRollDice,
+  onUndo,
   selectedActionCount,
   canRollDice,
+  canUndo,
 }: ActionBarProps) {
   const mainPhase = turnPhase === 'main' && isPlayerTurn
   const mulliganPhase = turnPhase === 'mulligan' && isPlayerTurn
   const dicePhase = turnPhase === 'diceRoll'
+  const showUndo =
+    turnPhase !== 'waitingOpponent' && turnPhase !== 'battlefieldSelect'
 
   return (
     <footer className="action-bar">
+      {showUndo ? (
+        <button type="button" className="btn ghost undo-btn" onClick={onUndo} disabled={!canUndo}>
+          撤回上一步
+        </button>
+      ) : null}
+
       {dicePhase ? (
         <div className="dice-panel">
-          <p className="dice-hint">双方完成战场选择与调度后，投掷骰子决定先手。</p>
+          <p className="dice-hint">双方完成调度后，投掷骰子决定先手。</p>
           {playerDice !== null && opponentDice !== null ? (
             <p className="dice-result">
               你的点数：{playerDice} · 对手点数：{opponentDice}
@@ -104,6 +118,11 @@ function ActionBar({
           {actionMode === 'untap' && selectedActionCount > 0 ? (
             <button type="button" className="btn primary" onClick={onConfirmUntap}>
               确认回正（{selectedActionCount}）
+            </button>
+          ) : null}
+          {actionMode === 'recycle' && selectedActionCount > 0 ? (
+            <button type="button" className="btn primary" onClick={onConfirmRecycle}>
+              确认回收（{selectedActionCount}）
             </button>
           ) : null}
         </>

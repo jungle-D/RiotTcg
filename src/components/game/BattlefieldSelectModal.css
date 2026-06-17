@@ -1,0 +1,86 @@
+.battlefield-select-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 6, 12, 0.78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  z-index: 110;
+}
+
+.battlefield-select-modal {
+  --bf-card-long: 280px;
+  --bf-ar-w: 88;
+  --bf-ar-h: 118;
+  --bf-stage-w: calc(var(--bf-card-long) * var(--bf-ar-h) / var(--bf-ar-w));
+  width: min(1320px, 100%);
+  max-height: 92vh;
+  overflow: auto;
+  border: 1px solid #4a5f82;
+  border-radius: 16px;
+  background: #1c2433;
+  padding: 24px 28px 28px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.45);
+}
+
+.battlefield-select-modal h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #e8ecf1;
+}
+
+.battlefield-select-modal-hint {
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #2a3d5c;
+  border-left: 4px solid #6fa5ff;
+  color: #dce6f8;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.battlefield-select-modal-sub {
+  margin: 10px 0 20px;
+  color: #afb8ca;
+  font-size: 14px;
+}
+
+.battlefield-select-modal .battlefield-select-panel h4 {
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.battlefield-select-modal .battlefield-select-options {
+  gap: 40px;
+}
+
+.battlefield-select-modal .battlefield-select-option {
+  width: var(--bf-stage-w);
+}
+
+.battlefield-select-modal .battlefield-select-option:hover .battlefield-thumb-rotated {
+  filter: brightness(1.08);
+}
+
+.battlefield-select-modal .battlefield-thumb-stage {
+  --bf-card-long: 280px;
+  width: var(--bf-stage-w);
+  height: var(--bf-card-long);
+}
+
+.battlefield-select-modal .battlefield-select-name {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .battlefield-select-modal {
+    --bf-card-long: min(280px, 52vw);
+  }
+
+  .battlefield-select-modal .battlefield-select-options {
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+}

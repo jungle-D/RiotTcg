@@ -2,6 +2,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 24px;
+  --card-face-width: min(92%, 260px);
+  --card-face-aspect: 88 / 118;
 }
 
 .game-header {
@@ -28,6 +30,30 @@
   background: #243149;
   color: #dce6f8;
   font-size: 14px;
+}
+
+.status-bar-prompt {
+  background: #2a3d5c;
+  border-left: 4px solid #6fa5ff;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(111, 165, 255, 0.2);
+}
+
+@keyframes battlefield-prompt-pulse {
+  0%,
+  100% {
+    border-color: #6fa5ff;
+    box-shadow: 0 0 0 2px rgba(111, 165, 255, 0.25);
+  }
+  50% {
+    border-color: #8eb8ff;
+    box-shadow: 0 0 0 4px rgba(111, 165, 255, 0.4);
+  }
+}
+
+.battlefield-card-prompt {
+  border-color: #6fa5ff;
+  animation: battlefield-prompt-pulse 2s ease-in-out infinite;
 }
 
 .score-actions {
@@ -135,14 +161,14 @@
 
 .top-zones {
   display: grid;
-  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 12px;
 }
 
 .player-board {
   display: grid;
-  grid-template-columns: 250px 250px 1fr 250px;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 300px 300px 1fr 300px;
+  grid-template-rows: 380px 380px;
   grid-template-areas:
     'legend hero base mainDeck'
     'runeDeck runeBoard runeBoard discard';
@@ -151,22 +177,22 @@
 }
 
 .zone-slot-fixed {
-  width: 250px;
-  height: 300px;
-  min-height: 300px;
+  width: 300px;
+  height: 380px;
+  min-height: 380px;
   box-sizing: border-box;
 }
 
 .zone-slot-base {
   grid-area: base;
-  height: 300px;
-  min-height: 300px;
+  height: 380px;
+  min-height: 380px;
 }
 
 .zone-slot-rune-board {
   grid-area: runeBoard;
-  height: 300px;
-  min-height: 300px;
+  height: 380px;
+  min-height: 380px;
 }
 
 .zone-legend {
@@ -310,9 +336,16 @@
 }
 
 .zone-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+.zone-slot-hand .zone-cards {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 4px;
 }
 
 .pile-stack {
@@ -320,13 +353,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80px;
-  gap: 6px;
+  min-height: 96px;
+  gap: 8px;
+}
+
+.zone-pile .zone-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.zone-pile .pile-stack {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.zone-pile .pile-back {
+  width: var(--card-face-width);
+  aspect-ratio: var(--card-face-aspect);
+  height: auto;
+  max-height: calc(100% - 32px);
+  font-size: 16px;
 }
 
 .pile-back {
-  width: 72px;
-  height: 96px;
+  width: var(--card-face-width);
+  aspect-ratio: var(--card-face-aspect);
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,8 +398,9 @@
 }
 
 .game-card {
-  width: 100%;
-  max-width: 110px;
+  width: var(--card-face-width);
+  max-width: var(--card-face-width);
+  flex: 0 0 auto;
   border: 1px solid #4a5f82;
   border-radius: 8px;
   background: #101623;
@@ -352,11 +408,12 @@
   cursor: pointer;
   color: #e8ecf1;
   transition: transform 0.15s, border-color 0.15s;
-  justify-self: center;
 }
 
 .game-card img {
   width: 100%;
+  aspect-ratio: var(--card-face-aspect);
+  object-fit: contain;
   border-radius: 4px;
   display: block;
 }
@@ -364,7 +421,7 @@
 .game-card .card-label {
   display: block;
   margin-top: 4px;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -385,14 +442,39 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 96px;
-  font-size: 12px;
+  aspect-ratio: var(--card-face-aspect);
+  font-size: 13px;
   color: #9aabc4;
 }
 
 .battlefield-card .zone-panel {
   height: calc(100% - 28px);
   min-height: 0;
+}
+
+.battlefield-card:has(.battlefield-zone) {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.battlefield-card:has(.battlefield-select-panel) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.battlefield-card:has(.battlefield-opponent-panel) {
+  height: auto;
+  min-height: 300px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.action-bar .undo-btn {
+  align-self: flex-start;
+  margin-bottom: 4px;
 }
 
 .action-bar {

@@ -152,3 +152,51 @@ export function isDeckComplete(
     validation.isBattlefieldValid
   )
 }
+
+export function getDeckValidationMessages(
+  validation: DeckValidation,
+  state: DeckState,
+): string[] {
+  const messages: string[] = []
+
+  if (!state.legend) {
+    messages.push('传奇卡：尚未选择或导入的传奇 ID 无效')
+  }
+
+  if (!state.hero) {
+    messages.push('英雄单位：尚未选择或导入的英雄 ID 无效')
+  } else if (!validation.isHeroValid) {
+    messages.push('英雄单位：与当前传奇不匹配')
+  }
+
+  if (!validation.isMainDeckValid) {
+    if (validation.mainDeckTotal !== MAIN_DECK_TARGET) {
+      messages.push(`主牌堆：需要 ${MAIN_DECK_TARGET} 张，当前 ${validation.mainDeckTotal} 张`)
+    }
+    if (validation.mainDeckHeroCount > MAIN_DECK_HERO_LIMIT) {
+      messages.push(
+        `主牌堆：英雄单位最多 ${MAIN_DECK_HERO_LIMIT} 张，当前 ${validation.mainDeckHeroCount} 张`,
+      )
+    }
+    if (validation.mainDeckNameOverLimit.length > 0) {
+      messages.push(
+        `主牌堆：同名卡超过 ${MAIN_DECK_SAME_NAME_LIMIT} 张（${validation.mainDeckNameOverLimit.join('、')}）`,
+      )
+    }
+  }
+
+  if (!validation.isRuneValid) {
+    if (validation.runeTotal !== RUNE_DECK_TARGET) {
+      messages.push(`符文堆：需要 ${RUNE_DECK_TARGET} 张，当前 ${validation.runeTotal} 张`)
+    }
+    if (!validation.isRuneColorValid) {
+      messages.push(`符文堆：最多 ${RUNE_COLOR_LIMIT} 种颜色，当前 ${validation.runeColorCount} 种`)
+    }
+  }
+
+  if (!validation.isBattlefieldValid) {
+    messages.push(`战场区：需要 ${BATTLEFIELD_TARGET} 张，当前 ${validation.battlefieldTotal} 张`)
+  }
+
+  return messages
+}

@@ -1,60 +1,51 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import ActionBar from '../components/game/ActionBar'
+import BattlefieldOpponentPanel from '../components/game/BattlefieldOpponentPanel'
+import BattlefieldSelectModal from '../components/game/BattlefieldSelectModal'
+import BattlefieldZone from '../components/game/BattlefieldZone'
+import CardPreviewModal from '../components/game/CardPreviewModal'
 import LookPileModal from '../components/game/LookPileModal'
 import ZonePanel from '../components/game/ZonePanel'
-import battlefieldCards from '../data/cards.battlefield.json'
-import heroCards from '../data/cards.hero.json'
-import legendCards from '../data/cards.legend.json'
-import mainCards from '../data/cards.main.json'
-import runeCards from '../data/cards.rune.json'
-import type { BaseCard, MainCard, RuneCard } from '../types/cards'
-import type { ActionMode, GameCardInstance, GameSession, RuneColor, ZoneId } from '../types/game'
+import { getCardMeta as lookupCardMeta, getRuneColorById } from '../data/loltcgCatalog'
+import {
+  clearBattlefieldSync,
+  getBattlefieldSync,
+  getBattlefieldSyncStorageKey,
+  initBattlefieldSync,
+  publishBattlefieldChoice,
+} from '../services/gameSyncService'
+import type { BaseCard } from '../types/cards'
+import type { ActionMode, GameCardInstance, GameSession, GameState, RuneColor, ZoneId } from '../types/game'
 import {
   adjustMana,
   adjustRuneEnergy,
   adjustScore,
+  applyBattlefieldSync,
   clearLookTarget,
   confirmDiscard,
+  confirmRecycle,
   confirmTap,
   confirmUntap,
   endTurn,
+  findCardZone,
   finishMulligan,
   handleDrawFromZone,
   handleLookZone,
   handleMoveSelect,
   handleMoveToZone,
-  handleRecycle,
-  initGameFromDeck,
+  initGame,
   isCardSelected,
-  pickBattlefield,
+  pickPlayerBattlefield,
   rollForFirstPlayer,
   setActionMode,
   startOpponentTurnEnd,
   toggleDiscardSelect,
   toggleMulliganSelect,
+  toggleRecycleSelect,
   toggleTapSelect,
   toggleUntapSelect,
 } from '../utils/gameState'
 import './GameBoardPage.css'
-
-const typedMainCards = mainCards as MainCard[]
-const typedLegendCards = legendCards as BaseCard[]
-const typedHeroCards = heroCards as BaseCard[]
-const typedRuneCards = runeCards as RuneCard[]
-const typedBattlefieldCards = battlefieldCards as BaseCard[]
-
-const cardCatalog = new Map<string, BaseCard>()
-for (const card of [
-  ...typedLegendCards,
-  ...typedHeroCards,
-  ...typedMainCards,
-  ...typedRuneCards,
-]) {
-  cardCatalog.set(card.id, card)
-}
-for (const card of typedBattlefieldCards) {
-  cardCatalog.set(card.id, card)
-}
 
 interface GameBoardPageProps {
   session: GameSession
@@ -62,20 +53,99 @@ interface GameBoardPageProps {
 }
 
 function getCardMeta(card: GameCardInstance): BaseCard | null {
-  return cardCatalog.get(card.cardId) ?? null
+  return lookupCardMeta(card.cardId)
 }
 
-function getBattlefieldName(id: string | null): string {
-  if (!id) {
-    return '未选择'
+function findPlayerCard(state: GameState, instanceId: string): GameCardInstance | null {
+  const zone = findCardZone(state, instanceId)
+  if (!zone) {
+    return null
   }
-  return cardCatalog.get(id)?.name ?? id
+  return state.zones[zone].find((card) => card.instanceId === instanceId) ?? null
 }
 
 function GameBoardPage({ session, onBack }: GameBoardPageProps) {
   const [game, setGame] = useState(() =>
-    initGameFromDeck(session.deckState, session.roomId),
+    initGame(session.playerDeck, session.opponentDeck, session.roomId),
   )
+  const [history, setHistory] = useState<GameState[]>([])
+  const [previewCard, setPreviewCard] = useState<BaseCard | null>(null)
+  const skipHistoryRef = useRef(false)
+
+  const applyGame = useCallback((updater: (prev: GameState) => GameState) => {
+    setGame((prev) => {
+      if (!skipHistoryRef.current) {
+        setHistory((stack) => [...stack.slice(-49), prev])
+      }
+      skipHistoryRef.current = false
+      return updater(prev)
+    })
+  }, [])
+
+  const undo = useCallback(() => {
+    setHistory((stack) => {
+      const last = stack[stack.length - 1]
+      if (last) {
+        skipHistoryRef.current = true
+        setGame(last)
+      }
+      return stack.slice(0, -1)
+    })
+  }, [])
+
+  const handlePickPlayerBattlefield = useCallback(
+    (battlefieldId: string) => {
+      publishBattlefieldChoice(session.roomId, session.role, battlefieldId)
+      applyGame((prev) => {
+        const afterPick = pickPlayerBattlefield(prev, battlefieldId)
+        const sync = getBattlefieldSync(session.roomId)
+        if (!sync) {
+          return afterPick
+        }
+        return applyBattlefieldSync(afterPick, sync, session.role)
+      })
+    },
+    [applyGame, session.roomId, session.role],
+  )
+
+  const handleBack = useCallback(() => {
+    clearBattlefieldSync(session.roomId)
+    onBack()
+  }, [onBack, session.roomId])
+
+  useEffect(() => {
+    initBattlefieldSync(session.roomId)
+
+    const applyRemoteSync = () => {
+      const sync = getBattlefieldSync(session.roomId)
+      if (!sync) {
+        return
+      }
+      setGame((prev) => {
+        if (prev.turnPhase !== 'battlefieldSelect') {
+          return prev
+        }
+        skipHistoryRef.current = true
+        return applyBattlefieldSync(prev, sync, session.role)
+      })
+    }
+
+    applyRemoteSync()
+
+    const onStorage = (event: StorageEvent) => {
+      if (event.key === getBattlefieldSyncStorageKey(session.roomId)) {
+        applyRemoteSync()
+      }
+    }
+
+    window.addEventListener('storage', onStorage)
+    const timer = window.setInterval(applyRemoteSync, 400)
+
+    return () => {
+      window.removeEventListener('storage', onStorage)
+      window.clearInterval(timer)
+    }
+  }, [session.roomId, session.role])
 
   useEffect(() => {
     if (game.turnPhase !== 'waitingOpponent') {
@@ -83,6 +153,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
     }
 
     const timer = window.setTimeout(() => {
+      skipHistoryRef.current = true
       setGame((prev) => startOpponentTurnEnd(prev))
     }, 2000)
 
@@ -99,48 +170,69 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
     game.opponentMulliganDone &&
     game.playerDice === null
 
-  const handleAction = useCallback((mode: ActionMode) => {
-    setGame((prev) => setActionMode(prev, mode))
-  }, [])
+  const handleAction = useCallback(
+    (mode: ActionMode) => {
+      applyGame((prev) => setActionMode(prev, mode))
+    },
+    [applyGame],
+  )
 
-  const handleZoneClick = useCallback((zoneId: ZoneId) => {
-    setGame((prev) => {
-      if (prev.actionMode === 'draw') {
-        return handleDrawFromZone(prev, zoneId)
-      }
-      if (prev.actionMode === 'look') {
-        return handleLookZone(prev, zoneId)
-      }
-      if (prev.actionMode === 'move' && prev.moveSourceInstanceId) {
-        return handleMoveToZone(prev, zoneId)
-      }
-      return prev
-    })
-  }, [])
+  const handleZoneClick = useCallback(
+    (zoneId: ZoneId) => {
+      applyGame((prev) => {
+        if (prev.actionMode === 'draw') {
+          return handleDrawFromZone(prev, zoneId)
+        }
+        if (prev.actionMode === 'look') {
+          return handleLookZone(prev, zoneId)
+        }
+        if (prev.actionMode === 'move' && prev.moveSourceInstanceId) {
+          return handleMoveToZone(prev, zoneId)
+        }
+        return prev
+      })
+    },
+    [applyGame],
+  )
 
-  const handleCardClick = useCallback((instanceId: string) => {
-    setGame((prev) => {
-      if (prev.turnPhase === 'mulligan') {
-        return toggleMulliganSelect(prev, instanceId)
+  const handleCardClick = useCallback(
+    (instanceId: string) => {
+      let previewMeta: BaseCard | null = null
+
+      applyGame((prev) => {
+        if (prev.turnPhase === 'mulligan') {
+          return toggleMulliganSelect(prev, instanceId)
+        }
+        if (prev.actionMode === 'discard') {
+          return toggleDiscardSelect(prev, instanceId)
+        }
+        if (prev.actionMode === 'tap') {
+          return toggleTapSelect(prev, instanceId)
+        }
+        if (prev.actionMode === 'untap') {
+          return toggleUntapSelect(prev, instanceId)
+        }
+        if (prev.actionMode === 'move') {
+          return handleMoveSelect(prev, instanceId)
+        }
+        if (prev.actionMode === 'recycle') {
+          return toggleRecycleSelect(prev, instanceId)
+        }
+        if (prev.actionMode === null && prev.turnPhase === 'main') {
+          const card = findPlayerCard(prev, instanceId)
+          if (card) {
+            previewMeta = getCardMeta(card)
+          }
+        }
+        return prev
+      })
+
+      if (previewMeta) {
+        setPreviewCard(previewMeta)
       }
-      if (prev.actionMode === 'discard') {
-        return toggleDiscardSelect(prev, instanceId)
-      }
-      if (prev.actionMode === 'tap') {
-        return toggleTapSelect(prev, instanceId)
-      }
-      if (prev.actionMode === 'untap') {
-        return toggleUntapSelect(prev, instanceId)
-      }
-      if (prev.actionMode === 'move') {
-        return handleMoveSelect(prev, instanceId)
-      }
-      if (prev.actionMode === 'recycle') {
-        return handleRecycle(prev, instanceId)
-      }
-      return prev
-    })
-  }, [])
+    },
+    [applyGame],
+  )
 
   const zoneHighlight = useMemo(() => {
     if (!game.actionMode) {
@@ -162,6 +254,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
     (instanceId: string) => isCardSelected(game, instanceId),
     [game],
   )
+
   const runeColors: RuneColor[] = ['red', 'blue', 'green', 'purple']
   const runeColorLabel: Record<RuneColor, string> = {
     red: '红',
@@ -169,16 +262,10 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
     green: '绿',
     purple: '紫',
   }
-  const runeColorById = useMemo(
-    () =>
-      new Map<string, RuneColor>(
-        typedRuneCards.map((card) => [card.id, card.color]),
-      ),
-    [],
-  )
+  const runeColorById = useMemo(() => getRuneColorById(), [])
   const activeRuneColors = useMemo(() => {
     const colorSet = new Set<RuneColor>()
-    for (const [cardId, count] of Object.entries(session.deckState.runeDeck)) {
+    for (const [cardId, count] of Object.entries(session.playerDeck.runeDeck)) {
       if (count <= 0) {
         continue
       }
@@ -188,7 +275,12 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
       }
     }
     return [...colorSet]
-  }, [session.deckState.runeDeck, runeColorById])
+  }, [session.playerDeck.runeDeck, runeColorById])
+
+  const showBattlefieldSelect = game.turnPhase === 'battlefieldSelect'
+  const showBattlefieldZones = !showBattlefieldSelect
+  const needsPlayerBattlefieldPick =
+    showBattlefieldSelect && game.playerBattlefieldChoice === null
 
   return (
     <main className="game-board">
@@ -199,12 +291,16 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
             房间号：{session.roomId} · {session.role === 'host' ? '房主' : '加入者'}
           </p>
         </div>
-        <button type="button" className="btn ghost" onClick={onBack}>
+        <button type="button" className="btn ghost" onClick={handleBack}>
           返回构建
         </button>
       </header>
 
-      <div className="status-bar">{game.statusMessage}</div>
+      <div
+        className={`status-bar ${needsPlayerBattlefieldPick ? 'status-bar-prompt' : ''}`}
+      >
+        {game.statusMessage}
+      </div>
 
       <section className="mirror-board">
         <div className="board-side opponent-side">
@@ -254,27 +350,17 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
 
         <div className="battleline">
           <article className="battlefield-card">
-            <h3>战场A（我方）</h3>
-            {game.turnPhase === 'diceRoll' ? (
-              <div className="battlefield-options">
-                {(game.playerBattlefieldChoice
-                  ? [game.playerBattlefieldChoice]
-                  : game.playerBattlefieldOptions
-                ).map((id) => (
-                  <button
-                    key={id}
-                    type="button"
-                    className={`btn ${game.playerBattlefieldChoice === id ? 'active' : ''}`}
-                    onClick={() => setGame((prev) => pickBattlefield(prev, 'player', id))}
-                  >
-                    {cardCatalog.get(id)?.name ?? id}
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <ZonePanel
+            {showBattlefieldSelect ? (
+              <BattlefieldOpponentPanel
+                title="战场A（我方）"
+                battlefieldId={game.playerBattlefieldChoice}
+                waitingText="尚未选择战场"
+              />
+            ) : showBattlefieldZones ? (
+              <BattlefieldZone
                 zoneId="battlefieldA"
-                title={getBattlefieldName(game.playerBattlefieldChoice)}
+                title="战场A（我方）"
+                battlefieldId={game.playerBattlefieldChoice}
                 cards={game.zones.battlefieldA}
                 getCardMeta={getCardMeta}
                 highlight={zoneHighlight.has('battlefieldA')}
@@ -282,7 +368,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
                 onCardClick={handleCardClick}
                 isCardSelected={isSelected}
               />
-            )}
+            ) : null}
           </article>
 
           <article className="score-center">
@@ -290,7 +376,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
               <button
                 type="button"
                 className="btn score-btn"
-                onClick={() => setGame((prev) => adjustScore(prev, 'opponent', -1))}
+                onClick={() => applyGame((prev) => adjustScore(prev, 'opponent', -1))}
                 aria-label="对手减分"
               >
                 −
@@ -299,7 +385,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
               <button
                 type="button"
                 className="btn score-btn"
-                onClick={() => setGame((prev) => adjustScore(prev, 'opponent', 1))}
+                onClick={() => applyGame((prev) => adjustScore(prev, 'opponent', 1))}
                 aria-label="对手加分"
               >
                 +
@@ -309,7 +395,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
               <button
                 type="button"
                 className="btn score-btn"
-                onClick={() => setGame((prev) => adjustScore(prev, 'player', -1))}
+                onClick={() => applyGame((prev) => adjustScore(prev, 'player', -1))}
                 aria-label="我方减分"
               >
                 −
@@ -318,7 +404,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
               <button
                 type="button"
                 className="btn score-btn"
-                onClick={() => setGame((prev) => adjustScore(prev, 'player', 1))}
+                onClick={() => applyGame((prev) => adjustScore(prev, 'player', 1))}
                 aria-label="我方加分"
               >
                 +
@@ -327,27 +413,16 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           </article>
 
           <article className="battlefield-card">
-            <h3>战场B（对手）</h3>
-            {game.turnPhase === 'diceRoll' ? (
-              <div className="battlefield-options">
-                {(game.opponentBattlefieldChoice
-                  ? [game.opponentBattlefieldChoice]
-                  : game.opponentBattlefieldOptions
-                ).map((id) => (
-                  <button
-                    key={id}
-                    type="button"
-                    className={`btn ${game.opponentBattlefieldChoice === id ? 'active' : ''}`}
-                    onClick={() => setGame((prev) => pickBattlefield(prev, 'opponent', id))}
-                  >
-                    {cardCatalog.get(id)?.name ?? id}
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <ZonePanel
+            {showBattlefieldSelect ? (
+              <BattlefieldOpponentPanel
+                title="战场B（对手）"
+                battlefieldId={game.opponentBattlefieldChoice}
+              />
+            ) : showBattlefieldZones ? (
+              <BattlefieldZone
                 zoneId="battlefieldB"
-                title={getBattlefieldName(game.opponentBattlefieldChoice)}
+                title="战场B（对手）"
+                battlefieldId={game.opponentBattlefieldChoice}
                 cards={game.zones.battlefieldB}
                 getCardMeta={getCardMeta}
                 highlight={zoneHighlight.has('battlefieldB')}
@@ -355,7 +430,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
                 onCardClick={handleCardClick}
                 isCardSelected={isSelected}
               />
-            )}
+            ) : null}
           </article>
         </div>
       </section>
@@ -398,7 +473,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           faceDown
           highlight={zoneHighlight.has('mainDeck')}
           onZoneClick={() => handleZoneClick('mainDeck')}
-          className="zone-slot-fixed zone-main-deck"
+          className="zone-slot-fixed zone-main-deck zone-pile"
         />
         <ZonePanel
           zoneId="runeDeck"
@@ -408,7 +483,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           faceDown
           highlight={zoneHighlight.has('runeDeck')}
           onZoneClick={() => handleZoneClick('runeDeck')}
-          className="zone-slot-fixed zone-rune-deck"
+          className="zone-slot-fixed zone-rune-deck zone-pile"
         />
         <ZonePanel
           zoneId="runeBoard"
@@ -422,7 +497,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
                   className="btn rune-adjust-btn"
                   onClick={(event) => {
                     event.stopPropagation()
-                    setGame((prev) => adjustMana(prev, -1))
+                    applyGame((prev) => adjustMana(prev, -1))
                   }}
                   aria-label="法力减少1"
                 >
@@ -433,7 +508,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
                   className="btn rune-adjust-btn"
                   onClick={(event) => {
                     event.stopPropagation()
-                    setGame((prev) => adjustMana(prev, 1))
+                    applyGame((prev) => adjustMana(prev, 1))
                   }}
                   aria-label="法力增加1"
                 >
@@ -442,13 +517,15 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
               </span>
               {(activeRuneColors.length > 0 ? activeRuneColors : runeColors).map((color) => (
                 <span key={color} className="rune-resource-group">
-                  <span className="rune-resource">{runeColorLabel[color]}符能 {game.runeEnergy[color]}</span>
+                  <span className="rune-resource">
+                    {runeColorLabel[color]}符能 {game.runeEnergy[color]}
+                  </span>
                   <button
                     type="button"
                     className="btn rune-adjust-btn"
                     onClick={(event) => {
                       event.stopPropagation()
-                      setGame((prev) => adjustRuneEnergy(prev, color, -1))
+                      applyGame((prev) => adjustRuneEnergy(prev, color, -1))
                     }}
                     aria-label={`${runeColorLabel[color]}符能减少1`}
                   >
@@ -459,7 +536,7 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
                     className="btn rune-adjust-btn"
                     onClick={(event) => {
                       event.stopPropagation()
-                      setGame((prev) => adjustRuneEnergy(prev, color, 1))
+                      applyGame((prev) => adjustRuneEnergy(prev, color, 1))
                     }}
                     aria-label={`${runeColorLabel[color]}符能增加1`}
                   >
@@ -507,14 +584,17 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
           playerDice={game.playerDice}
           opponentDice={game.opponentDice}
           onAction={handleAction}
-          onEndTurn={() => setGame((prev) => endTurn(prev))}
-          onConfirmDiscard={() => setGame((prev) => confirmDiscard(prev))}
-          onConfirmTap={() => setGame((prev) => confirmTap(prev))}
-          onConfirmUntap={() => setGame((prev) => confirmUntap(prev))}
-          onFinishMulligan={() => setGame((prev) => finishMulligan(prev))}
-          onRollDice={() => setGame((prev) => rollForFirstPlayer(prev))}
+          onEndTurn={() => applyGame((prev) => endTurn(prev))}
+          onConfirmDiscard={() => applyGame((prev) => confirmDiscard(prev))}
+          onConfirmTap={() => applyGame((prev) => confirmTap(prev))}
+          onConfirmUntap={() => applyGame((prev) => confirmUntap(prev))}
+          onConfirmRecycle={() => applyGame((prev) => confirmRecycle(prev))}
+          onFinishMulligan={() => applyGame((prev) => finishMulligan(prev))}
+          onRollDice={() => applyGame((prev) => rollForFirstPlayer(prev))}
+          onUndo={undo}
           selectedActionCount={game.selectedInstanceIds.length}
           canRollDice={canRollDice}
+          canUndo={history.length > 0}
         />
       </section>
 
@@ -523,7 +603,21 @@ function GameBoardPage({ session, onBack }: GameBoardPageProps) {
         title="废牌堆"
         cards={game.lookTargetZone ? game.zones[game.lookTargetZone] : []}
         getCardMeta={getCardMeta}
-        onClose={() => setGame((prev) => clearLookTarget(prev))}
+        onClose={() => applyGame((prev) => clearLookTarget(prev))}
+      />
+
+      <BattlefieldSelectModal
+        open={needsPlayerBattlefieldPick}
+        battlefieldIds={game.playerBattlefieldOptions}
+        selectedId={game.playerBattlefieldChoice}
+        statusMessage={game.statusMessage}
+        onSelect={handlePickPlayerBattlefield}
+      />
+
+      <CardPreviewModal
+        open={previewCard !== null}
+        card={previewCard}
+        onClose={() => setPreviewCard(null)}
       />
     </main>
   )

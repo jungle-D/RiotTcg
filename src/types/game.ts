@@ -26,6 +26,7 @@ export type ActionMode =
   | null
 
 export type TurnPhase =
+  | 'battlefieldSelect'
   | 'diceRoll'
   | 'mulligan'
   | 'main'
@@ -68,9 +69,10 @@ export interface GameState {
 }
 
 export interface GameSession {
-  deckState: DeckState
   roomId: string
   role: 'host' | 'guest'
+  playerDeck: DeckState
+  opponentDeck: DeckState
 }
 
 export const MULLIGAN_LIMIT = 2

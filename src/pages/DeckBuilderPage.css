@@ -162,6 +162,48 @@
   color: #ff9d9d;
 }
 
+.card-search-field {
+  display: block;
+  margin-top: 12px;
+}
+
+.card-search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #4a5f82;
+  background: #101623;
+  color: #e8ecf1;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.card-search-input:focus {
+  outline: none;
+  border-color: #6fa5ff;
+}
+
+.card-search-result {
+  margin-top: 8px;
+}
+
+.card-search-empty {
+  grid-column: 1 / -1;
+  margin: 12px 0 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .modal-scroll-content {
   margin-top: 12px;
   overflow-y: auto;
@@ -234,12 +276,46 @@
   border-radius: 14px;
   background: #101623;
   padding: 16px;
+  transition: width 0.25s ease;
+}
+
+.card-preview-modal.preview-rotated-sideways {
+  width: min(900px, 96vw);
+}
+
+.card-preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-preview-image-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 12px 0;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.card-preview-image-stage.preview-rotated-sideways {
+  max-height: 85vh;
+  min-height: 360px;
+  padding: 20px 0;
 }
 
 .card-preview-image {
   width: 100%;
   border-radius: 10px;
-  margin-top: 10px;
+  transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease;
+  transform-origin: center center;
+}
+
+.card-preview-image.preview-rotated-sideways {
+  width: auto;
+  height: min(75vh, 620px);
+  max-width: none;
 }
 
 .counter-row {

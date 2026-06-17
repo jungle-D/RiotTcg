@@ -1,5 +1,5 @@
-import runeCards from '../data/cards.rune.json'
-import type { DeckState, RuneCard } from '../types/cards'
+import { getRuneColorById } from '../data/loltcgCatalog'
+import type { DeckState } from '../types/cards'
 import type {
   ActionMode,
   CardKind,
@@ -16,10 +16,7 @@ import {
 } from '../types/game'
 
 let instanceCounter = 0
-const typedRuneCards = runeCards as RuneCard[]
-const runeColorById = new Map<string, RuneColor>(
-  typedRuneCards.map((card) => [card.id, card.color]),
-)
+const runeColorById = getRuneColorById()
 const runeColorLabel: Record<RuneColor, string> = {
   red: '红',
   blue: '蓝',
@@ -177,8 +174,7 @@ function drawOpeningHands(state: GameState): GameState {
   return next
 }
 
-export function initGameFromDeck(deckState: DeckState, roomId: string): GameState {
-  instanceCounter = 0
+function initZonesFromDeck(deckState: DeckState): Record<ZoneId, GameCardInstance[]> {
   const zones = emptyZones()
 
   if (deckState.legend) {
@@ -189,22 +185,24 @@ export function initGameFromDeck(deckState: DeckState, roomId: string): GameStat
   }
   zones.mainDeck = shuffle(expandDeck(deckState.mainDeck, 'main'))
   zones.runeDeck = shuffle(expandDeck(deckState.runeDeck, 'rune'))
-  const opponentZones = emptyZones()
-  if (deckState.legend) {
-    opponentZones.legend = [createInstance(deckState.legend.id, 'legend')]
-  }
-  if (deckState.hero) {
-    opponentZones.hero = [createInstance(deckState.hero.id, 'hero')]
-  }
-  opponentZones.mainDeck = shuffle(expandDeck(deckState.mainDeck, 'main'))
-  opponentZones.runeDeck = shuffle(expandDeck(deckState.runeDeck, 'rune'))
-  const battlefieldOptions = firstThreeBattlefields(deckState)
+
+  return zones
+}
+
+export function initGame(
+  playerDeck: DeckState,
+  opponentDeck: DeckState,
+  roomId: string,
+): GameState {
+  instanceCounter = 0
+  const zones = initZonesFromDeck(playerDeck)
+  const opponentZones = initZonesFromDeck(opponentDeck)
 
   return {
     zones,
     opponentZones,
     actionMode: null,
-    turnPhase: 'diceRoll',
+    turnPhase: 'battlefieldSelect',
     mulliganSelected: [],
     selectedInstanceIds: [],
     moveSourceInstanceId: null,
@@ -216,8 +214,8 @@ export function initGameFromDeck(deckState: DeckState, roomId: string): GameStat
     opponentDice: null,
     playerScore: 0,
     opponentScore: 0,
-    playerBattlefieldOptions: battlefieldOptions,
-    opponentBattlefieldOptions: battlefieldOptions,
+    playerBattlefieldOptions: firstThreeBattlefields(playerDeck),
+    opponentBattlefieldOptions: firstThreeBattlefields(opponentDeck),
     playerBattlefieldChoice: null,
     opponentBattlefieldChoice: null,
     openingHandsReady: false,
@@ -235,12 +233,17 @@ export function initGameFromDeck(deckState: DeckState, roomId: string): GameStat
   }
 }
 
+/** @deprecated Use initGame instead */
+export function initGameFromDeck(deckState: DeckState, roomId: string): GameState {
+  return initGame(deckState, deckState, roomId)
+}
+
 export function pickBattlefield(
   state: GameState,
   side: 'player' | 'opponent',
   battlefieldId: string,
 ): GameState {
-  if (state.turnPhase !== 'diceRoll') {
+  if (state.turnPhase !== 'battlefieldSelect') {
     return state
   }
   const options =
@@ -266,6 +269,69 @@ export function pickBattlefield(
       playerMulliganDone: false,
       opponentMulliganDone: true,
       statusMessage: `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请完成调度后投掷骰子。`,
+    }
+  }
+
+  return next
+}
+
+export function pickPlayerBattlefield(state: GameState, battlefieldId: string): GameState {
+  if (state.turnPhase !== 'battlefieldSelect') {
+    return state
+  }
+  if (!state.playerBattlefieldOptions.includes(battlefieldId)) {
+    return state
+  }
+  if (state.playerBattlefieldChoice === battlefieldId) {
+    return state
+  }
+  return {
+    ...state,
+    playerBattlefieldChoice: battlefieldId,
+    statusMessage: '已选择战场，等待对手选择…',
+  }
+}
+
+export function applyBattlefieldSync(
+  state: GameState,
+  sync: { hostBattlefieldChoice: string | null; guestBattlefieldChoice: string | null },
+  role: 'host' | 'guest',
+): GameState {
+  const playerChoice =
+    role === 'host' ? sync.hostBattlefieldChoice : sync.guestBattlefieldChoice
+  const opponentChoice =
+    role === 'host' ? sync.guestBattlefieldChoice : sync.hostBattlefieldChoice
+
+  let next: GameState = {
+    ...state,
+    playerBattlefieldChoice: playerChoice,
+    opponentBattlefieldChoice: opponentChoice,
+  }
+
+  if (
+    playerChoice &&
+    opponentChoice &&
+    !next.openingHandsReady &&
+    next.turnPhase === 'battlefieldSelect'
+  ) {
+    const withOpening = drawOpeningHands(next)
+    return {
+      ...withOpening,
+      turnPhase: 'mulligan',
+      openingHandsReady: true,
+      playerMulliganDone: false,
+      opponentMulliganDone: true,
+      statusMessage: `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请完成调度后投掷骰子。`,
+    }
+  }
+
+  if (next.turnPhase === 'battlefieldSelect') {
+    if (playerChoice && !opponentChoice) {
+      next = { ...next, statusMessage: '已选择战场，等待对手选择…' }
+    } else if (!playerChoice && opponentChoice) {
+      next = { ...next, statusMessage: '对手已选择战场，请选择你的战场。' }
+    } else if (!playerChoice && !opponentChoice) {
+      next = { ...next, statusMessage: '请双方先选择战场。战场确定后将自动各抽4张并进入调度。' }
     }
   }
 
@@ -416,7 +482,7 @@ export function setActionMode(state: GameState, mode: ActionMode): GameState {
     tap: '横置：请选择要横置的卡，再点「确认横置」。',
     untap: '回正：请选择已横置的卡，再点「确认回正」。',
     move: '移动：请先选择要移动的卡，再点击目标区域（基地/战场A/战场B）。',
-    recycle: '回收：请选择要回收的卡。',
+    recycle: '回收：请选择要回收的卡，再点「确认回收」。',
     look: '看牌：请点击废牌堆。',
   }
 
@@ -670,7 +736,7 @@ export function handleMoveToZone(state: GameState, targetZone: ZoneId): GameStat
   }
 }
 
-export function handleRecycle(state: GameState, instanceId: string): GameState {
+export function toggleRecycleSelect(state: GameState, instanceId: string): GameState {
   if (state.actionMode !== 'recycle' || state.turnPhase !== 'main') {
     return state
   }
@@ -680,41 +746,96 @@ export function handleRecycle(state: GameState, instanceId: string): GameState {
     return state
   }
 
-  const { zones, card } = removeFromZone(state.zones, zone, instanceId)
-  if (!card) {
-    return state
+  const card = state.zones[zone].find((item) => item.instanceId === instanceId)
+  if (card && card.kind !== 'main' && card.kind !== 'rune') {
+    return { ...state, statusMessage: '传奇/英雄卡无法回收至牌堆。' }
   }
 
-  if (card.kind !== 'main' && card.kind !== 'rune') {
+  const selected = state.selectedInstanceIds
+  if (selected.includes(instanceId)) {
     return {
       ...state,
-      statusMessage: '传奇/英雄卡无法回收至牌堆。',
+      selectedInstanceIds: selected.filter((id) => id !== instanceId),
     }
   }
 
-  const targetZone: ZoneId = card.kind === 'main' ? 'mainDeck' : 'runeDeck'
-
-  const shouldGainRuneEnergy = zone === 'runeBoard' && card.kind === 'rune'
-  const runeColor = shouldGainRuneEnergy ? runeColorById.get(card.cardId) : null
-  const nextRuneEnergy = runeColor
-    ? {
-        ...state.runeEnergy,
-        [runeColor]: state.runeEnergy[runeColor] + 1,
-      }
-    : state.runeEnergy
-
   return {
     ...state,
-    zones: {
+    selectedInstanceIds: [...selected, instanceId],
+  }
+}
+
+export function confirmRecycle(state: GameState): GameState {
+  if (state.actionMode !== 'recycle' || state.selectedInstanceIds.length === 0) {
+    return { ...state, statusMessage: '请先选择要回收的卡。' }
+  }
+
+  let next: GameState = { ...state, zones: { ...state.zones } }
+  let runeEnergyGain = 0
+  const gainedColors: string[] = []
+  let recycledCount = 0
+
+  for (const instanceId of state.selectedInstanceIds) {
+    const zone = findCardZone(next, instanceId)
+    if (!zone || !['hero', 'base', 'runeBoard', 'battlefieldA', 'battlefieldB', 'hand'].includes(zone)) {
+      continue
+    }
+
+    const { zones, card } = removeFromZone(next.zones, zone, instanceId)
+    if (!card) {
+      continue
+    }
+
+    if (card.kind !== 'main' && card.kind !== 'rune') {
+      continue
+    }
+
+    const targetZone: ZoneId = card.kind === 'main' ? 'mainDeck' : 'runeDeck'
+    next.zones = {
       ...zones,
       [targetZone]: [...zones[targetZone], card],
-    },
-    runeEnergy: nextRuneEnergy,
-    actionMode: null,
-    statusMessage: runeColor
-      ? `回收完成，卡牌已放回对应牌堆底部。获得 1 点${runeColorLabel[runeColor]}符能。`
-      : '回收完成，卡牌已放回对应牌堆底部。',
+    }
+
+    if (zone === 'runeBoard' && card.kind === 'rune') {
+      const runeColor = runeColorById.get(card.cardId)
+      if (runeColor) {
+        runeEnergyGain += 1
+        gainedColors.push(runeColorLabel[runeColor])
+        next = {
+          ...next,
+          runeEnergy: {
+            ...next.runeEnergy,
+            [runeColor]: next.runeEnergy[runeColor] + 1,
+          },
+        }
+      }
+    }
+
+    recycledCount += 1
   }
+
+  if (recycledCount === 0) {
+    return { ...state, statusMessage: '没有可回收的卡牌。' }
+  }
+
+  const energyMsg =
+    runeEnergyGain > 0 ? `获得 ${runeEnergyGain} 点符能（${gainedColors.join('、')}）。` : ''
+
+  return {
+    ...next,
+    actionMode: null,
+    selectedInstanceIds: [],
+    statusMessage: `回收完成（${recycledCount} 张），卡牌已放回对应牌堆底部。${energyMsg}`,
+  }
+}
+
+/** @deprecated Use toggleRecycleSelect + confirmRecycle */
+export function handleRecycle(state: GameState, instanceId: string): GameState {
+  const toggled = toggleRecycleSelect(state, instanceId)
+  if (toggled.selectedInstanceIds.length === 0) {
+    return toggled
+  }
+  return confirmRecycle(toggled)
 }
 
 export function handleLookZone(state: GameState, zone: ZoneId): GameState {

@@ -1,0 +1,92 @@
+.room-waiting-page {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 32px;
+  border: 1px solid #38445d;
+  border-radius: 14px;
+  background: #1c2433;
+  text-align: center;
+}
+
+.room-waiting-page h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.room-waiting-hint {
+  margin: 0 0 20px;
+  color: #afb8ca;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.room-waiting-note {
+  margin: 0 0 16px;
+  color: #8a96ab;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.room-waiting-note code {
+  color: #c5d0e6;
+}
+
+.room-waiting-url-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.room-waiting-url {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #141c2a;
+  border: 1px solid #38445d;
+  color: #6fa5ff;
+  font-size: 14px;
+}
+
+.room-waiting-label {
+  margin: 0 0 6px;
+  color: #afb8ca;
+  font-size: 13px;
+}
+
+.room-waiting-code {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #6fa5ff;
+  margin-bottom: 8px;
+}
+
+.room-waiting-code-copy {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px dashed #4a5f82;
+  border-radius: 10px;
+  background: #141c2a;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.room-waiting-code-copy:hover {
+  border-color: #6fa5ff;
+  background: #1a2438;
+}
+
+.room-waiting-copied {
+  margin: 0 0 16px;
+  color: #41d769;
+  font-size: 13px;
+}
+
+.room-waiting-status {
+  margin: 0 0 24px;
+  color: #dce6f8;
+  font-size: 15px;
+}

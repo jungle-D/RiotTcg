@@ -14,7 +14,7 @@ import spellsData from '../../data/imported/loltcg/normalized/spells.json'
 import unitsData from '../../data/imported/loltcg/normalized/units.json'
 import type { BaseCard, DeckState, MainCard, RuneCard } from '../types/cards'
 import type { GameSession } from '../types/game'
-import { createRoom, joinRoom } from '../services/roomService'
+import { createRoom, createLocalRoom, joinLocalRoom, getLocalRoom, clearLocalRoom, joinRoom, getJoinRoomHint } from '../services/roomService'
 import {
   BATTLEFIELD_TARGET,
   MAIN_DECK_HERO_LIMIT,
@@ -25,10 +25,12 @@ import {
   RUNE_COLOR_LIMIT,
   countFromRecord,
   getActiveRuneColors,
+  getDeckValidationMessages,
   isDeckComplete,
   isRuneColorAllowed,
   validateDeck,
 } from '../utils/deckRules'
+import { loadDeckStateFromStorage, saveDeckStateToStorage } from '../utils/deckBuilderStorage'
 import './DeckBuilderPage.css'
 
 interface ImportedCard {
@@ -89,6 +91,57 @@ function toRuneCard(card: ImportedCard): RuneCard | null {
     ...toBaseCard(card),
     color: color as RuneCard['color'],
   }
+}
+
+const MAIN_DECK_SOURCE_CARDS = [
+  ...importedUnits,
+  ...importedSpells,
+  ...importedEquipment,
+  ...importedHeroes,
+  ...importedExclusives,
+]
+
+function allowByLegendColors(colors: string[], selectedLegendColors: Set<string>): boolean {
+  if (colors.includes('colorless')) {
+    return true
+  }
+  if (selectedLegendColors.size === 0) {
+    return false
+  }
+  return colors.some((color) => selectedLegendColors.has(color))
+}
+
+function buildMainDeckCandidates(selectedLegendColors: Set<string>): MainCard[] {
+  return MAIN_DECK_SOURCE_CARDS.filter((card) => {
+    const category = card.official?.cardCategory ?? ''
+    if (
+      category === 'legendary' ||
+      category === 'rune' ||
+      category === 'battlefield' ||
+      category.startsWith('indicator_')
+    ) {
+      return false
+    }
+    const colors = card.official?.cardColorList ?? []
+    if (category.startsWith('exclusive_')) {
+      const nonColorless = colors.filter((color) => color !== 'colorless')
+      if (nonColorless.length === 0) {
+        return true
+      }
+      if (selectedLegendColors.size === 0) {
+        return false
+      }
+      return nonColorless.every((color) => selectedLegendColors.has(color))
+    }
+    return allowByLegendColors(colors, selectedLegendColors)
+  }).map(toMainCard)
+}
+
+function buildRuneCards(selectedLegendColors: Set<string>): RuneCard[] {
+  return importedRunes
+    .map(toRuneCard)
+    .filter((card): card is RuneCard => card !== null)
+    .filter((card) => selectedLegendColors.has(card.color))
 }
 
 type ModalType = 'legend' | 'hero' | 'main' | 'rune' | 'battlefield' | null
@@ -173,18 +226,17 @@ function getCardName(cardId: string, cards: BaseCard[]): string {
 
 interface DeckBuilderPageProps {
   onEnterGame: (session: GameSession) => void
+  onHostWaiting: (roomId: string) => void
   onOpenLegendHeroMapping: () => void
 }
 
-function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPageProps) {
-  const [deckState, setDeckState] = useState<DeckState>({
-    legend: null,
-    hero: null,
-    mainDeck: {},
-    runeDeck: {},
-    battlefield: [],
-  })
+function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }: DeckBuilderPageProps) {
+  const [deckState, setDeckState] = useState<DeckState>(() => loadDeckStateFromStorage())
   const [activeModal, setActiveModal] = useState<ModalType>(null)
+
+  useEffect(() => {
+    saveDeckStateToStorage(deckState)
+  }, [deckState])
 
   const [draftLegendId, setDraftLegendId] = useState<string | null>(() =>
     loadDraftIdFromStorage(LEGEND_DRAFT_STORAGE_KEY),
@@ -221,6 +273,7 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
   const [battlefieldError, setBattlefieldError] = useState('')
   const [joinModalOpen, setJoinModalOpen] = useState(false)
   const [joinError, setJoinError] = useState('')
+  const [lobbyError, setLobbyError] = useState('')
   const [importError, setImportError] = useState('')
 
   useEffect(() => {
@@ -306,59 +359,13 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
     [deckState.legend, legendColorMap],
   )
 
-  const allowByLegendColors = (colors: string[]): boolean => {
-    if (colors.includes('colorless')) {
-      return true
-    }
-    if (selectedLegendColors.size === 0) {
-      return false
-    }
-    return colors.some((color) => selectedLegendColors.has(color))
-  }
-
-  const mainDeckCandidates = useMemo(() => {
-    const source = [
-      ...importedUnits,
-      ...importedSpells,
-      ...importedEquipment,
-      ...importedHeroes,
-      ...importedExclusives,
-    ]
-    return source
-      .filter((card) => {
-        const category = card.official?.cardCategory ?? ''
-        if (
-          category === 'legendary' ||
-          category === 'rune' ||
-          category === 'battlefield' ||
-          category.startsWith('indicator_')
-        ) {
-          return false
-        }
-        const colors = card.official?.cardColorList ?? []
-        if (category.startsWith('exclusive_')) {
-          const nonColorless = colors.filter((color) => color !== 'colorless')
-          if (nonColorless.length === 0) {
-            return true
-          }
-          if (selectedLegendColors.size === 0) {
-            return false
-          }
-          return nonColorless.every((color) => selectedLegendColors.has(color))
-        }
-        return allowByLegendColors(colors)
-      })
-      .map(toMainCard)
-  }, [
-    selectedLegendColors,
-  ])
+  const mainDeckCandidates = useMemo(
+    () => buildMainDeckCandidates(selectedLegendColors),
+    [selectedLegendColors],
+  )
 
   const typedRuneCards = useMemo(
-    () =>
-      importedRunes
-        .map(toRuneCard)
-        .filter((card): card is RuneCard => card !== null)
-        .filter((card) => selectedLegendColors.has(card.color)),
+    () => buildRuneCards(selectedLegendColors),
     [selectedLegendColors],
   )
 
@@ -371,8 +378,6 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
     () => new Map(typedHeroCards.map((card) => [card.id, card])),
     [typedHeroCards],
   )
-  const mainCardIdSet = useMemo(() => new Set(typedMainCards.map((card) => card.id)), [typedMainCards])
-  const runeCardIdSet = useMemo(() => new Set(typedRuneCards.map((card) => card.id)), [typedRuneCards])
   const battlefieldCardIdSet = useMemo(
     () => new Set(typedBattlefieldCards.map((card) => card.id)),
     [typedBattlefieldCards],
@@ -380,7 +385,12 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
 
   const validation = useMemo(
     () => validateDeck(deckState, typedMainCards, typedRuneCards, legendHeroMapping),
-    [deckState, legendHeroMapping],
+    [deckState, typedMainCards, typedRuneCards, legendHeroMapping],
+  )
+
+  const deckValidationMessages = useMemo(
+    () => getDeckValidationMessages(validation, deckState),
+    [validation, deckState],
   )
 
   const deckComplete = useMemo(
@@ -626,23 +636,53 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
 
   const handleCreateRoom = () => {
     if (!deckComplete) {
+      setLobbyError(deckValidationMessages.join('；'))
       return
     }
+    setLobbyError('')
     const roomId = createRoom()
-    onEnterGame({ deckState, roomId, role: 'host' })
+    const created = createLocalRoom(roomId, deckState)
+    if (!created.ok) {
+      setLobbyError('创建房间失败：无法写入浏览器本地存储，请关闭无痕模式后重试。')
+      return
+    }
+    onHostWaiting(roomId)
   }
 
   const handleJoinRoom = (roomId: string) => {
     if (!deckComplete) {
+      setLobbyError(deckValidationMessages.join('；'))
       return
     }
     if (!joinRoom(roomId)) {
       setJoinError('房间号格式无效，请输入 4-8 位数字。')
       return
     }
+    const joined = joinLocalRoom(roomId, deckState)
+    if (!joined.ok) {
+      const hints: Record<typeof joined.reason, string> = {
+        not_found: `未找到房间。请双方使用完全相同的地址打开本页（当前：${window.location.origin}），且房主需停留在等待页。`,
+        id_mismatch: `房间号不匹配。${getJoinRoomHint()}`,
+        already_joined: '该房间已有玩家加入，请让房主重新创建房间。',
+        write_failed: '加入失败：无法写入浏览器本地存储。',
+      }
+      setJoinError(hints[joined.reason])
+      return
+    }
+    const room = getLocalRoom()
+    if (!room?.hostDeck) {
+      setJoinError('房间数据异常，请让房主重新创建房间。')
+      clearLocalRoom()
+      return
+    }
     setJoinError('')
     setJoinModalOpen(false)
-    onEnterGame({ deckState, roomId: roomId.trim(), role: 'guest' })
+    onEnterGame({
+      roomId: roomId.trim(),
+      role: 'guest',
+      playerDeck: deckState,
+      opponentDeck: room.hostDeck,
+    })
   }
 
   const handleExportDeck = () => {
@@ -666,6 +706,23 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
     URL.revokeObjectURL(url)
   }
 
+  const resetDraftState = () => {
+    setDraftLegendId(null)
+    setLegendDraftInitialized(false)
+    setDraftHeroId(null)
+    setHeroDraftInitialized(false)
+    setDraftMainDeck({})
+    setMainDeckDraftInitialized(false)
+    setDraftRuneDeck({})
+    setRuneDeckDraftInitialized(false)
+    setDraftBattlefield([])
+    setBattlefieldDraftInitialized(false)
+    setMainDeckError('')
+    setRuneError('')
+    setBattlefieldError('')
+    setLobbyError('')
+  }
+
   const handleImportDeck = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]
     if (!file) {
@@ -681,25 +738,46 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
         }
         const legend = incoming.legendId ? legendById.get(incoming.legendId) ?? null : null
         const hero = incoming.heroId ? heroById.get(incoming.heroId) ?? null : null
+        const importLegendColors = legend
+          ? legendColorMap.get(legend.id) ?? new Set<string>()
+          : new Set<string>()
+        const importMainCards = buildMainDeckCandidates(importLegendColors)
+        const importRuneCards = buildRuneCards(importLegendColors)
+        const importMainCardIdSet = new Set(importMainCards.map((card) => card.id))
+        const importRuneCardIdSet = new Set(importRuneCards.map((card) => card.id))
         const mainDeck = Object.fromEntries(
           Object.entries(incoming.mainDeck ?? {}).filter(
-            ([id, count]) => mainCardIdSet.has(id) && Number(count) > 0,
+            ([id, count]) => importMainCardIdSet.has(id) && Number(count) > 0,
           ),
         )
         const runeDeck = Object.fromEntries(
           Object.entries(incoming.runeDeck ?? {}).filter(
-            ([id, count]) => runeCardIdSet.has(id) && Number(count) > 0,
+            ([id, count]) => importRuneCardIdSet.has(id) && Number(count) > 0,
           ),
         )
         const battlefield = (incoming.battlefield ?? []).filter((id) => battlefieldCardIdSet.has(id))
-        setDeckState({
+        const nextDeckState: DeckState = {
           legend,
           hero,
           mainDeck,
           runeDeck,
           battlefield,
-        })
-        setImportError('')
+        }
+        const nextValidation = validateDeck(
+          nextDeckState,
+          importMainCards,
+          importRuneCards,
+          legendHeroMapping,
+        )
+        const validationMessages = getDeckValidationMessages(nextValidation, nextDeckState)
+
+        resetDraftState()
+        setDeckState(nextDeckState)
+        if (validationMessages.length > 0) {
+          setImportError(`导入完成，但卡组未达标：${validationMessages.join('；')}`)
+        } else {
+          setImportError('')
+        }
       } catch (error) {
         setImportError(`导入失败：${error instanceof Error ? error.message : 'JSON 格式错误'}`)
       } finally {
@@ -874,6 +952,7 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
         title="战场卡选择（3 张，不重复）"
         cards={typedBattlefieldCards}
         mode="multi"
+        previewRotatable
         selectedIds={draftBattlefield}
         disabledCardIds={
           draftBattlefield.length >= BATTLEFIELD_TARGET
@@ -894,7 +973,9 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
         <p>
           {deckComplete
             ? '卡组已达标，可创建或加入房间进入对战。'
-            : '请完成全部卡组区域配置后，方可进入对战房间。'}
+            : deckValidationMessages.length > 0
+              ? `卡组未达标：${deckValidationMessages.join('；')}`
+              : '请完成全部卡组区域配置后，方可进入对战房间。'}
         </p>
         <div className="lobby-actions">
           <button
@@ -911,6 +992,7 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
             disabled={!deckComplete}
             onClick={() => {
               setJoinError('')
+              setLobbyError('')
               setJoinModalOpen(true)
             }}
           >
@@ -924,6 +1006,7 @@ function DeckBuilderPage({ onEnterGame, onOpenLegendHeroMapping }: DeckBuilderPa
         onClose={() => setJoinModalOpen(false)}
         onConfirm={handleJoinRoom}
       />
+      {lobbyError ? <p className="join-error">{lobbyError}</p> : null}
       {joinError ? <p className="join-error">{joinError}</p> : null}
     </main>
   )
