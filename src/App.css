@@ -2,3 +2,17 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.app-restoring,
+.app-restore-error {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.app-restore-error {
+  color: #ffb4b4;
+  background: rgba(255, 80, 80, 0.12);
+  border-radius: 8px;
+}

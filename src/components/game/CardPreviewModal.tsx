@@ -5,9 +5,11 @@ interface CardPreviewModalProps {
   open: boolean
   card: BaseCard | null
   onClose: () => void
+  /** 战场卡预览时旋转 270° 展示 */
+  rotateImage?: boolean
 }
 
-function CardPreviewModal({ open, card, onClose }: CardPreviewModalProps) {
+function CardPreviewModal({ open, card, onClose, rotateImage = false }: CardPreviewModalProps) {
   if (!open || !card) {
     return null
   }
@@ -36,8 +38,14 @@ function CardPreviewModal({ open, card, onClose }: CardPreviewModalProps) {
             关闭
           </button>
         </header>
-        <div className="card-preview-image-stage">
-          <img src={card.image} alt={card.name} className="card-preview-image" />
+        <div
+          className={`card-preview-image-stage ${rotateImage ? 'card-preview-image-stage-rotated' : ''}`}
+        >
+          <img
+            src={card.image}
+            alt={card.name}
+            className={`card-preview-image ${rotateImage ? 'card-preview-image-rotated' : ''}`}
+          />
         </div>
         <p className="card-preview-meta">卡牌ID：{card.id}</p>
         <p className="card-preview-desc">{card.description}</p>

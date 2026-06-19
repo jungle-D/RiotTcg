@@ -3,10 +3,11 @@
   border-radius: 12px;
   background: #1c2433;
   padding: 12px;
-  height: 300px;
-  min-height: 300px;
+  height: var(--battlefield-height, 300px);
+  min-height: var(--battlefield-height, 300px);
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .battlefield-zone h3 {
@@ -14,38 +15,22 @@
   font-size: 14px;
 }
 
-.battlefield-zone-body {
-  position: relative;
+.battlefield-zone-layout {
+  display: flex;
+  gap: 10px;
   flex: 1;
   min-height: 0;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
-.battlefield-zone-bg {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: auto;
-  height: 85%;
-  max-width: 95%;
-  object-fit: contain;
-  transform: rotate(270deg);
-  transform-origin: center center;
-  opacity: 0.55;
-  pointer-events: none;
-}
-
-.battlefield-zone-overlay {
-  position: relative;
-  z-index: 1;
-  height: 100%;
+.battlefield-zone-cards {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
 }
 
 .battlefield-zone-panel {
   height: 100%;
-  background: rgba(20, 28, 42, 0.72);
-  border: none;
+  background: rgba(20, 28, 42, 0.85);
 }
 
 .battlefield-zone-panel .zone-header h3 {
@@ -54,5 +39,17 @@
 
 .battlefield-zone-panel .zone-body {
   max-height: calc(100% - 36px);
-  overflow: auto;
+  overflow: hidden;
+}
+
+.battlefield-zone-panel .zone-cards {
+  align-content: flex-start;
+}
+
+.battlefield-zone-panel .card-label {
+  display: none;
+}
+
+.battlefield-zone-panel-extra {
+  margin-top: 8px;
 }

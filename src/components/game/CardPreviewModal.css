@@ -39,10 +39,22 @@
   padding: 8px 0;
 }
 
+.card-preview-image-stage-rotated {
+  min-height: 320px;
+}
+
 .card-preview-image {
   width: 100%;
   max-width: 420px;
   border-radius: 10px;
+}
+
+.card-preview-image-rotated {
+  width: auto;
+  max-width: none;
+  max-height: 420px;
+  transform: rotate(270deg);
+  transform-origin: center center;
 }
 
 .card-preview-meta,

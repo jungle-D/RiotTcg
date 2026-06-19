@@ -1,0 +1,20 @@
+.first-player-choice-modal {
+  width: min(420px, 100%);
+}
+
+.first-player-choice-hint {
+  margin: 0 0 20px;
+  color: #b8c2d4;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.first-player-choice-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.first-player-choice-actions .btn {
+  min-width: 120px;
+}

@@ -14,7 +14,10 @@ import spellsData from '../../data/imported/loltcg/normalized/spells.json'
 import unitsData from '../../data/imported/loltcg/normalized/units.json'
 import type { BaseCard, DeckState, MainCard, RuneCard } from '../types/cards'
 import type { GameSession } from '../types/game'
-import { createRoom, createLocalRoom, joinLocalRoom, getLocalRoom, clearLocalRoom, joinRoom, getJoinRoomHint } from '../services/roomService'
+import { isRuneColor } from '../constants/runeColors'
+import { createRoom, joinRoom } from '../services/roomService'
+import { createOnlineRoom, joinOnlineRoom } from '../services/network/roomClient'
+import { getOrCreateClientId } from '../utils/clientId'
 import {
   BATTLEFIELD_TARGET,
   MAIN_DECK_HERO_LIMIT,
@@ -83,7 +86,7 @@ function toMainCard(card: ImportedCard): MainCard {
 
 function toRuneCard(card: ImportedCard): RuneCard | null {
   const colors = card.official?.cardColorList ?? []
-  const color = colors.find((item) => ['red', 'blue', 'green', 'purple'].includes(item))
+  const color = colors.find(isRuneColor)
   if (!color) {
     return null
   }
@@ -228,9 +231,15 @@ interface DeckBuilderPageProps {
   onEnterGame: (session: GameSession) => void
   onHostWaiting: (roomId: string) => void
   onOpenLegendHeroMapping: () => void
+  onOpenRoomDev: () => void
 }
 
-function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }: DeckBuilderPageProps) {
+function DeckBuilderPage({
+  onEnterGame,
+  onHostWaiting,
+  onOpenLegendHeroMapping,
+  onOpenRoomDev,
+}: DeckBuilderPageProps) {
   const [deckState, setDeckState] = useState<DeckState>(() => loadDeckStateFromStorage())
   const [activeModal, setActiveModal] = useState<ModalType>(null)
 
@@ -478,15 +487,33 @@ function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }
 
   const handleLegendConfirm = () => {
     const nextLegend = typedLegendCards.find((card) => card.id === draftLegendId) ?? null
+    const legendChanged = deckState.legend?.id !== nextLegend?.id
+
     setDeckState((prev) => {
-      const shouldClearHero =
-        prev.hero && nextLegend && !(legendHeroMapping[nextLegend.id] ?? []).includes(prev.hero.id)
-      return {
-        ...prev,
-        legend: nextLegend,
-        hero: shouldClearHero ? null : prev.hero,
+      const changed = prev.legend?.id !== nextLegend?.id
+      if (changed) {
+        return {
+          legend: nextLegend,
+          hero: null,
+          mainDeck: {},
+          runeDeck: {},
+          battlefield: [],
+        }
       }
+      return { ...prev, legend: nextLegend }
     })
+
+    if (legendChanged) {
+      setDraftHeroId(null)
+      setHeroDraftInitialized(false)
+      setDraftMainDeck({})
+      setMainDeckDraftInitialized(false)
+      setDraftRuneDeck({})
+      setRuneDeckDraftInitialized(false)
+      setDraftBattlefield([])
+      setBattlefieldDraftInitialized(false)
+    }
+
     setDraftLegendId(null)
     setLegendDraftInitialized(false)
     setActiveModal(null)
@@ -634,22 +661,26 @@ function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }
   const runeSummary = `${validation.runeTotal}/${RUNE_DECK_TARGET}，${validation.runeColorCount}/${RUNE_COLOR_LIMIT} 色`
   const battlefieldSummary = `${validation.battlefieldTotal}/${BATTLEFIELD_TARGET}`
 
-  const handleCreateRoom = () => {
+  const handleCreateRoom = async () => {
     if (!deckComplete) {
       setLobbyError(deckValidationMessages.join('；'))
       return
     }
     setLobbyError('')
     const roomId = createRoom()
-    const created = createLocalRoom(roomId, deckState)
+    const created = await createOnlineRoom(roomId, deckState, getOrCreateClientId())
     if (!created.ok) {
-      setLobbyError('创建房间失败：无法写入浏览器本地存储，请关闭无痕模式后重试。')
+      setLobbyError(
+        created.reason === 'room_exists'
+          ? '房间号冲突，请重试。'
+          : '创建房间失败：无法连接游戏服务器，请确认已运行 npm run dev。',
+      )
       return
     }
     onHostWaiting(roomId)
   }
 
-  const handleJoinRoom = (roomId: string) => {
+  const handleJoinRoom = async (roomId: string) => {
     if (!deckComplete) {
       setLobbyError(deckValidationMessages.join('；'))
       return
@@ -658,21 +689,14 @@ function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }
       setJoinError('房间号格式无效，请输入 4-8 位数字。')
       return
     }
-    const joined = joinLocalRoom(roomId, deckState)
+    const joined = await joinOnlineRoom(roomId, deckState, getOrCreateClientId())
     if (!joined.ok) {
       const hints: Record<typeof joined.reason, string> = {
-        not_found: `未找到房间。请双方使用完全相同的地址打开本页（当前：${window.location.origin}），且房主需停留在等待页。`,
-        id_mismatch: `房间号不匹配。${getJoinRoomHint()}`,
+        not_found: `未找到房间 ${roomId.trim()}。请确认房主已创建房间且双方都能访问 ${window.location.origin}。`,
         already_joined: '该房间已有玩家加入，请让房主重新创建房间。',
-        write_failed: '加入失败：无法写入浏览器本地存储。',
+        network_error: '加入失败：无法连接游戏服务器，请确认已运行 npm run dev。',
       }
       setJoinError(hints[joined.reason])
-      return
-    }
-    const room = getLocalRoom()
-    if (!room?.hostDeck) {
-      setJoinError('房间数据异常，请让房主重新创建房间。')
-      clearLocalRoom()
       return
     }
     setJoinError('')
@@ -681,7 +705,7 @@ function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }
       roomId: roomId.trim(),
       role: 'guest',
       playerDeck: deckState,
-      opponentDeck: room.hostDeck,
+      opponentDeck: joined.hostDeck,
     })
   }
 
@@ -804,6 +828,9 @@ function DeckBuilderPage({ onEnterGame, onHostWaiting, onOpenLegendHeroMapping }
           }
         >
           配置传奇-英雄映射
+        </button>
+        <button type="button" className="btn ghost" onClick={onOpenRoomDev}>
+          房间 UI 预览
         </button>
       </header>
       <section className="deck-file-actions">

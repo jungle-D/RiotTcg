@@ -1,4 +1,4 @@
-import { getBattlefieldCard } from '../../data/loltcgCatalog'
+import BattlefieldDisplay from './BattlefieldDisplay'
 import './BattlefieldOpponentPanel.css'
 
 interface BattlefieldOpponentPanelProps {
@@ -12,23 +12,10 @@ function BattlefieldOpponentPanel({
   battlefieldId,
   waitingText = '等待对手选择战场…',
 }: BattlefieldOpponentPanelProps) {
-  const battlefield = battlefieldId ? getBattlefieldCard(battlefieldId) : null
-
   return (
     <article className="battlefield-opponent-panel">
       <h3>{title}</h3>
-      {battlefield ? (
-        <div className="battlefield-opponent-preview">
-          <img
-            src={battlefield.image}
-            alt={battlefield.name}
-            className="battlefield-thumb-rotated"
-          />
-          <p className="battlefield-opponent-name">{battlefield.name}</p>
-        </div>
-      ) : (
-        <p className="battlefield-opponent-waiting">{waitingText}</p>
-      )}
+      <BattlefieldDisplay battlefieldId={battlefieldId} waitingText={waitingText} />
     </article>
   )
 }

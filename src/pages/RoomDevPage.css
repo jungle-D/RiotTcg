@@ -1,0 +1,193 @@
+.room-dev-page {
+  display: flex;
+  min-height: 100vh;
+  background: #0f1419;
+  color: #e7ecf3;
+}
+
+.room-dev-panel {
+  flex: 0 0 360px;
+  max-width: 360px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: #151b22;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: flex-basis 0.2s ease, max-width 0.2s ease;
+}
+
+.room-dev-panel.collapsed {
+  flex-basis: 56px;
+  max-width: 56px;
+}
+
+.room-dev-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.room-dev-panel-header h1 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.room-dev-panel.collapsed .room-dev-panel-header h1 {
+  display: none;
+}
+
+.room-dev-panel-body {
+  flex: 1;
+  overflow: auto;
+  padding: 12px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.room-dev-section h2 {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c9d4e3;
+}
+
+.room-dev-hint {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #8b98a8;
+}
+
+.room-dev-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+}
+
+.room-dev-field select,
+.room-dev-watch-row input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #0f1419;
+  color: inherit;
+}
+
+.room-dev-scenarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.room-dev-scenarios .btn {
+  font-size: 0.75rem;
+  padding: 6px 10px;
+}
+
+.room-dev-watch-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.room-dev-watch-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.room-dev-error {
+  margin: 0 0 8px;
+  color: #ff8a8a;
+  font-size: 0.8rem;
+}
+
+.room-dev-live-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  color: #9fb0c3;
+}
+
+.room-dev-json {
+  margin-top: 10px;
+}
+
+.room-dev-json summary {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #b8c5d6;
+  margin-bottom: 6px;
+}
+
+.room-dev-json pre {
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #0b0f14;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.room-dev-footer {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.room-dev-board {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: auto;
+}
+
+.room-dev-live-badge {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  text-align: center;
+  background: rgba(56, 120, 190, 0.25);
+  border-bottom: 1px solid rgba(96, 165, 250, 0.25);
+  color: #bfdbfe;
+}
+
+.room-dev-board .game-board {
+  max-width: none;
+  width: 100%;
+  min-height: calc(100vh - 28px);
+}
+
+@media (max-width: 960px) {
+  .room-dev-page {
+    flex-direction: column;
+  }
+
+  .room-dev-panel,
+  .room-dev-panel.collapsed {
+    flex: none;
+    max-width: none;
+    width: 100%;
+    max-height: 42vh;
+  }
+
+  .room-dev-panel.collapsed {
+    max-height: 48px;
+  }
+}

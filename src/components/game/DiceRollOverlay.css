@@ -1,0 +1,143 @@
+.dice-overlay-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 6, 12, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 120;
+  padding: 20px;
+}
+
+.dice-overlay-panel {
+  width: min(560px, 100%);
+  border: 1px solid #3a4761;
+  border-radius: 16px;
+  background: #101623;
+  padding: 24px;
+  text-align: center;
+}
+
+.dice-overlay-panel h2 {
+  margin: 0 0 8px;
+  color: #e8edf5;
+}
+
+.dice-overlay-hint {
+  margin: 0 0 20px;
+  color: #b8c2d4;
+  font-size: 14px;
+}
+
+.dice-results-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dice-result-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dice-result-block-opponent .dice-cube {
+  border-color: #ffc68f;
+}
+
+.dice-result-label {
+  color: #8ec5ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dice-result-block-opponent .dice-result-label {
+  color: #ffc68f;
+}
+
+.dice-scene {
+  width: 80px;
+  height: 80px;
+  perspective: 600px;
+}
+
+.dice-cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease-out;
+}
+
+.dice-scene.is-rolling .dice-cube {
+  animation: dice-spin 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dice-face {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(145deg, #4a5f82, #2f3a50);
+  border: 2px solid #6fa5ff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 12px rgba(111, 165, 255, 0.25);
+  backface-visibility: hidden;
+}
+
+.dice-result-block-opponent .dice-face {
+  border-color: #ffc68f;
+  box-shadow: inset 0 0 12px rgba(255, 198, 143, 0.25);
+}
+
+.dice-face-1 { transform: rotateY(0deg) translateZ(40px); }
+.dice-face-2 { transform: rotateY(180deg) translateZ(40px); }
+.dice-face-3 { transform: rotateY(-90deg) translateZ(40px); }
+.dice-face-4 { transform: rotateY(90deg) translateZ(40px); }
+.dice-face-5 { transform: rotateX(90deg) translateZ(40px); }
+.dice-face-6 { transform: rotateX(-90deg) translateZ(40px); }
+
+.dice-result-value {
+  color: #d5deec;
+  font-size: 14px;
+}
+
+.dice-result-value-primary {
+  font-size: 22px;
+  font-weight: 700;
+  color: #8ec5ff;
+}
+
+.dice-result-block-opponent .dice-result-value-primary {
+  color: #ffc68f;
+}
+
+.dice-final-summary {
+  margin: 20px 0 0;
+  color: #8ec5ff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dice-first-player-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dice-first-player-actions .btn {
+  min-width: 120px;
+}
+
+@keyframes dice-spin {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(720deg) rotateY(1080deg); }
+}

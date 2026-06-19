@@ -9,6 +9,7 @@ interface ZonePanelProps {
   cards: GameCardInstance[]
   getCardMeta: (card: GameCardInstance) => BaseCard | null
   faceDown?: boolean
+  pileDisplay?: 'faceDown' | 'faceUpTop'
   highlight?: boolean
   onZoneClick?: () => void
   onCardClick?: (instanceId: string) => void
@@ -22,13 +23,16 @@ function ZonePanel({
   cards,
   getCardMeta,
   faceDown = false,
+  pileDisplay,
   highlight = false,
   onZoneClick,
   onCardClick,
   isCardSelected,
   className = '',
 }: ZonePanelProps) {
-  const showStackOnly = faceDown && cards.length > 0
+  const showFaceDownStack = (faceDown || pileDisplay === 'faceDown') && cards.length > 0
+  const showFaceUpTopStack = pileDisplay === 'faceUpTop' && cards.length > 0
+  const topCard = cards[cards.length - 1]
 
   return (
     <section
@@ -49,9 +53,24 @@ function ZonePanel({
       </header>
 
       <div className="zone-body">
-        {showStackOnly ? (
+        {showFaceDownStack ? (
           <div className="pile-stack">
             <span className="pile-back">牌堆</span>
+            <span className="pile-count">{cards.length} 张</span>
+          </div>
+        ) : showFaceUpTopStack && topCard ? (
+          <div className="pile-stack pile-stack-face-up">
+            <div className="pile-top-card-wrap">
+              <CardInstanceView
+                card={topCard}
+                meta={getCardMeta(topCard)}
+                selected={isCardSelected?.(topCard.instanceId)}
+                onClick={(event) => {
+                  event.stopPropagation()
+                  onCardClick?.(topCard.instanceId)
+                }}
+              />
+            </div>
             <span className="pile-count">{cards.length} 张</span>
           </div>
         ) : cards.length === 0 ? (

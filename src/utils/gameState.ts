@@ -1,4 +1,6 @@
 import { getRuneColorById } from '../data/loltcgCatalog'
+import { RUNE_COLOR_LABELS, emptyRuneEnergy } from '../constants/runeColors'
+import type { PlayerRole, RoomGameSyncState } from '../services/gameSyncService'
 import type { DeckState } from '../types/cards'
 import type {
   ActionMode,
@@ -15,27 +17,55 @@ import {
   TURN_RUNE_DRAW,
 } from '../types/game'
 
-let instanceCounter = 0
+type DeckSide = 'host' | 'guest'
+
 const runeColorById = getRuneColorById()
-const runeColorLabel: Record<RuneColor, string> = {
-  red: '红',
-  blue: '蓝',
-  green: '绿',
-  purple: '紫',
+const runeColorLabel = RUNE_COLOR_LABELS
+
+const instanceCounters: Record<DeckSide, number> = { host: 0, guest: 0 }
+
+export function createSeededRng(seed: string): () => number {
+  let hash = 2166136261
+  for (let i = 0; i < seed.length; i += 1) {
+    hash ^= seed.charCodeAt(i)
+    hash = Math.imul(hash, 16777619)
+  }
+  return () => {
+    hash += 0x6d2b79f5
+    let t = hash
+    t = Math.imul(t ^ (t >>> 15), t | 1)
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
 }
 
-function nextInstanceId(): string {
-  instanceCounter += 1
-  return `inst_${instanceCounter}_${Date.now()}`
+function resetInstanceCounters(): void {
+  instanceCounters.host = 0
+  instanceCounters.guest = 0
 }
 
-function shuffle<T>(items: T[]): T[] {
+function nextInstanceId(side: DeckSide): string {
+  instanceCounters[side] += 1
+  return `inst_${side}_${instanceCounters[side]}`
+}
+
+function shuffleWithRng<T>(items: T[], rng: () => number): T[] {
   const copy = [...items]
   for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1))
+    const j = Math.floor(rng() * (i + 1))
     ;[copy[i], copy[j]] = [copy[j], copy[i]]
   }
   return copy
+}
+
+export function cloneZones(
+  zones: Record<ZoneId, GameCardInstance[]>,
+): Record<ZoneId, GameCardInstance[]> {
+  const next = {} as Record<ZoneId, GameCardInstance[]>
+  for (const zone of Object.keys(zones) as ZoneId[]) {
+    next[zone] = zones[zone].map((card) => ({ ...card }))
+  }
+  return next
 }
 
 function emptyZones(): Record<ZoneId, GameCardInstance[]> {
@@ -57,9 +87,9 @@ function firstThreeBattlefields(deckState: DeckState): string[] {
   return deckState.battlefield.slice(0, 3)
 }
 
-function createInstance(cardId: string, kind: CardKind): GameCardInstance {
+function createInstance(cardId: string, kind: CardKind, side: DeckSide): GameCardInstance {
   return {
-    instanceId: nextInstanceId(),
+    instanceId: nextInstanceId(side),
     cardId,
     kind,
     tapped: false,
@@ -69,18 +99,29 @@ function createInstance(cardId: string, kind: CardKind): GameCardInstance {
 function expandDeck(
   record: Record<string, number>,
   kind: CardKind,
+  side: DeckSide,
 ): GameCardInstance[] {
   const instances: GameCardInstance[] = []
   for (const [cardId, count] of Object.entries(record)) {
     for (let i = 0; i < count; i += 1) {
-      instances.push(createInstance(cardId, kind))
+      instances.push(createInstance(cardId, kind, side))
     }
   }
   return instances
 }
 
-function rollDice(): number {
+export function rollLocalDice(): number {
   return Math.floor(Math.random() * 6) + 1
+}
+
+function roleToSecondPlayer(
+  secondPlayerRole: PlayerRole | null,
+  role: PlayerRole,
+): 'player' | 'opponent' | null {
+  if (!secondPlayerRole) {
+    return null
+  }
+  return secondPlayerRole === role ? 'player' : 'opponent'
 }
 
 export function findCardZone(
@@ -174,17 +215,22 @@ function drawOpeningHands(state: GameState): GameState {
   return next
 }
 
-function initZonesFromDeck(deckState: DeckState): Record<ZoneId, GameCardInstance[]> {
+function initZonesFromDeck(
+  deckState: DeckState,
+  side: DeckSide,
+  shuffleSeed: string,
+): Record<ZoneId, GameCardInstance[]> {
   const zones = emptyZones()
+  const rng = createSeededRng(`${shuffleSeed}_${side}`)
 
   if (deckState.legend) {
-    zones.legend = [createInstance(deckState.legend.id, 'legend')]
+    zones.legend = [createInstance(deckState.legend.id, 'legend', side)]
   }
   if (deckState.hero) {
-    zones.hero = [createInstance(deckState.hero.id, 'hero')]
+    zones.hero = [createInstance(deckState.hero.id, 'hero', side)]
   }
-  zones.mainDeck = shuffle(expandDeck(deckState.mainDeck, 'main'))
-  zones.runeDeck = shuffle(expandDeck(deckState.runeDeck, 'rune'))
+  zones.mainDeck = shuffleWithRng(expandDeck(deckState.mainDeck, 'main', side), rng)
+  zones.runeDeck = shuffleWithRng(expandDeck(deckState.runeDeck, 'rune', side), rng)
 
   return zones
 }
@@ -193,10 +239,14 @@ export function initGame(
   playerDeck: DeckState,
   opponentDeck: DeckState,
   roomId: string,
+  shuffleSeed: string,
+  role: PlayerRole,
 ): GameState {
-  instanceCounter = 0
-  const zones = initZonesFromDeck(playerDeck)
-  const opponentZones = initZonesFromDeck(opponentDeck)
+  resetInstanceCounters()
+  const playerSide: DeckSide = role
+  const opponentSide: DeckSide = role === 'host' ? 'guest' : 'host'
+  const zones = initZonesFromDeck(playerDeck, playerSide, shuffleSeed)
+  const opponentZones = initZonesFromDeck(opponentDeck, opponentSide, shuffleSeed)
 
   return {
     zones,
@@ -224,18 +274,146 @@ export function initGame(
     secondPlayer: null,
     firstRoundSecondPlayerBonusPending: false,
     mana: 0,
-    runeEnergy: {
-      red: 0,
-      blue: 0,
-      green: 0,
-      purple: 0,
-    },
+    runeEnergy: emptyRuneEnergy(),
   }
 }
 
 /** @deprecated Use initGame instead */
 export function initGameFromDeck(deckState: DeckState, roomId: string): GameState {
-  return initGame(deckState, deckState, roomId)
+  return initGame(deckState, deckState, roomId, 'local_seed', 'host')
+}
+
+export function getHostGuestZones(
+  state: GameState,
+  role: PlayerRole,
+): {
+  hostZones: Record<ZoneId, GameCardInstance[]>
+  guestZones: Record<ZoneId, GameCardInstance[]>
+} {
+  if (role === 'host') {
+    return { hostZones: cloneZones(state.zones), guestZones: cloneZones(state.opponentZones) }
+  }
+  return { hostZones: cloneZones(state.opponentZones), guestZones: cloneZones(state.zones) }
+}
+
+export function applyRoomGameSync(
+  state: GameState,
+  sync: RoomGameSyncState,
+  role: PlayerRole,
+): GameState {
+  const playerMulliganDone = role === 'host' ? sync.hostMulliganDone : sync.guestMulliganDone
+  const opponentMulliganDone = role === 'host' ? sync.guestMulliganDone : sync.hostMulliganDone
+  const playerDice = role === 'host' ? sync.hostDice : sync.guestDice
+  const opponentDice = role === 'host' ? sync.guestDice : sync.hostDice
+  const playerScore = role === 'host' ? sync.hostScore : sync.guestScore
+  const opponentScore = role === 'host' ? sync.guestScore : sync.hostScore
+  const mana = role === 'host' ? sync.hostMana : sync.guestMana
+  const runeEnergy =
+    role === 'host' ? { ...sync.hostRuneEnergy } : { ...sync.guestRuneEnergy }
+
+  let next: GameState = {
+    ...state,
+    playerBattlefieldChoice:
+      role === 'host' ? sync.hostBattlefieldChoice : sync.guestBattlefieldChoice,
+    opponentBattlefieldChoice:
+      role === 'host' ? sync.guestBattlefieldChoice : sync.hostBattlefieldChoice,
+    playerMulliganDone,
+    opponentMulliganDone,
+    playerDice,
+    opponentDice,
+    playerScore,
+    opponentScore,
+    mana,
+    runeEnergy,
+    openingHandsReady: sync.openingHandsReady,
+    firstRoundSecondPlayerBonusPending: sync.firstRoundSecondPlayerBonusPending,
+    secondPlayer: roleToSecondPlayer(sync.secondPlayer, role),
+    turnPhase: sync.turnPhase,
+    isPlayerTurn: sync.activePlayer === role && sync.turnPhase === 'main',
+  }
+
+  if (sync.hostZones && sync.guestZones) {
+    const syncPlayerZones = cloneZones(role === 'host' ? sync.hostZones : sync.guestZones)
+    const syncOpponentZones = cloneZones(role === 'host' ? sync.guestZones : sync.hostZones)
+    const preserveLocalHand =
+      sync.turnPhase === 'mulligan' &&
+      !playerMulliganDone &&
+      state.zones.hand.length > 0
+
+    if (preserveLocalHand) {
+      next.zones = { ...syncPlayerZones, hand: state.zones.hand }
+    } else {
+      next.zones = syncPlayerZones
+    }
+    next.opponentZones = syncOpponentZones
+  }
+
+  next.mulliganSelected =
+    sync.turnPhase === 'mulligan' && !playerMulliganDone
+      ? state.mulliganSelected
+      : []
+
+  if (sync.turnPhase === 'battlefieldSelect') {
+    if (next.playerBattlefieldChoice && !next.opponentBattlefieldChoice) {
+      next.statusMessage = '已选择战场，等待对手选择…'
+    } else if (!next.playerBattlefieldChoice && next.opponentBattlefieldChoice) {
+      next.statusMessage = '对手已选择战场，请选择你的战场。'
+    } else if (!next.playerBattlefieldChoice && !next.opponentBattlefieldChoice) {
+      next.statusMessage = '请双方先选择战场。战场确定后将自动各抽4张并进入调度。'
+    }
+  }
+
+  if (sync.turnPhase === 'mulligan') {
+    if (playerMulliganDone && opponentMulliganDone) {
+      next.statusMessage = '双方调度完成，即将自动投掷骰子决定先手。'
+    } else if (playerMulliganDone && !opponentMulliganDone) {
+      next.statusMessage = '调度完成，等待对手调度…'
+    } else if (!playerMulliganDone && opponentMulliganDone) {
+      next.statusMessage = '对手已完成调度，请选择最多 2 张手牌完成调度。'
+    } else {
+      next.statusMessage = `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请选择最多 ${MULLIGAN_LIMIT} 张手牌完成调度。`
+    }
+  }
+
+  if (sync.turnPhase === 'diceRoll') {
+    if (playerDice !== null && opponentDice !== null) {
+      next.statusMessage = `你掷出 ${playerDice}，对手掷出 ${opponentDice}，正在判定掷骰较高者…`
+    } else if (playerDice !== null) {
+      next.statusMessage = `你掷出 ${playerDice}，等待对手投掷骰子…`
+    } else if (opponentDice !== null) {
+      next.statusMessage = `对手已掷出 ${opponentDice}，正在投掷你的骰子…`
+    } else {
+      next.statusMessage = '双方调度完成，正在自动投掷骰子…'
+    }
+  }
+
+  if (sync.turnPhase === 'firstPlayerChoice') {
+    const isDiceWinner = sync.diceWinner === role
+    if (isDiceWinner && sync.firstPlayer === null) {
+      next.statusMessage = `你掷出了更高的点数（${playerDice} 对 ${opponentDice}），请选择谁先手。`
+    } else if (!isDiceWinner && sync.firstPlayer === null) {
+      next.statusMessage = `对手掷出了更高的点数，等待对手选择先手…`
+    } else if (sync.firstPlayer !== null) {
+      const playerFirst = sync.firstPlayer === role
+      next.statusMessage = playerFirst
+        ? '你获得先手，即将开始回合。'
+        : '对手获得先手，等待对手回合开始…'
+    }
+  }
+
+  if (sync.turnPhase === 'waitingOpponent') {
+    if (sync.pendingTurnStartFor === role) {
+      next.statusMessage = '轮到你的回合，正在抽取符文与手牌…'
+    } else if (sync.activePlayer !== role) {
+      next.statusMessage = '对方回合中…'
+    }
+  }
+
+  if (sync.turnPhase === 'main' && sync.activePlayer === role) {
+    next.statusMessage = '主阶段：可使用下方操作按钮。'
+  }
+
+  return next
 }
 
 export function pickBattlefield(
@@ -251,7 +429,7 @@ export function pickBattlefield(
   if (!options.includes(battlefieldId)) {
     return state
   }
-  const next =
+  let next: GameState =
     side === 'player'
       ? { ...state, playerBattlefieldChoice: battlefieldId }
       : { ...state, opponentBattlefieldChoice: battlefieldId }
@@ -261,14 +439,9 @@ export function pickBattlefield(
     next.opponentBattlefieldChoice &&
     !next.openingHandsReady
   ) {
-    const withOpening = drawOpeningHands(next)
-    return {
-      ...withOpening,
-      turnPhase: 'mulligan',
-      openingHandsReady: true,
-      playerMulliganDone: false,
-      opponentMulliganDone: true,
-      statusMessage: `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请完成调度后投掷骰子。`,
+    next = {
+      ...next,
+      statusMessage: '双方战场已选定，正在准备起手牌…',
     }
   }
 
@@ -308,23 +481,6 @@ export function applyBattlefieldSync(
     opponentBattlefieldChoice: opponentChoice,
   }
 
-  if (
-    playerChoice &&
-    opponentChoice &&
-    !next.openingHandsReady &&
-    next.turnPhase === 'battlefieldSelect'
-  ) {
-    const withOpening = drawOpeningHands(next)
-    return {
-      ...withOpening,
-      turnPhase: 'mulligan',
-      openingHandsReady: true,
-      playerMulliganDone: false,
-      opponentMulliganDone: true,
-      statusMessage: `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请完成调度后投掷骰子。`,
-    }
-  }
-
   if (next.turnPhase === 'battlefieldSelect') {
     if (playerChoice && !opponentChoice) {
       next = { ...next, statusMessage: '已选择战场，等待对手选择…' }
@@ -332,55 +488,54 @@ export function applyBattlefieldSync(
       next = { ...next, statusMessage: '对手已选择战场，请选择你的战场。' }
     } else if (!playerChoice && !opponentChoice) {
       next = { ...next, statusMessage: '请双方先选择战场。战场确定后将自动各抽4张并进入调度。' }
+    } else if (playerChoice && opponentChoice) {
+      next = { ...next, statusMessage: '双方战场已选定，正在准备起手牌…' }
     }
   }
 
   return next
 }
 
-export function rollForFirstPlayer(state: GameState): GameState {
-  if (state.turnPhase !== 'diceRoll' || state.playerDice !== null) {
-    return state
+/** 双方战场选定后由房主调用一次，抽取起手 4 张并进入调度 */
+export function prepareOpeningHands(
+  state: GameState,
+  sync: { hostBattlefieldChoice: string | null; guestBattlefieldChoice: string | null },
+  role: PlayerRole,
+): GameState | null {
+  if (state.openingHandsReady || state.zones.hand.length > 0) {
+    return null
   }
-  if (!state.playerBattlefieldChoice || !state.opponentBattlefieldChoice) {
-    return { ...state, statusMessage: '请先完成双方战场选择，再投掷骰子。' }
-  }
-  if (!state.openingHandsReady || !state.playerMulliganDone || !state.opponentMulliganDone) {
-    return { ...state, statusMessage: '请先完成双方开局抽牌与调度，再投掷骰子。' }
-  }
-
-  const playerDice = rollDice()
-  let opponentDice = rollDice()
-  while (playerDice === opponentDice) {
-    opponentDice = rollDice()
-  }
-
-  const playerFirst = playerDice > opponentDice
-
-  if (playerFirst) {
-    const started = startRegularPlayerTurn({
-      ...state,
-      playerDice,
-      opponentDice,
-      secondPlayer: 'opponent',
-      firstRoundSecondPlayerBonusPending: true,
-    })
-    return {
-      ...started,
-      statusMessage: `你掷出 ${playerDice}，对手掷出 ${opponentDice}，你获得先手。${started.statusMessage}`,
-    }
+  const playerChoice =
+    role === 'host' ? sync.hostBattlefieldChoice : sync.guestBattlefieldChoice
+  const opponentChoice =
+    role === 'host' ? sync.guestBattlefieldChoice : sync.hostBattlefieldChoice
+  if (!playerChoice || !opponentChoice) {
+    return null
   }
 
+  let next = applyBattlefieldSync(state, sync, role)
+  next = drawOpeningHands(next)
   return {
-    ...state,
-    playerDice,
-    opponentDice,
-    secondPlayer: 'player',
-    firstRoundSecondPlayerBonusPending: true,
-    turnPhase: 'waitingOpponent',
-    isPlayerTurn: false,
-    statusMessage: `你掷出 ${playerDice}，对手掷出 ${opponentDice}，对手获得先手。对手回合开始中…`,
+    ...next,
+    turnPhase: 'mulligan',
+    openingHandsReady: true,
+    playerMulliganDone: false,
+    opponentMulliganDone: false,
+    statusMessage: `双方战场已确定，已各抽 ${OPENING_HAND_DRAW} 张手牌。请选择最多 ${MULLIGAN_LIMIT} 张手牌完成调度。`,
   }
+}
+
+export function resolveDiceWinner(
+  hostDice: number,
+  guestDice: number,
+): { winner: PlayerRole } | 'tie' {
+  if (hostDice === guestDice) {
+    return 'tie'
+  }
+  if (hostDice > guestDice) {
+    return { winner: 'host' }
+  }
+  return { winner: 'guest' }
 }
 
 export function startRegularPlayerTurn(state: GameState): GameState {
@@ -408,7 +563,7 @@ export function startRegularPlayerTurn(state: GameState): GameState {
 }
 
 export function toggleMulliganSelect(state: GameState, instanceId: string): GameState {
-  if (state.turnPhase !== 'mulligan') {
+  if (state.turnPhase !== 'mulligan' || state.playerMulliganDone) {
     return state
   }
 
@@ -439,35 +594,36 @@ export function toggleMulliganSelect(state: GameState, instanceId: string): Game
 }
 
 export function finishMulligan(state: GameState): GameState {
-  if (state.turnPhase !== 'mulligan') {
+  if (state.turnPhase !== 'mulligan' || state.playerMulliganDone) {
     return state
-  }
-
-  let next: GameState = {
-    ...state,
-    zones: { ...state.zones },
-    mulliganSelected: [],
   }
 
   const toMulligan = state.mulliganSelected
     .map((id) => state.zones.hand.find((card) => card.instanceId === id))
     .filter((card): card is GameCardInstance => card !== undefined)
 
+  let next: GameState = {
+    ...state,
+    zones: cloneZones(state.zones),
+    mulliganSelected: [],
+  }
+
   for (const card of toMulligan) {
     next.zones.hand = next.zones.hand.filter((item) => item.instanceId !== card.instanceId)
     next.zones.mainDeck = [...next.zones.mainDeck, card]
   }
 
-  next = drawFromZone(next, 'mainDeck', toMulligan.length, 'hand')
+  if (toMulligan.length > 0) {
+    next = drawFromZone(next, 'mainDeck', toMulligan.length, 'hand')
+  }
 
   return {
     ...next,
-    turnPhase: 'diceRoll',
     actionMode: null,
     selectedInstanceIds: [],
     moveSourceInstanceId: null,
     playerMulliganDone: true,
-    statusMessage: '调度完成，请投掷骰子决定先手。',
+    statusMessage: '调度完成，等待对手调度…',
   }
 }
 

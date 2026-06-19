@@ -1,3 +1,5 @@
+import type { RuneColor } from '../constants/runeColors'
+
 export type CardKind = 'legend' | 'hero' | 'main' | 'rune' | 'battlefield'
 
 export interface BaseCard {
@@ -12,7 +14,7 @@ export interface MainCard extends BaseCard {
 }
 
 export interface RuneCard extends BaseCard {
-  color: 'red' | 'blue' | 'green' | 'purple'
+  color: RuneColor
 }
 
 export interface DeckState {

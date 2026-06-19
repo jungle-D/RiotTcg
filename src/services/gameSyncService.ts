@@ -1,94 +1,173 @@
-export const GAME_SYNC_STORAGE_KEY_PREFIX = 'riottcg.gameSync.'
+export type { PlayerRole, RoomGameSyncState, TurnPhase } from '@shared/gameSyncTypes'
+export { generateShuffleSeed } from '@shared/gameSyncTypes'
 
-export interface BattlefieldSyncState {
-  roomId: string
-  hostBattlefieldChoice: string | null
-  guestBattlefieldChoice: string | null
-  updatedAt: number
+import { generateShuffleSeed } from '@shared/gameSyncTypes'
+import type { PlayerRole, RoomGameSyncState } from '@shared/gameSyncTypes'
+import type { RuneColor } from '@shared/runeColors'
+import type { GameCardInstance, ZoneId } from '../types/game'
+import {
+  clearRoomGameSyncRemote,
+  fetchSync,
+  getCachedSync,
+  hasRoomGameSyncRemote,
+  initRoomGameSyncRemote,
+  publishBattlefieldChoiceRemote,
+  publishDiceRollRemote,
+  publishDiceTieRerollRemote,
+  publishDiceWinnerDeterminedRemote,
+  publishFirstPlayerChoiceRemote,
+  publishMulliganDoneRemote,
+  publishOpeningHandsReadyRemote,
+  publishTurnEndRemote,
+  publishTurnStartCompleteRemote,
+  publishZonesSnapshotRemote,
+  subscribeSync,
+} from './network/gameSyncClient'
+
+export function getRoomGameSync(roomId: string): RoomGameSyncState | null {
+  return getCachedSync(roomId)
 }
 
-function storageKey(roomId: string): string {
-  return `${GAME_SYNC_STORAGE_KEY_PREFIX}${roomId.trim()}`
+export async function fetchRoomGameSync(roomId: string): Promise<RoomGameSyncState | null> {
+  return fetchSync(roomId)
 }
 
-function readSync(roomId: string): BattlefieldSyncState | null {
-  try {
-    const raw = window.localStorage.getItem(storageKey(roomId))
-    if (!raw) {
-      return null
-    }
-    const parsed = JSON.parse(raw) as BattlefieldSyncState
-    if (parsed.roomId !== roomId.trim()) {
-      return null
-    }
-    return parsed
-  } catch {
-    return null
-  }
-}
-
-function writeSync(state: BattlefieldSyncState): boolean {
-  try {
-    const json = JSON.stringify(state)
-    window.localStorage.setItem(storageKey(state.roomId), json)
-    return localStorage.getItem(storageKey(state.roomId)) === json
-  } catch {
-    return false
-  }
-}
-
-export function initBattlefieldSync(roomId: string): void {
-  const trimmed = roomId.trim()
-  const existing = readSync(trimmed)
-  if (existing) {
-    return
-  }
-  writeSync({
-    roomId: trimmed,
-    hostBattlefieldChoice: null,
-    guestBattlefieldChoice: null,
-    updatedAt: Date.now(),
-  })
-}
-
-export function publishBattlefieldChoice(
+export async function initRoomGameSync(
   roomId: string,
-  role: 'host' | 'guest',
+  shuffleSeed: string,
+): Promise<RoomGameSyncState> {
+  return initRoomGameSyncRemote(roomId, shuffleSeed)
+}
+
+export async function hasRoomGameSync(roomId: string): Promise<boolean> {
+  return hasRoomGameSyncRemote(roomId)
+}
+
+export async function clearRoomGameSync(roomId: string): Promise<void> {
+  return clearRoomGameSyncRemote(roomId)
+}
+
+export { subscribeSync }
+
+export async function publishBattlefieldChoice(
+  roomId: string,
+  role: PlayerRole,
   battlefieldId: string,
-): boolean {
-  const trimmed = roomId.trim()
-  const current =
-    readSync(trimmed) ??
-    ({
-      roomId: trimmed,
-      hostBattlefieldChoice: null,
-      guestBattlefieldChoice: null,
-      updatedAt: Date.now(),
-    } satisfies BattlefieldSyncState)
-
-  const next: BattlefieldSyncState = {
-    ...current,
-    updatedAt: Date.now(),
-    hostBattlefieldChoice:
-      role === 'host' ? battlefieldId : current.hostBattlefieldChoice,
-    guestBattlefieldChoice:
-      role === 'guest' ? battlefieldId : current.guestBattlefieldChoice,
-  }
-  return writeSync(next)
+): Promise<boolean> {
+  return publishBattlefieldChoiceRemote(roomId, role, battlefieldId)
 }
 
-export function getBattlefieldSync(roomId: string): BattlefieldSyncState | null {
-  return readSync(roomId.trim())
+export async function publishOpeningHandsReady(
+  roomId: string,
+  hostZones: Record<ZoneId, GameCardInstance[]>,
+  guestZones: Record<ZoneId, GameCardInstance[]>,
+): Promise<boolean> {
+  return publishOpeningHandsReadyRemote(roomId, hostZones, guestZones)
 }
 
-export function clearBattlefieldSync(roomId: string): void {
-  try {
-    window.localStorage.removeItem(storageKey(roomId.trim()))
-  } catch {
-    // ignore
-  }
+export async function publishMulliganDone(
+  roomId: string,
+  role: PlayerRole,
+  zones: Record<ZoneId, GameCardInstance[]>,
+): Promise<boolean> {
+  return publishMulliganDoneRemote(roomId, role, zones)
 }
 
+export async function publishDiceRoll(
+  roomId: string,
+  role: PlayerRole,
+  value: number,
+  generation: number,
+): Promise<boolean> {
+  return publishDiceRollRemote(roomId, role, value, generation)
+}
+
+export async function publishDiceTieReroll(
+  roomId: string,
+  generation: number,
+): Promise<boolean> {
+  return publishDiceTieRerollRemote(roomId, generation)
+}
+
+export async function publishDiceWinnerDetermined(
+  roomId: string,
+  winner: PlayerRole,
+): Promise<boolean> {
+  return publishDiceWinnerDeterminedRemote(roomId, winner)
+}
+
+export async function publishFirstPlayerChoice(
+  roomId: string,
+  firstPlayer: PlayerRole,
+): Promise<boolean> {
+  return publishFirstPlayerChoiceRemote(roomId, firstPlayer)
+}
+
+export async function publishTurnStartComplete(
+  roomId: string,
+  role: PlayerRole,
+  zones: Record<ZoneId, GameCardInstance[]>,
+  mana: number,
+  runeEnergy: Record<RuneColor, number>,
+): Promise<boolean> {
+  return publishTurnStartCompleteRemote(roomId, role, zones, mana, runeEnergy)
+}
+
+export async function publishTurnEnd(
+  roomId: string,
+  role: PlayerRole,
+  zones: Record<ZoneId, GameCardInstance[]>,
+  mana: number,
+  runeEnergy: Record<RuneColor, number>,
+): Promise<boolean> {
+  return publishTurnEndRemote(roomId, role, zones, mana, runeEnergy)
+}
+
+export async function publishZonesSnapshot(
+  roomId: string,
+  role: PlayerRole,
+  zones: Record<ZoneId, GameCardInstance[]>,
+  mana: number,
+  runeEnergy: Record<RuneColor, number>,
+  score: number,
+): Promise<boolean> {
+  return publishZonesSnapshotRemote(roomId, role, zones, mana, runeEnergy, score)
+}
+
+/** @deprecated no longer uses localStorage */
+export function getRoomGameSyncStorageKey(_roomId: string): string {
+  return ''
+}
+
+/** @deprecated */
 export function getBattlefieldSyncStorageKey(roomId: string): string {
-  return storageKey(roomId.trim())
+  return getRoomGameSyncStorageKey(roomId)
+}
+
+/** @deprecated */
+export function getBattlefieldSync(roomId: string): RoomGameSyncState | null {
+  return getRoomGameSync(roomId)
+}
+
+/** @deprecated */
+export async function initBattlefieldSync(roomId: string): Promise<void> {
+  const existing = getRoomGameSync(roomId)
+  if (!existing) {
+    await initRoomGameSync(roomId, generateShuffleSeed())
+  }
+}
+
+/** @deprecated */
+export async function clearBattlefieldSync(roomId: string): Promise<void> {
+  await clearRoomGameSync(roomId)
+}
+
+/** @deprecated */
+export async function publishFirstPlayerResolved(
+  roomId: string,
+  firstPlayer: PlayerRole,
+  secondPlayer: PlayerRole,
+): Promise<boolean> {
+  void secondPlayer
+  return publishFirstPlayerChoice(roomId, firstPlayer)
 }

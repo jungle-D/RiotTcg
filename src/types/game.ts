@@ -1,4 +1,7 @@
 import type { DeckState } from './cards'
+import type { RuneColor } from '../constants/runeColors'
+
+export type { RuneColor } from '../constants/runeColors'
 
 export type ZoneId =
   | 'legend'
@@ -13,7 +16,6 @@ export type ZoneId =
   | 'discard'
 
 export type CardKind = 'legend' | 'hero' | 'main' | 'rune'
-export type RuneColor = 'red' | 'blue' | 'green' | 'purple'
 
 export type ActionMode =
   | 'draw'
@@ -28,6 +30,7 @@ export type ActionMode =
 export type TurnPhase =
   | 'battlefieldSelect'
   | 'diceRoll'
+  | 'firstPlayerChoice'
   | 'mulligan'
   | 'main'
   | 'waitingOpponent'

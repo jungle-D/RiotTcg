@@ -1,3 +1,4 @@
+import type { BaseCard } from '../../types/cards'
 import BattlefieldSelectOption from './BattlefieldSelectOption'
 import './BattlefieldSelectModal.css'
 
@@ -6,6 +7,7 @@ interface BattlefieldSelectModalProps {
   battlefieldIds: string[]
   selectedId: string | null
   statusMessage: string
+  opponentLegend: BaseCard | null
   onSelect: (id: string) => void
 }
 
@@ -14,6 +16,7 @@ function BattlefieldSelectModal({
   battlefieldIds,
   selectedId,
   statusMessage,
+  opponentLegend,
   onSelect,
 }: BattlefieldSelectModalProps) {
   if (!open) {
@@ -30,6 +33,17 @@ function BattlefieldSelectModal({
       >
         <h2>选择战场</h2>
         <p className="battlefield-select-modal-hint">{statusMessage}</p>
+        {opponentLegend ? (
+          <div className="opponent-legend-banner">
+            <span className="opponent-legend-label">对手传奇</span>
+            <img
+              src={opponentLegend.image}
+              alt={opponentLegend.name}
+              className="opponent-legend-thumb"
+            />
+            <span className="opponent-legend-name">{opponentLegend.name}</span>
+          </div>
+        ) : null}
         <p className="battlefield-select-modal-sub">
           请从下列战场中选择一张；双方选定后将进入调度环节。
         </p>

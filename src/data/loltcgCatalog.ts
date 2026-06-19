@@ -7,7 +7,8 @@ import runesData from '../../data/imported/loltcg/normalized/runes.json'
 import spellsData from '../../data/imported/loltcg/normalized/spells.json'
 import unitsData from '../../data/imported/loltcg/normalized/units.json'
 import type { BaseCard, MainCard, RuneCard } from '../types/cards'
-import type { RuneColor } from '../types/game'
+import type { RuneColor } from '../constants/runeColors'
+import { isRuneColor } from '../constants/runeColors'
 
 interface ImportedCard {
   id: string
@@ -50,7 +51,7 @@ function toMainCard(card: ImportedCard): MainCard {
 
 function toRuneCard(card: ImportedCard): RuneCard | null {
   const colors = card.official?.cardColorList ?? []
-  const color = colors.find((item) => ['red', 'blue', 'green', 'purple'].includes(item))
+  const color = colors.find(isRuneColor)
   if (!color) {
     return null
   }

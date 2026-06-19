@@ -4,8 +4,9 @@ interface ActionBarProps {
   actionMode: ActionMode
   turnPhase: string
   isPlayerTurn: boolean
-  playerDice: number | null
-  opponentDice: number | null
+  playerMulliganDone: boolean
+  opponentMulliganDone: boolean
+  mulliganSelectedCount: number
   onAction: (mode: ActionMode) => void
   onEndTurn: () => void
   onConfirmDiscard: () => void
@@ -13,10 +14,8 @@ interface ActionBarProps {
   onConfirmUntap: () => void
   onConfirmRecycle: () => void
   onFinishMulligan: () => void
-  onRollDice: () => void
   onUndo: () => void
   selectedActionCount: number
-  canRollDice: boolean
   canUndo: boolean
 }
 
@@ -34,8 +33,9 @@ function ActionBar({
   actionMode,
   turnPhase,
   isPlayerTurn,
-  playerDice,
-  opponentDice,
+  playerMulliganDone,
+  opponentMulliganDone,
+  mulliganSelectedCount,
   onAction,
   onEndTurn,
   onConfirmDiscard,
@@ -43,17 +43,20 @@ function ActionBar({
   onConfirmUntap,
   onConfirmRecycle,
   onFinishMulligan,
-  onRollDice,
   onUndo,
   selectedActionCount,
-  canRollDice,
   canUndo,
 }: ActionBarProps) {
   const mainPhase = turnPhase === 'main' && isPlayerTurn
-  const mulliganPhase = turnPhase === 'mulligan' && isPlayerTurn
-  const dicePhase = turnPhase === 'diceRoll'
+  const mulliganPhase = turnPhase === 'mulligan' && !playerMulliganDone
+  const mulliganWaiting = turnPhase === 'mulligan' && playerMulliganDone && !opponentMulliganDone
+  const diceWaiting = turnPhase === 'diceRoll'
+  const firstPlayerChoiceWaiting = turnPhase === 'firstPlayerChoice'
   const showUndo =
-    turnPhase !== 'waitingOpponent' && turnPhase !== 'battlefieldSelect'
+    turnPhase !== 'waitingOpponent' &&
+    turnPhase !== 'battlefieldSelect' &&
+    turnPhase !== 'diceRoll' &&
+    turnPhase !== 'firstPlayerChoice'
 
   return (
     <footer className="action-bar">
@@ -63,29 +66,27 @@ function ActionBar({
         </button>
       ) : null}
 
-      {dicePhase ? (
-        <div className="dice-panel">
-          <p className="dice-hint">双方完成调度后，投掷骰子决定先手。</p>
-          {playerDice !== null && opponentDice !== null ? (
-            <p className="dice-result">
-              你的点数：{playerDice} · 对手点数：{opponentDice}
-            </p>
-          ) : null}
-          <button
-            type="button"
-            className="btn primary"
-            onClick={onRollDice}
-            disabled={!canRollDice}
-          >
-            投掷骰子
+      {mulliganPhase ? (
+        <>
+          <p className="mulligan-hint">
+            开局调度：点击手牌选择最多 2 张放回牌堆底部（已选 {mulliganSelectedCount}/2）
+          </p>
+          <button type="button" className="btn primary" onClick={onFinishMulligan}>
+            完成调度
           </button>
-        </div>
+        </>
       ) : null}
 
-      {mulliganPhase ? (
-        <button type="button" className="btn primary" onClick={onFinishMulligan}>
-          完成调度
-        </button>
+      {mulliganWaiting ? (
+        <p className="waiting-text">调度完成，等待对手调度…</p>
+      ) : null}
+
+      {diceWaiting ? (
+        <p className="waiting-text">双方调度完成，正在自动投掷骰子…</p>
+      ) : null}
+
+      {firstPlayerChoiceWaiting ? (
+        <p className="waiting-text">掷骰较高者正在选择先手…</p>
       ) : null}
 
       {mainPhase ? (
@@ -128,7 +129,7 @@ function ActionBar({
         </>
       ) : null}
 
-      {turnPhase === 'waitingOpponent' ? (
+      {turnPhase === 'waitingOpponent' && !mulliganWaiting && !diceWaiting && !firstPlayerChoiceWaiting ? (
         <p className="waiting-text">等待对方回合结束…</p>
       ) : null}
     </footer>
