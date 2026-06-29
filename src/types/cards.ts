@@ -9,8 +9,15 @@ export interface BaseCard {
   description: string
 }
 
+export type MainDeckFilterCategory = 'unit' | 'spell' | 'equipment' | 'hero'
+
 export interface MainCard extends BaseCard {
   type: 'spell' | 'unit' | 'hero' | 'wandering' | 'defense'
+  category: string
+  filterCategory: MainDeckFilterCategory
+  energy: number | null
+  returnEnergy: number | null
+  colors: string[]
 }
 
 export interface RuneCard extends BaseCard {

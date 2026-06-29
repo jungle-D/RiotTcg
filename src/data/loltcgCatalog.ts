@@ -6,7 +6,7 @@ import legendsData from '../../data/imported/loltcg/normalized/legends.json'
 import runesData from '../../data/imported/loltcg/normalized/runes.json'
 import spellsData from '../../data/imported/loltcg/normalized/spells.json'
 import unitsData from '../../data/imported/loltcg/normalized/units.json'
-import type { BaseCard, MainCard, RuneCard } from '../types/cards'
+import type { BaseCard, MainCard, MainDeckFilterCategory, RuneCard } from '../types/cards'
 import type { RuneColor } from '../constants/runeColors'
 import { isRuneColor } from '../constants/runeColors'
 
@@ -19,6 +19,8 @@ interface ImportedCard {
   official?: {
     cardCategory?: string
     cardColorList?: string[]
+    energy?: number | null
+    returnEnergy?: number | null
   }
 }
 
@@ -42,10 +44,25 @@ function toMainType(card: ImportedCard): MainCard['type'] {
   return 'unit'
 }
 
+function toFilterCategory(card: ImportedCard): MainDeckFilterCategory {
+  const category = card.official?.cardCategory ?? ''
+  if (category === 'hero_unit') return 'hero'
+  if (category === 'spell' || category === 'exclusive_spell') return 'spell'
+  if (category === 'equipment' || category === 'exclusive_equipment') return 'equipment'
+  return 'unit'
+}
+
 function toMainCard(card: ImportedCard): MainCard {
+  const energy = card.official?.energy
+  const returnEnergy = card.official?.returnEnergy
   return {
     ...toBaseCard(card),
     type: toMainType(card),
+    category: card.official?.cardCategory ?? '',
+    filterCategory: toFilterCategory(card),
+    energy: typeof energy === 'number' ? energy : null,
+    returnEnergy: typeof returnEnergy === 'number' ? returnEnergy : null,
+    colors: card.official?.cardColorList ?? [],
   }
 }
 

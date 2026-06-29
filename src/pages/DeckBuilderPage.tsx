@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { ChangeEvent } from 'react'
 import CardSelectModal from '../components/CardSelectModal'
+import MainDeckSelectModal from '../components/MainDeckSelectModal'
 import DeckSectionCard from '../components/DeckSectionCard'
 import JoinRoomModal from '../components/game/JoinRoomModal'
 import battlefieldsData from '../../data/imported/loltcg/normalized/battlefields.json'
@@ -12,7 +13,7 @@ import legendHeroMappingData from '../../data/imported/loltcg/normalized/legend2
 import runesData from '../../data/imported/loltcg/normalized/runes.json'
 import spellsData from '../../data/imported/loltcg/normalized/spells.json'
 import unitsData from '../../data/imported/loltcg/normalized/units.json'
-import type { BaseCard, DeckState, MainCard, RuneCard } from '../types/cards'
+import type { BaseCard, DeckState, MainCard, MainDeckFilterCategory, RuneCard } from '../types/cards'
 import type { GameSession } from '../types/game'
 import { isRuneColor } from '../constants/runeColors'
 import { createRoom, joinRoom } from '../services/roomService'
@@ -34,6 +35,7 @@ import {
   validateDeck,
 } from '../utils/deckRules'
 import { loadDeckStateFromStorage, saveDeckStateToStorage } from '../utils/deckBuilderStorage'
+import { getMainDeckFilterBounds } from '../utils/mainDeckFilters'
 import './DeckBuilderPage.css'
 
 interface ImportedCard {
@@ -45,6 +47,8 @@ interface ImportedCard {
   official?: {
     cardCategory?: string
     cardColorList?: string[]
+    energy?: number | null
+    returnEnergy?: number | null
   }
 }
 
@@ -77,10 +81,25 @@ function toMainType(card: ImportedCard): MainCard['type'] {
   return 'unit'
 }
 
+function toFilterCategory(card: ImportedCard): MainDeckFilterCategory {
+  const category = card.official?.cardCategory ?? ''
+  if (category === 'hero_unit') return 'hero'
+  if (category === 'spell' || category === 'exclusive_spell') return 'spell'
+  if (category === 'equipment' || category === 'exclusive_equipment') return 'equipment'
+  return 'unit'
+}
+
 function toMainCard(card: ImportedCard): MainCard {
+  const energy = card.official?.energy
+  const returnEnergy = card.official?.returnEnergy
   return {
     ...toBaseCard(card),
     type: toMainType(card),
+    category: card.official?.cardCategory ?? '',
+    filterCategory: toFilterCategory(card),
+    energy: typeof energy === 'number' ? energy : null,
+    returnEnergy: typeof returnEnergy === 'number' ? returnEnergy : null,
+    colors: card.official?.cardColorList ?? [],
   }
 }
 
@@ -103,6 +122,10 @@ const MAIN_DECK_SOURCE_CARDS = [
   ...importedHeroes,
   ...importedExclusives,
 ]
+
+const GLOBAL_MAIN_DECK_FILTER_BOUNDS = getMainDeckFilterBounds(
+  MAIN_DECK_SOURCE_CARDS.map(toMainCard),
+)
 
 function allowByLegendColors(colors: string[], selectedLegendColors: Set<string>): boolean {
   if (colors.includes('colorless')) {
@@ -944,11 +967,12 @@ function DeckBuilderPage({
         onConfirm={handleHeroConfirm}
       />
 
-      <CardSelectModal
+      <MainDeckSelectModal
         open={activeModal === 'main'}
         title="主牌堆选择（39 张）"
         cards={typedMainCards}
-        mode="counter"
+        filterBounds={GLOBAL_MAIN_DECK_FILTER_BOUNDS}
+        legendColors={Array.from(selectedLegendColors)}
         selectedCounters={draftMainDeck}
         helperText={`规则：总计 ${MAIN_DECK_TARGET} 张；英雄最多 ${MAIN_DECK_HERO_LIMIT} 张；单卡最多 ${CARD_PER_COPY_LIMIT} 张。`}
         errorText={mainDeckError}

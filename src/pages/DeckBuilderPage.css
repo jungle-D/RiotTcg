@@ -423,4 +423,298 @@
   .section-grid {
     grid-template-columns: 1fr;
   }
+
+  .main-deck-modal-body {
+    flex-direction: column;
+  }
+
+  .main-deck-config-panel {
+    width: 100%;
+    max-height: 280px;
+  }
 }
+
+.main-deck-modal {
+  width: min(1280px, 100%);
+}
+
+.main-deck-modal-body {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.main-deck-main-column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.main-deck-scroll {
+  flex: 1;
+}
+
+.main-deck-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.filter-group-label {
+  flex: 0 0 40px;
+  font-size: 13px;
+  color: #9aa8be;
+  padding-top: 6px;
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+}
+
+.filter-chip {
+  border: 1px solid #4a5f82;
+  background: #1a2232;
+  color: #c3ccdd;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter-chip.active {
+  border-color: #6fa5ff;
+  background: #2a4068;
+  color: #e8f0ff;
+}
+
+.filter-group-energy .energy-range-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.energy-range-hint {
+  font-size: 12px;
+  color: #9aa8be;
+}
+
+.energy-range-field {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.energy-range-field-label {
+  font-size: 12px;
+  color: #9aa8be;
+}
+
+.energy-range-input {
+  width: 52px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #4a5f82;
+  background: #101623;
+  color: #e8ecf1;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.energy-range-input:focus {
+  outline: none;
+  border-color: #6fa5ff;
+}
+
+.energy-range-separator {
+  color: #9aa8be;
+  font-size: 13px;
+}
+
+.energy-range-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #c3ccdd;
+  cursor: pointer;
+}
+
+.energy-range-checkbox input {
+  accent-color: #6fa5ff;
+}
+
+.main-deck-config-panel {
+  width: 300px;
+  flex-shrink: 0;
+  border: 1px solid #36425a;
+  border-radius: 12px;
+  background: #1c2433;
+  padding: 12px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.config-panel-title {
+  margin: 0;
+  font-size: 16px;
+  color: #e8ecf1;
+}
+
+.config-panel-summary {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #243149;
+  font-size: 13px;
+  color: #dce6f8;
+}
+
+.config-panel-summary p {
+  margin: 4px 0;
+}
+
+.config-panel-summary strong {
+  color: #8ec5ff;
+}
+
+.cost-curve-section {
+  margin-top: 14px;
+}
+
+.cost-curve-section h4,
+.selected-cards-section h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #b8c2d4;
+}
+
+.cost-curve {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 100px;
+  padding: 8px 4px 0;
+  border-radius: 8px;
+  background: #101623;
+}
+
+.cost-bar-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-width: 0;
+}
+
+.cost-bar {
+  width: 100%;
+  max-width: 28px;
+  margin-top: auto;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, #6fa5ff 0%, #3660b3 100%);
+  min-height: 4px;
+}
+
+.cost-bar-count {
+  font-size: 11px;
+  color: #8ec5ff;
+  margin-top: 2px;
+}
+
+.cost-bar-label {
+  font-size: 11px;
+  color: #9aa8be;
+}
+
+.selected-cards-section {
+  margin-top: 14px;
+}
+
+.config-empty {
+  margin: 0;
+  font-size: 13px;
+}
+
+.selected-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selected-card-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 8px;
+  background: #101623;
+  border: 1px solid #2f3a50;
+}
+
+.selected-card-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.selected-card-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.selected-card-name {
+  font-size: 13px;
+  color: #e8ecf1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selected-card-meta {
+  font-size: 11px;
+  color: #9aa8be;
+}
+
+.selected-card-counter {
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.selected-card-counter .btn {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.card-meta {
+  margin: 4px 0 0;
+  color: #9aa8be;
+  font-size: 12px;
+  min-height: auto;
+}
+
